@@ -3,10 +3,17 @@
 import os
 import sys
 import json
+from pathlib import Path
 from datetime import datetime, timezone
 
-# Add backend to path
-sys.path.insert(0, r"c:\Users\prana\OneDrive\Desktop\EL5\CIVIX\backend")
+# Add backend directory to Python path
+script_dir = Path(__file__).resolve().parent
+project_root = script_dir.parent  # CIVIX
+el5_root = project_root.parent    # EL5
+backend_dir = project_root / "backend"
+
+if str(backend_dir) not in sys.path:
+    sys.path.insert(0, str(backend_dir))
 
 from app.database.database import SessionLocal, engine, Base
 from app.models.user import User
@@ -22,7 +29,10 @@ from app.core.security import hash_password
 
 
 def populate():
-    datasets_dir = r"c:\Users\prana\OneDrive\Desktop\EL5\Datasets"
+    datasets_dir = el5_root / "Datasets"
+    if not datasets_dir.exists():
+        datasets_dir = project_root / "Datasets"
+    datasets_dir = str(datasets_dir)
     db = SessionLocal()
 
     print("Checking database tables...")

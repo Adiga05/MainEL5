@@ -1,0 +1,11 @@
+{
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/CIVIX/backend",
+    "./CIVIX/backend"
+  ],
+  "python.autoComplete.extraPaths": [
+    "${workspaceFolder}/CIVIX/backend",
+    "./CIVIX/backend"
+  ],
+  "python.envFile": "${workspaceFolder}/.env"
+}
