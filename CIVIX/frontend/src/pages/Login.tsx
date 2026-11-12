@@ -42,7 +42,7 @@ export const Login: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-sky-50 to-emerald-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center">
-        <div className="mx-auto w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-100 to-sky-100 border border-pink-200 flex items-center justify-center text-pink-600 shadow-md mb-4">
+        <div className="mx-auto w-14 h-14 rounded-2xl bg-sky-100 border border-sky-300 flex items-center justify-center text-sky-600 shadow-md mb-4">
           <ShieldAlert className="w-8 h-8" />
         </div>
         <h2 className="text-xl font-bold tracking-tight text-slate-800">

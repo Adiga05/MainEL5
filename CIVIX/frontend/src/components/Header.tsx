@@ -20,8 +20,8 @@ export const Header: React.FC<HeaderProps> = ({ currentRole, onSwitchRole }) => 
   return (
     <header className="h-16 bg-white/95 backdrop-blur-xs border-b border-sky-100 px-6 flex items-center justify-between sticky top-0 z-30 shadow-xs">
       <div className="flex items-center space-x-3">
-        {/* Pastel Pink / Sky Blue Brand Badge */}
-        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-100 to-sky-100 border border-pink-200 flex items-center justify-center text-pink-600 shadow-xs">
+        {/* Blue Brand Badge Logo */}
+        <div className="w-10 h-10 rounded-xl bg-sky-100 border border-sky-300 flex items-center justify-center text-sky-600 shadow-xs">
           <ShieldAlert className="w-5 h-5" />
         </div>
         <div>

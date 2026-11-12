@@ -39,18 +39,18 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
 
   return (
     <aside className={`w-64 bg-[#1e2638] text-slate-300 flex flex-col shrink-0 min-h-[calc(100vh-4rem)] border-r border-slate-700/60 shadow-md ${className}`}>
-      {/* Brand Header with Pastel Accents */}
+      {/* Brand Header with Blue Logo */}
       <div className="p-4 border-b border-slate-700/50">
         <div className="flex items-center space-x-2.5">
-          <div className="w-8 h-8 rounded-lg bg-pink-100/90 border border-pink-300 flex items-center justify-center text-pink-600 shadow-xs">
-            <ShieldCheck className="w-4.5 h-4.5" />
+          <div className="w-8 h-8 rounded-lg bg-sky-500/20 border border-sky-400/50 flex items-center justify-center text-sky-300 shadow-xs">
+            <ShieldCheck className="w-4.5 h-4.5 text-sky-400" />
           </div>
           <div>
             <div className="flex items-center space-x-1.5">
-              <span className="text-xs font-bold tracking-wide uppercase text-white">Urban Flood Intel</span>
+              <span className="text-xs font-bold tracking-wide text-white">Decision Support</span>
               <Sparkles className="w-3 h-3 text-sky-300" />
             </div>
-            <span className="block text-[10px] text-sky-200/80 font-medium">Decision Support System</span>
+            <span className="block text-[10px] text-sky-200/80 font-medium">Urban Flood & Accessibility</span>
           </div>
         </div>
       </div>
