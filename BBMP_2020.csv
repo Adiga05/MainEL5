@@ -1,0 +1,869 @@
+_id,Complaint ID,Category,Sub Category,Grievance Date,Ward Name,Grievance Status,Staff Remarks,Staff Name
+101,20096307,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-31 03:18:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+613,20095795,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-12-29 05:20:00.000000000,Bommanahalli,Closed,closed,Suresh/AEE
+933,20095475,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-28 01:58:00.000000000,Singasandra,Rejected,"Rejected , This Complaint is comes under BWSSB Dept so Rejected",BBMP Whatsapp/Customer Support Representative
+1061,20095347,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-12-27 06:24:00.000000000,Vijanapura,Closed,Closed,Shree Lakshmi/AEE
+1178,20095230,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-27 01:29:00.000000000,Vasanthapura,Closed,Closes,Krishne Gowda/AEE
+1609,20094799,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-12-25 03:10:00.000000000,Sri Rammandira,Rejected,Rejected,BBMP Whatsapp/Customer Support Representative
+2555,20093853,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-22 11:12:00.000000000,Bellandur,Resolved,THIS COMPLAINT HAS BEEN RESOLVED,Chethan/AE
+2573,20093835,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-12-22 10:38:00.000000000,Arakere,Rejected,Contact BWSSB and KPSCB not under the purview of Rajakaluve,BBMP Whatsapp/Customer Support Representative
+3074,20093334,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-12-20 01:02:00.000000000,HBR Layout,Closed,It comes under Swm closed,Chandrashekhar/AEE
+3100,20093308,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-20 10:36:00.000000000,Marathalli,Resolved,THIS COMPLAINT HAS BEEN RESOLVED,Chethan/AE
+3277,20093131,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-19 03:19:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+3281,20093127,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-19 03:10:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+3569,20092839,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-18 02:24:00.000000000,Yelachenahalli,Closed,Closed,Krishne Gowda/AEE
+3658,20092750,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-18 10:06:00.000000000,Basavanagudi,Closed,Work taken up by swd BBMP,Jyothi/AEE
+3674,20092734,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-18 09:12:00.000000000,Chikkalasandra,Closed,Grievance has been resolved,Chethan HD/AEE
+3707,20092701,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-12-18 01:39:00.000000000,Lakkasandra,Rejected,Comes under BMRCL,BBMP Whatsapp/Customer Support Representative
+4121,20092287,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-16 05:31:00.000000000,Chokkasandra,Closed,Resolved,Santhosh S/AEE
+4179,20092229,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-16 01:38:00.000000000,HBR Layout,Rejected,Rejected,BBMP Whatsapp/Customer Support Representative
+4311,20092097,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-12-15 09:46:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+4795,20091613,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-14 11:03:00.000000000,Hegganahalli,Closed,Resolved,Santhosh S/AEE
+4803,20091605,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-14 10:56:00.000000000,Basaveshwara Nagar,Rejected,Rejected,BBMP Whatsapp/Customer Support Representative
+4915,20091493,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-13 08:19:00.000000000,Kumaraswamy Layout,Closed,Complaint attended,Chethan HD/AEE
+4923,20091485,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-13 07:45:00.000000000,Ramamurthy Nagar,Rejected,Pertaining toBwssb work,BBMP Whatsapp/Customer Support Representative
+5070,20091338,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-13 06:12:00.000000000,Rajarajeshwari Nagar,Closed,increase the RCC wall height of storm water drain  a proposal has sent to allocate grant as soon as grant obtained work will be started,Ragavendra R/AEE
+5467,20090941,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-12-11 01:52:00.000000000,Peenya Industrial Area,Closed,Resolved,Santhosh S/AEE
+5571,20090837,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-12-11 09:04:00.000000000,Bommanahalli,Closed,closed,Suresh/AEE
+5608,20090800,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-10 11:21:00.000000000,Bommanahalli,Closed,closed,Suresh/AEE
+5646,20090762,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-12-10 07:32:00.000000000,HBR Layout,Closed,Closed,Chandrashekhar/AEE
+5731,20090677,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-12-10 02:06:00.000000000,HBR Layout,Rejected,"Rejected , As per Officer Information This Complaints is comes under BWSSB Dept",BBMP Whatsapp/Customer Support Representative
+6359,20090049,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-08 11:57:00.000000000,Someshwara,Closed,Resolved,Srinivas J N/AEE
+6519,20089889,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-07 05:56:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+6532,20089876,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-07 05:06:00.000000000,Chalavadipalya,Closed,Maintenance of swd is in progress,Manuja R/AEE
+6559,20089849,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-12-07 03:19:00.000000000,Begur,Closed,Closed,Krishne Gowda/AEE
+6733,20089675,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-06 11:59:00.000000000,Jayangar,Rejected,address is not correct,BBMP Whatsapp/Customer Support Representative
+6757,20089651,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-06 08:06:00.000000000,Basaveshwara Nagar,Closed,Maintenance of swd is in progress,Manuja R/AEE
+6867,20089541,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-12-06 12:20:00.000000000,Byatarayanapura,Rejected,AS PER CITIZEN INFORMATION COMPLAINT REJECTED,BBMP Whatsapp/Customer Support Representative
+7048,20089360,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-12-05 06:04:00.000000000,Hemmigepura,Rejected,"Rejected , This Complaints is comes under BWSSB Department Call 1916",BBMP Whatsapp/Customer Support Representative
+7061,20089347,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-05 05:05:00.000000000,Kottigepalya,Closed,re solved,Ragavendra R/AEE
+7123,20089285,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-05 01:11:00.000000000,Chokkasandra,Closed,Resolved,Santhosh S/AEE
+7125,20089283,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-12-05 01:05:00.000000000,Rajarajeshwari Nagar,Rejected,"Regarding Sewage comes under B W S S B Dept, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+7329,20089079,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-04 04:29:00.000000000,Herohalli,Closed,Closed,Chandrashekhar/AEE
+7384,20089024,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-04 12:00:00.000000000,Jalahalli,Closed,Resolved,Ragavendra R/AEE
+7453,20088955,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-04 08:33:00.000000000,Jalahalli,Closed,Resolved,Ragavendra R/AEE
+7579,20088829,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-03 05:38:00.000000000,Varthur,Resolved,THIS COMPLAINT HAS BEEN RESOLVED,Chethan/AE
+7631,20088777,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-03 01:35:00.000000000,Rajagopala Nagar,Closed,Resolved,Santhosh S/AEE
+7658,20088750,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-03 11:54:00.000000000,Anjanapur,Closed,Closed,Krishne Gowda/AEE
+7733,20088675,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-03 01:06:00.000000000,Gottigere,Rejected,AS PER CITIZEN INFORMATION REQUEST IS REJECTED,BBMP Whatsapp/Customer Support Representative
+8035,20088373,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-02 09:08:00.000000000,K.R.Puram,Closed,Closed,Shree Lakshmi/AEE
+8175,20088233,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-01 04:58:00.000000000,Horamavu,Rejected,As per citizen information request is resolved.,BBMP Whatsapp/Customer Support Representative
+8249,20088159,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-12-01 12:36:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+8296,20088112,Storm  Water Drain(SWD),Maintenance of SWD,2020-12-01 10:33:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+8511,20087897,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-30 03:09:00.000000000,Shettyhalli,Closed,Resolved,Santhosh S/AEE
+8582,20087826,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-30 12:33:00.000000000,Ramamurthy Nagar,Closed,Resolved,Shree Lakshmi/AEE
+8585,20087823,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-30 12:31:00.000000000,Bagalagunte,Closed,Resolved,Santhosh S/AEE
+9206,20087202,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-28 12:14:00.000000000,Someshwara,Rejected,REJECTED AS PER CITIZEN CONFORMATION THIS COMPLAINT HAS BEEN CLOSED,BBMP Whatsapp/Customer Support Representative
+9375,20087033,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-27 10:32:00.000000000,HBR Layout,Closed,Closed,Chandrashekhar/AEE
+9587,20086821,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-11-27 11:13:00.000000000,C.V.Raman Nagar,Rejected,Complaint belongs to BWSSB department,BBMP Whatsapp/Customer Support Representative
+10156,20086252,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-11-25 11:07:00.000000000,Banaswadi,Rejected,Complainer can contact bwssb officials for the assistance,BBMP Whatsapp/Customer Support Representative
+10519,20085889,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-11-24 08:53:00.000000000,Anjanapur,Closed,Closes,Krishne Gowda/AEE
+10633,20085775,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-23 04:33:00.000000000,Arakere,Closed,closed,Suresh/AEE
+10732,20085676,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-11-23 11:38:00.000000000,Anjanapur,Closed,Closed,Krishne Gowda/AEE
+10988,20085420,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-22 10:55:00.000000000,Katriguppe,Closed,Stones and debris have been removed from the spot,Jyothi/AEE
+10992,20085416,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-22 10:52:00.000000000,Katriguppe,Closed,Stones and debris have been removed from the spot,Jyothi/AEE
+11251,20085157,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-21 10:58:00.000000000,Rajarajeshwari Nagar,Rejected,"Rejected , As per the Citizen confirmation this complaint has been rejected and problem is resolved",BBMP Whatsapp/Customer Support Representative
+11552,20084856,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-11-20 10:31:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+11721,20084687,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-19 04:14:00.000000000,Vidyaranyapura,Rejected,rejected as per officer information,BBMP Whatsapp/Customer Support Representative
+11826,20084582,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-11-19 11:11:00.000000000,Jnanabharathi Ward,Closed,Redolved,Ragavendra R/AEE
+12187,20084221,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-11-18 07:15:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+12190,20084218,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-18 07:05:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+12920,20083488,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-11-15 10:40:00.000000000,Shettyhalli,Rejected,Complaint belongs to BWSSB department,BBMP Whatsapp/Customer Support Representative
+12922,20083486,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-11-15 10:36:00.000000000,Hoodi,Resolved,SWD cleaned,Chethan/AE
+12969,20083439,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-11-14 11:29:00.000000000,Shettyhalli,Rejected,Dear citizen complaint belongs to BWSSB. kindly contact BWSSB department,BBMP Whatsapp/Customer Support Representative
+12970,20083438,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-11-14 11:15:00.000000000,Shettyhalli,Rejected,Complaint belongs to BWSSB so kindly contact BWSSB department.,BBMP Whatsapp/Customer Support Representative
+12973,20083435,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-11-14 10:21:00.000000000,Shettyhalli,Rejected,"Rejected , As per the Citizen Confirmation This Complaint has been Rejected",BBMP Whatsapp/Customer Support Representative
+13400,20083008,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-13 08:37:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+13448,20082960,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-11-12 10:46:00.000000000,Maruthi Mandira Ward,Rejected,Complaint has been Resolved,BBMP Whatsapp/Customer Support Representative
+13515,20082893,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-12 06:43:00.000000000,Ganeshmandira Ward,Closed,Attended,Chethan HD/AEE
+13649,20082759,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-12 11:53:00.000000000,Hongasandra,Closed,closed,Suresh/AEE
+13661,20082747,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-12 11:17:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+13697,20082711,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-11-12 09:37:00.000000000,Chikkalasandra,Closed,The drain has been completely desilted in previous grievance no 20076037 dated 24_10-2020,Chethan HD/AEE
+13771,20082637,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-11 09:51:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+13866,20082542,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-11 05:34:00.000000000,Ramamurthy Nagar,Closed,Closed,Shree Lakshmi/AEE
+14021,20082387,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-11-11 08:58:00.000000000,Shettyhalli,Closed,Resolved,Santhosh S/AEE
+14059,20082349,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-10 11:02:00.000000000,Yelachenahalli,Closed,Closed,Krishne Gowda/AEE
+14168,20082240,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-10 04:01:00.000000000,Rajarajeshwari Nagar,Rejected,Rejected . As per the Citizen confirmation This Complaint has been rejected,BBMP Whatsapp/Customer Support Representative
+14632,20081776,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-09 01:38:00.000000000,HSR Layout,Closed,closed,Ramegowda/AE
+14943,20081465,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-08 08:14:00.000000000,Newthippasandra,Closed,Closed,Renuka Swadi/AEE
+15088,20081320,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-08 11:29:00.000000000,Hongasandra,Closed,closed,Suresh/AEE
+15343,20081065,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-07 12:24:00.000000000,Jakkur,Rejected,AS PER CITIZEN INFORMATION THE COMPLAINT WILL BE REJECTED,BBMP Whatsapp/Customer Support Representative
+15392,20081016,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-07 10:48:00.000000000,Sarakki,Closed,Attended,Suma/AEE
+15726,20080682,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-11-06 11:04:00.000000000,Chikpete,Rejected,Belongs to BWSSB,BBMP Whatsapp/Customer Support Representative
+15823,20080585,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-06 07:48:00.000000000,Begur,Rejected,AS PER CITIZEN CONFIRMATION IS REJECTED DUE TO IT COMES UNDER BWSSB,BBMP Whatsapp/Customer Support Representative
+15863,20080545,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-05 10:12:00.000000000,Domlur,Closed,Closed,Chandrashekhar/AEE
+16018,20080390,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-05 10:21:00.000000000,Chikpete,Rejected,Citizen provided wrong number,BBMP Whatsapp/Customer Support Representative
+16105,20080303,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-05 11:09:00.000000000,Peenya Industrial Area,Closed,Closed,Santhosh S/AEE
+16209,20080199,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-11-05 07:18:00.000000000,Bagalagunte,Rejected,Complaint belongs to BWSSB department,BBMP Whatsapp/Customer Support Representative
+16425,20079983,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-04 01:33:00.000000000,Adugodi,Closed,Attended,Suma/AEE
+16454,20079954,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-04 12:31:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+16489,20079919,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-04 11:03:00.000000000,Bommanahalli,Closed,closed,Suresh/AEE
+16691,20079717,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-03 07:00:00.000000000,Rajagopala Nagar,Closed,Resolved,Santhosh S/AEE
+16889,20079519,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-03 09:28:00.000000000,Hemmigepura,Closed,Closed,Chandrashekhar/AEE
+16914,20079494,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-03 07:56:00.000000000,Hemmigepura,Closed,Closed,Chandrashekhar/AEE
+16918,20079490,Storm  Water Drain(SWD),Maintenance of SWD,2020-11-03 07:37:00.000000000,Hemmigepura,ReOpen,What is the solution. Still toilet water flow for rajkaluve.,Chandrashekhar/AEE
+17083,20079325,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-11-02 03:17:00.000000000,Arakere,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+17148,20079260,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-11-02 11:41:00.000000000,HBR Layout,Rejected,"Rejected , This Complaint si comes under BWSSB Department call 1916",BBMP Whatsapp/Customer Support Representative
+17578,20078830,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-31 04:57:00.000000000,Gurappanapalya,Closed,Pertains to roads,Suma/AEE
+17713,20078695,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-31 10:49:00.000000000,Ramamurthy Nagar,Rejected,Pertaining to Bwssb,BBMP Whatsapp/Customer Support Representative
+17727,20078681,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-31 10:15:00.000000000,HBR Layout,Rejected,"Rejected, As per The Citizen Confirmation This Complaint has been Rejected",BBMP Whatsapp/Customer Support Representative
+17740,20078668,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-31 09:50:00.000000000,HBR Layout,Rejected,"Rejected , As per The Citizen Confirmation This Complaint has been Rejected",BBMP Whatsapp/Customer Support Representative
+17748,20078660,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-31 09:41:00.000000000,HBR Layout,Rejected,"Rejected , As per Officer Information This Complaints is comes under BWSSB Dept cal 1916",BBMP Whatsapp/Customer Support Representative
+17871,20078537,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-30 07:56:00.000000000,Chokkasandra,Closed,Closed,Santhosh S/AEE
+18019,20078389,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-30 12:36:00.000000000,Vignana Nagar,Closed,Resolved,Shree Lakshmi/AEE
+18090,20078318,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-30 09:45:00.000000000,Kacharakanahalli,Rejected,Rejected as per citizen information .,BBMP Whatsapp/Customer Support Representative
+18169,20078239,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-10-29 10:38:00.000000000,HBR Layout,Rejected,Rejected as per citizen information .,BBMP Whatsapp/Customer Support Representative
+18174,20078234,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-29 10:30:00.000000000,HBR Layout,Rejected,Rejected as citizen information .,BBMP Whatsapp/Customer Support Representative
+18294,20078114,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-29 02:22:00.000000000,Shanthala Nagar,Closed,Closed,Chandrashekhar/AEE
+18375,20078033,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-29 11:29:00.000000000,Arakere,Closed,closed,Suresh/AEE
+18377,20078031,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-29 11:28:00.000000000,Arakere,Rejected,"this complaint was attended,as per citizen confirmation this complaint will be rejected",BBMP Whatsapp/Customer Support Representative
+18492,20077916,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-29 08:46:00.000000000,Jakkur,Closed,Attended,7829808099/AEE
+18525,20077883,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-29 07:40:00.000000000,Ramamurthy Nagar,Rejected,Pertaining to Bwssb,BBMP Whatsapp/Customer Support Representative
+18566,20077842,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-28 11:18:00.000000000,Basavanapura,Rejected,"Citizen not responding the call, this complaint comes under B W S S B Dept, Rejected.",BBMP Whatsapp/Customer Support Representative
+18764,20077644,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-28 02:11:00.000000000,Yelachenahalli,Closed,Closed,Krishne Gowda/AEE
+18794,20077614,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-28 09:44:00.000000000,Chikpete,Rejected,Citizen provided wrong number,BBMP Whatsapp/Customer Support Representative
+18911,20077497,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-28 10:30:00.000000000,Anjanapur,Closed,Closed,Krishne Gowda/AEE
+18956,20077452,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-28 09:40:00.000000000,Thanisandra,Closed,Resolved,7829808099/AEE
+19081,20077327,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-27 02:34:00.000000000,Banashankari Temple Ward,Rejected,Dear citizen this complaint belongs to BWSSB,BBMP Whatsapp/Customer Support Representative
+19304,20077104,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-27 03:04:00.000000000,Vijanapura,Rejected,CITIZEN RAISED  MULTIPAL COMPLAINTES,BBMP Whatsapp/Customer Support Representative
+19392,20077016,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-27 12:11:00.000000000,Singasandra,Rejected,"Rejected , As per The Citizen Confirmation This Complaint has been rejected",BBMP Whatsapp/Customer Support Representative
+19397,20077011,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-27 12:04:00.000000000,Thanisandra,Rejected,REJECTED AS PER CITIZEN CONFORMATION THIS COMPLAINT HAS BEEN CLOSED,BBMP Whatsapp/Customer Support Representative
+19413,20076995,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-27 11:35:00.000000000,Puttenahalli,Rejected,DOES NOT COMES UNDER BBMP,BBMP Whatsapp/Customer Support Representative
+19533,20076875,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-26 11:40:00.000000000,Rajarajeshwari Nagar,Closed,Res,Ragavendra R/AEE
+19535,20076873,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-26 11:31:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+19761,20076647,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-26 12:16:00.000000000,Vijanapura,Rejected,Rejected . As per The Citizen Confirmation This Complaint has been Rejected,BBMP Whatsapp/Customer Support Representative
+19809,20076599,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-26 10:51:00.000000000,Kodigehalli,Rejected,"This complaint comes under BWSSB, As per citizen confirmation this complaint was rejected",BBMP Whatsapp/Customer Support Representative
+19846,20076562,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-26 09:56:00.000000000,Bilekahalli,Rejected,as per citizen confirmation this complaint will be rejected,BBMP Whatsapp/Customer Support Representative
+19891,20076517,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-26 08:10:00.000000000,Dharmarayaswamy Temple Ward,Rejected,Not in my jurisdiction,BBMP Whatsapp/Customer Support Representative
+19960,20076448,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-25 08:06:00.000000000,Begur,Closed,Closed,Krishne Gowda/AEE
+20035,20076373,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-25 04:26:00.000000000,Yelachenahalli,Closed,Cleared,Krishne Gowda/AEE
+20141,20076267,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-25 08:13:00.000000000,Dodda Bidarkallu,Rejected,Resolved,BBMP Whatsapp/Customer Support Representative
+20281,20076127,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-24 05:50:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+20296,20076112,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-24 05:09:00.000000000,Vasanthapura,Closed,Closed,Krishne Gowda/AEE
+20371,20076037,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-10-24 12:42:00.000000000,Chikkalasandra,Closed,Desilting work done,Chethan HD/AEE
+20385,20076023,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-24 12:11:00.000000000,Uttarahalli,Rejected,Rejected,BBMP Whatsapp/Customer Support Representative
+20396,20076012,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-24 11:44:00.000000000,Begur,Closed,Closed,Krishne Gowda/AEE
+20416,20075992,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-24 10:48:00.000000000,Bilekahalli,Rejected,as per citizen confirmation this complaint will be rejected,BBMP Whatsapp/Customer Support Representative
+20431,20075977,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-24 10:33:00.000000000,Hemmigepura,Long Term Solution,\N,Aveesh/AE
+20454,20075954,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-24 09:54:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+20464,20075944,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-24 09:35:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+20479,20075929,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-24 09:12:00.000000000,Hemmigepura,Rejected,Issue is about sand mining. The issue has to be solved by police department or mines and geology department,BBMP Whatsapp/Customer Support Representative
+20507,20075901,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-24 08:26:00.000000000,Anjanapur,Rejected,This complaint as been register twice .,BBMP Whatsapp/Customer Support Representative
+20546,20075862,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-24 12:11:00.000000000,Padmanabha Nagar,Closed,Drain designed and executed long back.9th main is valley point.No path to lead off drain.,Chethan HD/AEE
+20580,20075828,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-23 10:50:00.000000000,Anjanapur,Closed,Closed,Krishne Gowda/AEE
+20598,20075810,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-23 08:55:00.000000000,Sudam Nagar,Rejected,Not in my jurisdiction,BBMP Whatsapp/Customer Support Representative
+20624,20075784,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-23 07:27:00.000000000,Sarakki,Closed,Attended,Suma/AEE
+20628,20075780,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-23 07:22:00.000000000,Vasanthapura,Closed,Cleared,Krishne Gowda/AEE
+20651,20075757,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-10-23 06:45:00.000000000,Vasanthapura,Closed,Cleared,Krishne Gowda/AEE
+20704,20075704,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-23 05:55:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+20741,20075667,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-23 05:18:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+20747,20075661,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-23 05:10:00.000000000,Jayangar,Rejected,As per citizen conformation this complaint is rejected,BBMP Whatsapp/Customer Support Representative
+20809,20075599,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-23 02:03:00.000000000,Bellandur,Resolved,Drainage has been opened,Chethan/AE
+20828,20075580,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-23 01:32:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+21223,20075184,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-22 12:27:00.000000000,Bellandur,Rejected,Complaint belongs to BWSSB,BBMP Whatsapp/Customer Support Representative
+21226,20075181,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-22 12:24:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+21270,20075137,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-22 10:46:00.000000000,Bellandur,Resolved,Drain is being opened,Chethan/AE
+21276,20075131,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-22 10:37:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+21287,20075120,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-22 10:21:00.000000000,Bellandur,Resolved,Drainage is being opened,Chethan/AE
+21293,20075114,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-22 10:14:00.000000000,Gottigere,Closed,Closed,Krishne Gowda/AEE
+21615,20074792,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 02:58:00.000000000,Vijay Nagar,Closed,Work completed,Jyothi/AEE
+21686,20074721,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 12:20:00.000000000,Hosakerehalli,Closed,Work will be taken up,Chethan HD/AEE
+21726,20074681,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 11:31:00.000000000,Ulsoor,Rejected,REJECTED AS PER CITIZEN CONFORMATION THIS COMPLAINT HAS BEEN CLOSED,BBMP Whatsapp/Customer Support Representative
+21728,20074679,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 11:30:00.000000000,Ulsoor,Rejected,REJECTED AS PER CITIZEN CONFORMATION THIS COMPLAINT HAS BEEN SOLVED,BBMP Whatsapp/Customer Support Representative
+21730,20074677,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 11:29:00.000000000,Ulsoor,Rejected,REJECTED AS PER CITIZEN CONFORMATION THIS COMPLAINT HAS BEEN SOLVED,BBMP Whatsapp/Customer Support Representative
+21765,20074642,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 10:38:00.000000000,Hosakerehalli,Closed,Work will be taken up,Chethan HD/AEE
+21808,20074599,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 09:19:00.000000000,Bellandur,Resolved,Drainage is being opened,Chethan/AE
+21812,20074595,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 09:12:00.000000000,Hongasandra,Closed,closed,Suresh/AEE
+21815,20074592,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 09:08:00.000000000,Bellandur,Resolved,Drainage is being opened,Chethan/AE
+21816,20074591,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 09:06:00.000000000,Bellandur,Resolved,Drainage is being opened,Chethan/AE
+21819,20074588,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 09:04:00.000000000,Mangammanapalya,Closed,closed,Suresh/AEE
+21820,20074587,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 09:02:00.000000000,Bellandur,Resolved,Drainage is being opened,Chethan/AE
+21822,20074585,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 08:59:00.000000000,Singasandra,Closed,Closed,Krishne Gowda/AEE
+21826,20074581,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 08:55:00.000000000,Bellandur,Resolved,Drainage is being opened,Chethan/AE
+21832,20074575,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 08:39:00.000000000,Hongasandra,Closed,closed,Suresh/AEE
+21839,20074568,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 08:23:00.000000000,Rajarajeshwari Nagar,Closed,resolved,Ragavendra R/AEE
+21850,20074557,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-21 07:49:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+21857,20074550,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 07:25:00.000000000,Bellandur,Resolved,Drainage has been opened,Chethan/AE
+21859,20074548,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-21 07:23:00.000000000,Bellandur,Resolved,Drainage has been opened,Chethan/AE
+21891,20074516,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-20 11:47:00.000000000,Neelasandra,Rejected,"As per citizen confirmation this is Sewage issue, this complaint comes under B W S S B Dept, Rejected.",BBMP Whatsapp/Customer Support Representative
+21907,20074500,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-20 11:11:00.000000000,Kavalbyrasandra,Closed,Closed,Renuka Swadi/AEE
+21955,20074452,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-20 09:11:00.000000000,Puttenahalli,Rejected,AS PER CITIZEN CONFIRMATION COMPLIANT HAS BEEN REJECTED DUE  IT COMES UNDER BWSSB,BBMP Whatsapp/Customer Support Representative
+21965,20074442,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-20 08:52:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+21986,20074421,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-20 08:05:00.000000000,Jayangar,Rejected,As per citizen conformation this complaint is rejected,BBMP Whatsapp/Customer Support Representative
+22135,20074272,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-20 01:27:00.000000000,Begur,Rejected,As per Citizen Conformation Complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+22193,20074214,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-20 11:33:00.000000000,Pulikeshi Nagar,Closed,Closed,Renuka Swadi/AEE
+22236,20074171,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-20 10:21:00.000000000,Radhakrishna Temple,Closed,Closed,raj kumar/ADTP
+22256,20074151,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-20 10:00:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+22315,20074092,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-20 08:17:00.000000000,Rajarajeshwari Nagar,Closed,resolved,Ragavendra R/AEE
+22483,20073924,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-19 05:49:00.000000000,Hosakerehalli,Rejected,Rejected,BBMP Whatsapp/Customer Support Representative
+22489,20073918,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-19 05:34:00.000000000,Singasandra,Rejected,"This complaint comes under B W S S B dept, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+22519,20073888,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-19 04:14:00.000000000,Hongasandra,Closed,closed,Suresh/AEE
+22590,20073817,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-19 01:03:00.000000000,Herohalli,Closed,Closed,Chandrashekhar/AEE
+22594,20073813,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-19 12:54:00.000000000,Anjanapur,Closed,Closed,Krishne Gowda/AEE
+22615,20073792,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-19 12:08:00.000000000,Hosakerehalli,Rejected,Rejected,BBMP Whatsapp/Customer Support Representative
+22707,20073700,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-19 09:29:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+22749,20073658,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-19 06:47:00.000000000,Rajarajeshwari Nagar,Closed,resolved,Ragavendra R/AEE
+22788,20073619,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-18 09:56:00.000000000,Rajarajeshwari Nagar,Closed,o increase the RCC wall height of storm water drain  a proposal has sent to allocate grant as soon as grant obtained work will be started,Ragavendra R/AEE
+22790,20073617,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-18 09:47:00.000000000,Rajarajeshwari Nagar,Closed,resolved,Ragavendra R/AEE
+22823,20073584,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-18 07:15:00.000000000,Varthur,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+22854,20073553,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-18 06:03:00.000000000,Varthur,Rejected,AS PER CITIZEN COMFORMATION REJECTED IT COMES UNDER BWSSB,BBMP Whatsapp/Customer Support Representative
+22856,20073551,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-18 05:58:00.000000000,Varthur,Rejected,Complaint has been closed,BBMP Whatsapp/Customer Support Representative
+22857,20073550,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-18 05:58:00.000000000,Varthur,Rejected,"AS PER CITIZEN COMFIRMATION THIS COMPLIANT HAS BEEN REJECTED ,IT COMES UNDER BWSSB",BBMP Whatsapp/Customer Support Representative
+22921,20073486,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-18 11:57:00.000000000,Anjanapur,Closed,Closed,Krishne Gowda/AEE
+23147,20073260,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-17 04:36:00.000000000,Jayachamarajendra Nagar,Closed,Closed,raj kumar/ADTP
+23228,20073179,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-17 11:47:00.000000000,Vignana Nagar,Rejected,Complaint comes under BWSSB.  Rejected.,BBMP Whatsapp/Customer Support Representative
+23372,20073035,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-16 07:39:00.000000000,Padmanabha Nagar,Rejected,AS PER THE CITIZEN INFORMATION THIS COMPLAINT WILL BE  REJECTED,BBMP Whatsapp/Customer Support Representative
+23686,20072721,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-15 07:21:00.000000000,Begur,Closed,Cleared,Krishne Gowda/AEE
+23782,20072625,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-15 01:10:00.000000000,Benniganahalli,Closed,Closed,Renuka Swadi/AEE
+24081,20072326,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-14 02:56:00.000000000,Rajarajeshwari Nagar,Closed,resolved,Ragavendra R/AEE
+24237,20072170,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-14 09:24:00.000000000,Rajarajeshwari Nagar,Rejected,Rejected . As per The Citizen Confirmation This Complaint has been Rejected,BBMP Whatsapp/Customer Support Representative
+24302,20072105,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-13 11:27:00.000000000,Adugodi,Rejected,AS PER CITIZEN AND OFFCIER INFORMATION THE COMPLAINT SOLVED,BBMP Whatsapp/Customer Support Representative
+24497,20071910,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-13 08:45:00.000000000,Hongasandra,Closed,closed,Suresh/AEE
+24585,20071822,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-13 09:53:00.000000000,Bellandur,Resolved,THIS COMPLAINT HAS BEEN RESOLVED,Chethan/AE
+24731,20071676,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-12 06:52:00.000000000,Hoysala Nagar,Closed,Closed,Renuka Swadi/AEE
+24837,20071570,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-12 01:53:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+24889,20071518,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-12 12:14:00.000000000,Peenya Industrial Area,Closed,Road side drains are maintained and desilted by ward Engineers.,Santhosh S/AEE
+24921,20071486,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-12 11:20:00.000000000,Ganga Nagar,Closed,Closed,raj kumar/ADTP
+24988,20071419,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-12 09:14:00.000000000,Sampangiram Nagar,Rejected,Rejected . As per The Citizen Confirmation This Complaint has been rejected,BBMP Whatsapp/Customer Support Representative
+24996,20071411,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-12 09:02:00.000000000,Jaraganahalli,Closed,closed,Suresh/AEE
+25269,20071138,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-11 12:38:00.000000000,Chalavadipalya,Closed,Maintenance of swd is in progress,Manuja R/AEE
+25345,20071062,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-10-11 10:26:00.000000000,Mangammanapalya,Closed,closed,Suresh/AEE
+25445,20070962,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-10 09:02:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+25447,20070960,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-10 08:57:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+25514,20070893,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-10 05:43:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+25537,20070870,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-10-10 04:07:00.000000000,Uttarahalli,Closed,Cleared,Krishne Gowda/AEE
+25541,20070866,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-10 03:51:00.000000000,Bellandur,Resolved,Drainage has been opened,Chethan/AE
+25544,20070863,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-10 03:23:00.000000000,Bellandur,Resolved,Drainage is being opened,Chethan/AE
+25548,20070859,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-10 03:09:00.000000000,Hagadooru,Resolved,Bridge work under progress,Chethan/AE
+25576,20070831,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-10 01:02:00.000000000,Horamavu,Closed,Resolved,Shree Lakshmi/AEE
+25703,20070704,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-10 07:42:00.000000000,Hagadooru,Resolved,Bridge work under progress,Chethan/AE
+25786,20070621,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-09 04:54:00.000000000,Ramamurthy Nagar,Closed,Resolved,Shree Lakshmi/AEE
+25787,20070620,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-09 04:47:00.000000000,Basavanapura,Closed,Resolved,T.Hanumantharaya/ADTP
+25806,20070601,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-09 03:20:00.000000000,Dodda Bidarkallu,Rejected,Clear,BBMP Whatsapp/Customer Support Representative
+25858,20070549,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-09 12:34:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+26004,20070403,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-10-09 08:35:00.000000000,Karisandra,Closed,Attended,Chethan HD/AEE
+26007,20070400,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-10-09 08:34:00.000000000,Karisandra,Closed,Attended,Chethan HD/AEE
+26044,20070363,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-09 12:19:00.000000000,Pulikeshi Nagar,null,Closed,Uma Shankar /Nodel Officer
+26270,20070137,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-08 11:44:00.000000000,Rajarajeshwari Nagar,Rejected,REJECTED / BECAUSE THIS COMPLAIN BELONGS TO BWSSB  SO THIS COMPLAINT WILL BE REJECTED,BBMP Whatsapp/Customer Support Representative
+26338,20070069,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-08 10:04:00.000000000,Herohalli,Closed,Closed,Chandrashekhar/AEE
+26422,20069985,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-07 07:41:00.000000000,Horamavu,Rejected,REJECTED / AS PER THE CITIZEN INFORMATION  THIS COMPLAINT WILL BE REJECTED BECAUSE  IN THIS COMPLAINT THEY HAD NOT MENTIONED THE DSCRIPTION,BBMP Whatsapp/Customer Support Representative
+26423,20069984,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-07 07:34:00.000000000,Singasandra,Closed,Closed,Krishne Gowda/AEE
+26507,20069900,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-07 02:22:00.000000000,Ramamurthy Nagar,Rejected,As per citizen conformation complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+26512,20069895,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-07 02:00:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+26564,20069843,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-07 11:26:00.000000000,Singasandra,Rejected,"This complaint comes under B W S S B Dept, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+26584,20069823,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-07 10:59:00.000000000,Singasandra,Closed,Closed,Krishne Gowda/AEE
+26645,20069762,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-07 08:38:00.000000000,Begur,Closed,Closed,Krishne Gowda/AEE
+26738,20069669,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-06 08:35:00.000000000,Bommanahalli,Closed,closed,Suresh/AEE
+26836,20069571,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-06 03:46:00.000000000,Anjanapur,Closed,Cleared,Krishne Gowda/AEE
+26995,20069412,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-06 09:34:00.000000000,Radhakrishna Temple,Closed,Closed,raj kumar/ADTP
+27542,20068865,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-04 04:12:00.000000000,Rajarajeshwari Nagar,Closed,resolved,Ragavendra R/AEE
+27704,20068703,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-03 09:07:00.000000000,Thanisandra,Closed,Resolved,7829808099/AEE
+28100,20068307,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-02 09:51:00.000000000,Bellandur,Resolved,The SWD which was blocked is opened,Chethan/AE
+28254,20068153,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-02 02:18:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+28332,20068075,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-10-02 11:32:00.000000000,Hagadooru,Resolved,Cleaned,Chethan/AE
+28453,20067954,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-01 10:19:00.000000000,Vidyaranyapura,Rejected,rejected,BBMP Whatsapp/Customer Support Representative
+28685,20067722,Storm  Water Drain(SWD),Maintenance of SWD,2020-10-01 12:29:00.000000000,K.R.Puram,Closed,Blockage cleaned,Shree Lakshmi/AEE
+28709,20067698,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-10-01 11:49:00.000000000,Nagavara,Rejected,rejected,BBMP Whatsapp/Customer Support Representative
+29007,20067400,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-30 03:32:00.000000000,K.R.Puram,Closed,Closed,Shree Lakshmi/AEE
+29057,20067350,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-30 12:30:00.000000000,Thanisandra,Closed,Resolved,7829808099/AEE
+29109,20067298,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-30 11:12:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+29132,20067275,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-30 09:59:00.000000000,Sudam Nagar,Rejected,Rejected As Per Citizen Conformation,BBMP Whatsapp/Customer Support Representative
+29188,20067219,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-30 06:35:00.000000000,Varthur,Rejected,As per citizen confirmation this complaint is rejected.,BBMP Whatsapp/Customer Support Representative
+29237,20067170,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-29 09:30:00.000000000,Jeevanbhima Nagar,Closed,Closed,Renuka Swadi/AEE
+29341,20067066,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-29 05:08:00.000000000,Prakash Nagar,Rejected,Rejected as per citizen conformation .,BBMP Whatsapp/Customer Support Representative
+29382,20067025,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-29 02:59:00.000000000,Vijanapura,Closed,Closed,Shree Lakshmi/AEE
+29383,20067024,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-29 02:58:00.000000000,Chikkalasandra,Rejected,Rejected Citizen Number Is Not Correct I  Tried To Call This Number  Wrong Number,BBMP Whatsapp/Customer Support Representative
+29571,20066836,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-29 01:13:00.000000000,Yelachenahalli,Rejected,As per the citizen confirmation the complaint has been rejected,BBMP Whatsapp/Customer Support Representative
+29756,20066651,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-28 02:00:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+30153,20066254,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-27 08:51:00.000000000,Arakere,Closed,closed,Suresh/AEE
+30305,20066102,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-26 04:19:00.000000000,Kodigehalli,Closed,Attended,7829808099/AEE
+30320,20066087,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-26 03:17:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+30462,20065945,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-25 11:08:00.000000000,Newthippasandra,Closed,Closed,Renuka Swadi/AEE
+30595,20065812,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-25 02:10:00.000000000,Chokkasandra,Closed,Resolved,Santhosh S/AEE
+30642,20065765,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-25 11:22:00.000000000,Koramangala,Rejected,Pertains to Bwssb,BBMP Whatsapp/Customer Support Representative
+30694,20065713,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-09-25 09:17:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+30889,20065518,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-24 05:02:00.000000000,Sudam Nagar,Rejected,Rejected . As per The Citizen Confirmation This Complaint has been Rejected,BBMP Whatsapp/Customer Support Representative
+31014,20065393,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-24 10:36:00.000000000,Adugodi,Closed,Attended,Suma/AEE
+31027,20065380,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-24 09:51:00.000000000,Mangammanapalya,Closed,closed,Suresh/AEE
+31111,20065296,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-23 09:44:00.000000000,Basavanapura,Closed,Resolved,T.Hanumantharaya/ADTP
+31143,20065264,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-23 08:20:00.000000000,HBR Layout,Closed,Closed,Chandrashekhar/AEE
+31355,20065052,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-23 10:03:00.000000000,Someshwara,Rejected,Rejected. As per The Citizen confirmation This complaint has been rejected and already  problem is also resolved,BBMP Whatsapp/Customer Support Representative
+31512,20064895,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-22 06:04:00.000000000,Banaswadi,Closed,Closed,Chandrashekhar/AEE
+31528,20064879,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-22 05:19:00.000000000,Rajarajeshwari Nagar,Closed,resolved,Ragavendra R/AEE
+31538,20064869,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-22 04:48:00.000000000,Kadugodi,Rejected,Complaint pertains to BWSSB. Please contact BWSSB,BBMP Whatsapp/Customer Support Representative
+31577,20064830,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-22 02:14:00.000000000,Vasanthapura,Closed,Cleaned,Krishne Gowda/AEE
+31590,20064817,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-22 01:41:00.000000000,Varthur,Rejected,Complaint belongs to BWSSB,BBMP Whatsapp/Customer Support Representative
+31690,20064717,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-22 08:49:00.000000000,Chokkasandra,Closed,Resolved,Santhosh S/AEE
+31777,20064630,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-09-21 08:34:00.000000000,Bapuji Nagar,Closed,Attended,Jyothi/AEE
+31864,20064543,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-21 03:34:00.000000000,Mathikere,Closed,Maintenance of swd is in progress,Manuja R/AEE
+31996,20064411,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-21 07:57:00.000000000,Someshwara,Closed,Attended,Srinivas J N/AEE
+32054,20064353,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-20 08:34:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+32324,20064083,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-19 04:57:00.000000000,Bagalagunte,Closed,Resolved,Santhosh S/AEE
+32569,20063838,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-18 08:25:00.000000000,Bellandur,Rejected,Rejected . As per The Citizen Confirmation This Complaint has been Rejected,BBMP Whatsapp/Customer Support Representative
+32616,20063791,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-18 05:37:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+32680,20063727,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-18 01:05:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+32753,20063654,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-18 10:00:00.000000000,Bellandur,Rejected,Multiple complaints.  Rejected,BBMP Whatsapp/Customer Support Representative
+32896,20063511,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-17 05:52:00.000000000,Konena Agrahara,Closed,Closed,Renuka Swadi/AEE
+32987,20063420,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-17 11:36:00.000000000,Vasanthapura,Closed,Cleaned,Krishne Gowda/AEE
+33025,20063382,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-17 10:03:00.000000000,Kamakshipalya,Rejected,Rejected . As per the Citizen Confirmation This Complaint has been rejected  and Already Problem Resolved,BBMP Whatsapp/Customer Support Representative
+33298,20063109,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-16 11:41:00.000000000,Peenya Industrial Area,Rejected,Dear citizen this Complaint belongs to BWSSB,BBMP Whatsapp/Customer Support Representative
+33440,20062967,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-15 08:52:00.000000000,Agrahara Dasarahalli,Rejected,As per Citizen Conformation Complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+33467,20062940,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-15 07:33:00.000000000,Hongasandra,Closed,closed,Suresh/AEE
+33570,20062837,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-15 02:25:00.000000000,Bilekahalli,Closed,closed,Suresh/AEE
+33653,20062754,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-09-15 11:39:00.000000000,Ullalu,Closed,Closed,Chandrashekhar/AEE
+33697,20062710,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-15 07:18:00.000000000,Doddabommasandra,Closed,Attended,7829808099/AEE
+33701,20062706,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-09-15 06:54:00.000000000,Bilekahalli,Closed,closed,Suresh/AEE
+33840,20062567,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-14 05:13:00.000000000,Chokkasandra,Rejected,"This complaint comes under B W S S B Dept, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+34111,20062296,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-13 07:58:00.000000000,Hemmigepura,Rejected,As per information by Citizen Complaint Rejected.,BBMP Whatsapp/Customer Support Representative
+34118,20062289,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-13 07:20:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+34160,20062247,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-13 06:03:00.000000000,Arakere,Closed,closed,Suresh/AEE
+34176,20062231,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-13 05:06:00.000000000,HBR Layout,Closed,Closed,Chandrashekhar/AEE
+34181,20062226,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-13 04:54:00.000000000,Vijanapura,Closed,Resolved,Shree Lakshmi/AEE
+34196,20062211,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-13 03:51:00.000000000,Kadugodi,Rejected,Complaint comes under BWSSB.  Rejected.,BBMP Whatsapp/Customer Support Representative
+34217,20062190,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-13 01:48:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+34222,20062185,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-13 01:29:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+34257,20062150,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-13 11:16:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+34267,20062140,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-13 10:48:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+34279,20062128,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-13 09:44:00.000000000,Vrushabhavati Nagar,Closed,Attended,Manuja R/AEE
+34353,20062054,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-12 08:15:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+34424,20061983,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-12 04:57:00.000000000,Rajarajeshwari Nagar,Closed,Redolved,Ragavendra R/AEE
+34430,20061977,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-12 04:40:00.000000000,Mangammanapalya,Closed,closed,Suresh/AEE
+34445,20061962,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-12 03:31:00.000000000,Mangammanapalya,Closed,closed,Suresh/AEE
+34467,20061940,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-12 02:20:00.000000000,Sudduguntepalya,Rejected,As per Citizen Conformation Complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+34580,20061827,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-12 09:09:00.000000000,Hegganahalli,Rejected,Dear citizen this complaint belongs to BWSSB. Kindly contact BWSSB department,BBMP Whatsapp/Customer Support Representative
+34584,20061823,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-09-12 08:57:00.000000000,K.R.Puram,Closed,Resolved your complaint,Shree Lakshmi/AEE
+34733,20061674,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-09-11 06:25:00.000000000,Gottigere,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+34734,20061673,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-11 06:20:00.000000000,Banaswadi,Closed,Closed,Chandrashekhar/AEE
+34908,20061499,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-11 10:22:00.000000000,Vasanthapura,Closed,Cleaned,Krishne Gowda/AEE
+35169,20061238,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-10 03:34:00.000000000,Arakere,Rejected,Dear citizen This complaint belongs to BWSSB. Kindly contact BWSSB,BBMP Whatsapp/Customer Support Representative
+35263,20061144,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-10 11:02:00.000000000,Arakere,Rejected,"This complaint comes under B W S S B Dept, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+35271,20061136,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-10 10:37:00.000000000,Hoodi,Resolved,SWD cleaned,Chethan/AE
+35349,20061058,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-10 08:17:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+35351,20061056,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-09-10 08:01:00.000000000,Subramanya Nagar,Closed,Maintenance of swd is in progress,Manuja R/AEE
+35385,20061022,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-09 09:53:00.000000000,Rajarajeshwari Nagar,Closed,resolved,Ragavendra R/AEE
+35393,20061014,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-09 09:10:00.000000000,Dodda Bidarkallu,Closed,Colsed,Chandrashekhar/AEE
+35394,20061013,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-09 09:06:00.000000000,Shettyhalli,Closed,Resolved,Santhosh S/AEE
+35410,20060997,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-09-09 08:40:00.000000000,Shankaramata,Closed,Debris cleared,Manuja R/AEE
+35435,20060972,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-09 07:06:00.000000000,Thanisandra,Closed,Resolved,7829808099/AEE
+35455,20060952,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-09 06:24:00.000000000,Banaswadi,Closed,Closed,Chandrashekhar/AEE
+35707,20060700,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-09 09:17:00.000000000,Vidyaranyapura,Closed,.,7829808099/AEE
+35736,20060671,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-09 08:24:00.000000000,Thanisandra,Closed,Done,7829808099/AEE
+35780,20060627,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-09 03:30:00.000000000,Vijanapura,Closed,Closed,Shree Lakshmi/AEE
+35782,20060625,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-09 02:48:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+35795,20060612,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-09 01:24:00.000000000,Pulikeshi Nagar,Closed,Closed,Renuka Swadi/AEE
+36397,20060010,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-07 06:12:00.000000000,Sarakki,Closed,Attended,Suma/AEE
+36398,20060009,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-07 06:12:00.000000000,Sarakki,Closed,Attended,Suma/AEE
+36558,20059849,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-07 11:31:00.000000000,Bilekahalli,Rejected,REJECTED AS PER CITIZEN CONFORMATION COMPLAINT HAS BEEN CLOSED,BBMP Whatsapp/Customer Support Representative
+36578,20059829,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-07 10:48:00.000000000,Chikkalasandra,Rejected,DOES NOT COMES UNDER BBMP,BBMP Whatsapp/Customer Support Representative
+36915,20059492,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-05 08:58:00.000000000,Singasandra,Rejected,As per Citizen Conformation Complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+37028,20059379,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-09-05 04:05:00.000000000,Chamrajpet,Closed,Maintenance of swd is in progress,Manuja R/AEE
+37029,20059378,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-05 04:00:00.000000000,Vignana Nagar,Closed,Complaint attended,Shree Lakshmi/AEE
+37065,20059342,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-05 01:58:00.000000000,Hemmigepura,Rejected,Rejected As Per Citizen Confirmation,BBMP Whatsapp/Customer Support Representative
+37089,20059318,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-05 12:41:00.000000000,H.M.T,Closed,Redolved,Ragavendra R/AEE
+37191,20059216,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-04 10:41:00.000000000,Jakkur,Rejected,Rejected as per citizen  conformation .,BBMP Whatsapp/Customer Support Representative
+37275,20059132,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-04 06:01:00.000000000,Byatarayanapura,Rejected,Rejected as per citizen  conformation .,BBMP Whatsapp/Customer Support Representative
+37356,20059051,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-04 12:43:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+37487,20058920,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-09-03 10:44:00.000000000,Shanthala Nagar,Rejected,As per citizen information complaint has been rejected. and complaint belongs to BWSSB,BBMP Whatsapp/Customer Support Representative
+37548,20058859,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-03 07:23:00.000000000,Jayangar,Rejected,Rejected as per citizen conformation .,BBMP Whatsapp/Customer Support Representative
+37916,20058491,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-09-02 04:55:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+37946,20058461,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-02 02:46:00.000000000,Madiwala,Closed,Attended,Suma/AEE
+38254,20058153,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-01 01:45:00.000000000,Jeevanbhima Nagar,Rejected,Complaint belongs to BWSSB,BBMP Whatsapp/Customer Support Representative
+38280,20058127,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-01 12:21:00.000000000,Begur,Closed,Cleaned,Krishne Gowda/AEE
+38346,20058061,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-01 09:49:00.000000000,Bommanahalli,Closed,closed,Suresh/AEE
+38364,20058043,Storm  Water Drain(SWD),Maintenance of SWD,2020-09-01 09:21:00.000000000,Hagadooru,Resolved,The SWD is being cleaned,Chethan/AE
+38531,20057876,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-31 04:35:00.000000000,Hongasandra,Closed,closed,Suresh/AEE
+38579,20057828,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-31 02:06:00.000000000,Hebbal,Rejected,As per the citizen confirmation the complaint has been rejected,BBMP Whatsapp/Customer Support Representative
+38634,20057773,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-31 10:59:00.000000000,Sarakki,Closed,Attended,Suma/AEE
+38802,20057605,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-30 05:06:00.000000000,Herohalli,Closed,Closed,Chandrashekhar/AEE
+38811,20057596,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-30 04:10:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+38829,20057578,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-08-30 12:56:00.000000000,Rajarajeshwari Nagar,Closed,resolved,Ragavendra R/AEE
+38877,20057530,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-30 10:36:00.000000000,Shanthala Nagar,Closed,"Zonal, closed",Chandrashekhar/AEE
+39288,20057119,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-28 04:24:00.000000000,Konena Agrahara,Closed,Closed,Renuka Swadi/AEE
+39342,20057065,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-08-28 12:25:00.000000000,Uttarahalli,Rejected,"There is no problem description, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+39468,20056939,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-27 08:31:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+39493,20056914,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-27 07:18:00.000000000,HBR Layout,Closed,Closed,Chandrashekhar/AEE
+39530,20056877,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-27 04:24:00.000000000,Jayachamarajendra Nagar,Closed,Closed,raj kumar/ADTP
+39711,20056696,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-26 09:44:00.000000000,Madiwala,Closed,Attended,Suma/AEE
+39781,20056626,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-08-26 06:27:00.000000000,Dodda Bidarkallu,Rejected,As per the citizen confirmation the complaint has been rejected,BBMP Whatsapp/Customer Support Representative
+40046,20056361,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-25 03:38:00.000000000,Horamavu,Closed,Complaint attended,Shree Lakshmi/AEE
+40158,20056249,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-25 08:18:00.000000000,Banaswadi,Rejected,"Rejected , As per Officer information This complaints is comes under BWSSB dept so rejected",BBMP Whatsapp/Customer Support Representative
+40230,20056177,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-24 07:45:00.000000000,Basavanapura,Rejected,Rejected. Complaint belongs to BWSSB,BBMP Whatsapp/Customer Support Representative
+40294,20056113,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-24 06:16:00.000000000,Banaswadi,Rejected,"There is no problem description, as per citizen confirmation this complaint is rejected.",BBMP Whatsapp/Customer Support Representative
+40406,20056001,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-24 12:05:00.000000000,HBR Layout,Closed,"Repeat, closed",Chandrashekhar/AEE
+40413,20055994,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-24 11:51:00.000000000,Hemmigepura,Long Term Solution,\N,Aveesh/AE
+40861,20055546,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-22 09:05:00.000000000,Herohalli,Rejected,Complaint comes under B W S S B.  Rejected.,BBMP Whatsapp/Customer Support Representative
+41653,20054754,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-19 10:41:00.000000000,Begur,Closed,This issue pertains to BWSSB,Krishne Gowda/AEE
+41711,20054696,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-19 04:42:00.000000000,Bilekahalli,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+42387,20054020,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-16 04:02:00.000000000,Singasandra,Rejected,Rejected this complaint come under BWSSB....................vel,BBMP Whatsapp/Customer Support Representative
+42391,20054016,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-16 03:40:00.000000000,Hebbal,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+42666,20053741,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-15 08:16:00.000000000,Bilekahalli,Closed,closed,Suresh/AEE
+42668,20053739,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-15 08:12:00.000000000,Bilekahalli,Closed,closed,Suresh/AEE
+42771,20053636,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-08-14 05:34:00.000000000,Mallasandra,Closed,Resolved,Santhosh S/AEE
+42924,20053483,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-14 08:36:00.000000000,Basavanapura,Rejected,As per the citizen confirmation the complaint as been rejected,BBMP Whatsapp/Customer Support Representative
+43040,20053367,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-13 06:28:00.000000000,Herohalli,Rejected,As Per Citizen Information Complaint Cleared,BBMP Whatsapp/Customer Support Representative
+43122,20053285,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-13 01:47:00.000000000,Kuvempu Nagar,Closed,Irrelevant as it pertains to BWSSB,7829808099/AEE
+43407,20053000,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-12 02:15:00.000000000,Kodigehalli,Closed,Attended,7829808099/AEE
+44000,20052407,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-10 02:21:00.000000000,Hemmigepura,Closed,Closed,Chandrashekhar/AEE
+44017,20052390,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-10 01:18:00.000000000,Bagalagunte,Closed,Resolved,Santhosh S/AEE
+44116,20052291,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-10 07:06:00.000000000,Hongasandra,Closed,closed,Suresh/AEE
+44286,20052121,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-08 11:13:00.000000000,Maruthi Seva Nagar,Rejected,As per the citizen confirmation the complaint has been rejected,BBMP Whatsapp/Customer Support Representative
+44461,20051946,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-08-08 11:00:00.000000000,Singasandra,Rejected,"There is no problem description, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+44515,20051892,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-07 11:44:00.000000000,Azad Nagar,Rejected,"This complaint comes under B W S S B Dept, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+44623,20051784,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-07 04:26:00.000000000,Hemmigepura,Rejected,Rejected This is not a SWD. Sanitary lines belongs to BWSSB department and they have to rectify the pipline. This issue in not related to SWD department,BBMP Whatsapp/Customer Support Representative
+44686,20051721,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-08-07 12:27:00.000000000,Yelachenahalli,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+44906,20051501,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-06 01:32:00.000000000,Basavanapura,Rejected,As per citizen information complaint has been Rejected,BBMP Whatsapp/Customer Support Representative
+44962,20051445,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-06 11:24:00.000000000,Basavanapura,Closed,Cleared,T.Hanumantharaya/ADTP
+45363,20051044,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-08-04 05:53:00.000000000,Sudduguntepalya,Rejected,Rejected  as per officer information...............vel,BBMP Whatsapp/Customer Support Representative
+45383,20051024,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-04 04:32:00.000000000,Shettyhalli,Closed,Resolved,Santhosh S/AEE
+45812,20050595,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-03 08:12:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+45903,20050504,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-02 03:20:00.000000000,HBR Layout,Closed,Sloved,Chandrashekhar/AEE
+46099,20050308,Storm  Water Drain(SWD),Maintenance of SWD,2020-08-01 02:07:00.000000000,Shettyhalli,Rejected,As per Citizen Conformation Complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+46230,20050177,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-31 09:53:00.000000000,Ganga Nagar,Rejected,Rejected,BBMP Whatsapp/Customer Support Representative
+46577,20049830,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-30 11:56:00.000000000,Jakkur,Rejected,REJECTED,BBMP Whatsapp/Customer Support Representative
+46582,20049825,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-30 11:42:00.000000000,Bilekahalli,Rejected,As per Citizen conformation Complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+46659,20049748,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-29 11:42:00.000000000,Devasandra,Closed,Resolved,Shree Lakshmi/AEE
+46748,20049659,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-29 06:26:00.000000000,Doddabommasandra,Rejected,"This complaint comes under B W S S B Dept, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+46808,20049599,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-29 02:24:00.000000000,Konena Agrahara,Closed,Sir the complaint resolved,Renuka Swadi/AEE
+46946,20049461,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-29 06:47:00.000000000,Yelachenahalli,Closed,Cleaned,Krishne Gowda/AEE
+47110,20049297,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-28 09:31:00.000000000,Herohalli,Rejected,As per citizen confirmation this complaint is rejected.,BBMP Whatsapp/Customer Support Representative
+47172,20049235,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-27 09:30:00.000000000,Yelachenahalli,Closed,Closed,Krishne Gowda/AEE
+47295,20049112,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-27 02:25:00.000000000,Shettyhalli,Closed,Resolved,Santhosh S/AEE
+47298,20049109,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-27 02:14:00.000000000,Yelachenahalli,Closed,Cleaned,Krishne Gowda/AEE
+47304,20049103,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-27 01:38:00.000000000,Arakere,Rejected,As Per Citizen Conformation Complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+47471,20048936,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-26 02:56:00.000000000,Vijanapura,Rejected,Rejected Its Comes Under Bwssb,BBMP Whatsapp/Customer Support Representative
+47472,20048935,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-26 02:56:00.000000000,Vijanapura,Rejected,Rejected  This Complaint Comes Under Bwssb,BBMP Whatsapp/Customer Support Representative
+47531,20048876,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-26 04:51:00.000000000,Begur,Rejected,Rejected This is out side problem release the water we spoke them also fix one pipe to drain Please Complaint To BWSSB,BBMP Whatsapp/Customer Support Representative
+47545,20048862,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-26 03:08:00.000000000,J.P.Nagar,Closed,Attended,Suma/AEE
+47695,20048712,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-07-25 08:12:00.000000000,Chokkasandra,Closed,Resolved,Santhosh S/AEE
+47889,20048518,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-07-25 09:48:00.000000000,Yelachenahalli,Closed,Cleaned,Krishne Gowda/AEE
+47956,20048451,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-24 09:03:00.000000000,Hampi Nagar,Closed,Attended,Jyothi/AEE
+47978,20048429,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-24 07:57:00.000000000,HBR Layout,Closed,Closed,Chandrashekhar/AEE
+48134,20048273,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-24 12:15:00.000000000,Vidyaranyapura,Rejected,Rejected As Per Citizen Information,BBMP Whatsapp/Customer Support Representative
+48140,20048267,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-24 12:01:00.000000000,Basavanapura,Rejected,As per Citizen Conformation Complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+48144,20048263,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-24 11:43:00.000000000,Konena Agrahara,Closed,Sir the complaint resolved,Renuka Swadi/AEE
+48169,20048238,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-24 10:26:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+48171,20048236,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-24 10:24:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+48177,20048230,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-24 10:08:00.000000000,Kuvempu Nagar,Rejected,"This complaint comes under B W S S B Dept, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+48251,20048156,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-23 08:59:00.000000000,Malleshwaram,Rejected,As per citizen confirmation this complaint is rejected.,BBMP Whatsapp/Customer Support Representative
+48463,20047944,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-23 09:04:00.000000000,Shettyhalli,Rejected,as per officer information complaint resolved,BBMP Whatsapp/Customer Support Representative
+48583,20047824,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-22 07:07:00.000000000,Giri Nagar,Rejected,Rejected As per citizen information,BBMP Whatsapp/Customer Support Representative
+48620,20047787,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-22 04:25:00.000000000,Chokkasandra,Closed,Resolved,Santhosh S/AEE
+48622,20047785,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-22 04:19:00.000000000,Thanisandra,Closed,Attended,7829808099/AEE
+48631,20047776,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-22 03:42:00.000000000,H.M.T,Closed,resolved,Ragavendra R/AEE
+48661,20047746,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-22 01:05:00.000000000,Arakere,Rejected,This complaint comes under BWSSB,BBMP Whatsapp/Customer Support Representative
+48806,20047601,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-21 09:10:00.000000000,Chokkasandra,Closed,Resolved,Santhosh S/AEE
+48905,20047502,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-21 02:41:00.000000000,H.M.T,Closed,Resolved,Ragavendra R/AEE
+48939,20047468,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-21 01:00:00.000000000,Shettyhalli,Closed,Resolved,Santhosh S/AEE
+48941,20047466,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-21 12:56:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+48954,20047453,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-21 12:37:00.000000000,Hoodi,Rejected,Rejected As Per Citizen Information,BBMP Whatsapp/Customer Support Representative
+48960,20047447,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-21 12:28:00.000000000,Garudacharpalya,Rejected,Please contact BWSSB,BBMP Whatsapp/Customer Support Representative
+48978,20047429,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-21 11:31:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+48981,20047426,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-21 11:17:00.000000000,HSR Layout,Closed,closed,Ramegowda/AE
+48991,20047416,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-21 10:32:00.000000000,Garudacharpalya,Rejected,This  complaint comes under B W S S B .......,BBMP Whatsapp/Customer Support Representative
+48992,20047415,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-21 10:32:00.000000000,Garudacharpalya,Rejected,This complaint  is to be rejected  Because citizen registered multiple complaints .,BBMP Whatsapp/Customer Support Representative
+48996,20047411,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-21 10:16:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+49002,20047405,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-21 09:54:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+49016,20047390,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-21 08:43:00.000000000,Thanisandra,Rejected,As per citizen information this complaints is to be rejected .........,BBMP Whatsapp/Customer Support Representative
+49035,20047371,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-20 11:24:00.000000000,Hoodi,Resolved,Encroachment of SWD is removed and now water will flow easily,Chethan/AE
+49071,20047335,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-20 09:13:00.000000000,Thanisandra,Closed,.,7829808099/AEE
+49168,20047238,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-20 03:44:00.000000000,Byatarayanapura,Closed,Attended,7829808099/AEE
+49182,20047224,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-20 03:18:00.000000000,Horamavu,Closed,Complaint resolved,Shree Lakshmi/AEE
+49474,20046932,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-19 12:59:00.000000000,Laggere,Closed,Complaint attended,Ragavendra R/AEE
+49547,20046859,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-18 06:04:00.000000000,Malleshwaram,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+49626,20046780,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-18 11:09:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+49991,20046415,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-07-16 03:24:00.000000000,HBR Layout,Rejected,As per Citizen conformation Complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+50264,20046138,Storm  Water Drain(SWD),Maintenance of SWD,2020-02-10 10:25:00.000000000,Gayathri Nagar,Rejected,Complaint is not Comes under BBMP Limits So Complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+50282,20046120,Storm  Water Drain(SWD),Maintenance of SWD,2020-02-14 07:55:00.000000000,Bilekahalli,Rejected,Tried to Contact with citizen but citizen not picking our call. this complaint belongs to BWSSB,BBMP Whatsapp/Customer Support Representative
+50307,20046095,Storm  Water Drain(SWD),Maintenance of SWD,2020-02-23 04:36:00.000000000,Koramangala,Rejected,As per citizen information this complaint is to be rejected ...............,BBMP Whatsapp/Customer Support Representative
+50437,20045965,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-27 11:51:00.000000000,Bagalagunte,Closed,Resolved,Santhosh S/AEE
+50469,20045933,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-08 02:28:00.000000000,Begur,Rejected,This complaint comes under B W S S B............,BBMP Whatsapp/Customer Support Representative
+50546,20045856,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-19 04:05:00.000000000,Benniganahalli,Rejected,Address not comes under BBMP,BBMP Whatsapp/Customer Support Representative
+50547,20045855,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-19 04:05:00.000000000,Benniganahalli,Rejected,Address not comes under BBMP,BBMP Whatsapp/Customer Support Representative
+50766,20045636,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-03 02:13:00.000000000,Peenya Industrial Area,Closed,Resolved,Santhosh S/AEE
+50957,20045445,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-13 06:13:00.000000000,Begur,Closed,Resolved,Krishne Gowda/AEE
+51003,20045399,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-13 03:23:00.000000000,Hagadooru,Rejected,Please contact BWSSB,BBMP Whatsapp/Customer Support Representative
+51136,20045266,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-07-13 08:12:00.000000000,Yelachenahalli,Closed,Resolved,Krishne Gowda/AEE
+51386,20045016,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-12 10:35:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+51455,20044947,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-11 10:38:00.000000000,Mangammanapalya,Closed,closed,Suresh/AEE
+51456,20044946,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-11 10:36:00.000000000,Bellandur,Rejected,This complaint comes under BWSSB,BBMP Whatsapp/Customer Support Representative
+51537,20044865,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-11 06:24:00.000000000,Bellandur,Closed,"Search operations done by NDRF, SDRF, Fire Force and BBMP jointly.",Sri. Raghavendra B. N/AEE
+51615,20044787,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-07-11 02:22:00.000000000,Bommanahalli,Rejected,Rejected,BBMP Whatsapp/Customer Support Representative
+51636,20044766,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-11 01:31:00.000000000,Yelachenahalli,Closed,Resolved,Krishne Gowda/AEE
+51769,20044633,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-10 08:16:00.000000000,Ulsoor,Closed,unauthorised construction  zonal,raj kumar/ADTP
+51948,20044454,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-10 11:56:00.000000000,Jakkur,Closed,It has been done,7829808099/AEE
+52024,20044378,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-10 08:12:00.000000000,Azad Nagar,Rejected,Rejected As Per Citizen Information,BBMP Whatsapp/Customer Support Representative
+52025,20044377,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-10 08:09:00.000000000,Ulsoor,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+52054,20044348,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-09 11:37:00.000000000,Hemmigepura,Closed,Resolved,Aveesh/AE
+52131,20044271,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-09 06:42:00.000000000,Jakkur,Rejected,"This complaint comes under B W S S B , as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+52142,20044260,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-09 06:17:00.000000000,Singasandra,Rejected,This complaint is to be rejected because citizen not mentioned proper descripation,BBMP Whatsapp/Customer Support Representative
+52464,20043938,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-08 05:22:00.000000000,Peenya Industrial Area,Closed,Resolved,Santhosh S/AEE
+52509,20043893,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-08 02:43:00.000000000,Pulikeshi Nagar,Closed,Closed,Renuka Swadi/AEE
+52532,20043870,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-08 01:56:00.000000000,Vasanthapura,Rejected,This is not SWD drain it is comes under BDA,BBMP Whatsapp/Customer Support Representative
+52719,20043683,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-07 09:30:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+52918,20043484,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-07 11:44:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+52919,20043483,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-07 11:43:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+53001,20043401,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-07 08:11:00.000000000,Radhakrishna Temple,Rejected,This complaint comes under B W S S B ..............,BBMP Whatsapp/Customer Support Representative
+53176,20043226,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-06 01:51:00.000000000,Bagalagunte,Closed,Resolved,Santhosh S/AEE
+53183,20043219,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-06 01:33:00.000000000,Hemmigepura,Closed,Closed,Chandrashekhar/AEE
+53236,20043166,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-06 11:21:00.000000000,Basaveshwara Nagar,Rejected,Rejected as per citizen information,BBMP Whatsapp/Customer Support Representative
+53267,20043135,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-06 10:00:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+53406,20042996,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-05 05:08:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+53420,20042982,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-05 02:23:00.000000000,Dodda Bidarkallu,Closed,Closed,Chandrashekhar/AEE
+53452,20042950,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-07-05 11:51:00.000000000,Ejipura,Rejected,"There is no problem description, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+53628,20042774,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-04 04:52:00.000000000,Rajarajeshwari Nagar,Rejected,This complaint belongs to BWSSB,BBMP Whatsapp/Customer Support Representative
+53751,20042651,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-03 10:56:00.000000000,Ramaswamy Palya,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+53801,20042601,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-03 06:24:00.000000000,Mathikere,Rejected,Rejected This Complaint Comes Under BWSSB,BBMP Whatsapp/Customer Support Representative
+54010,20042392,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-02 10:34:00.000000000,Bellandur,Rejected,Rejected This Complaint Its Comes Under (BWSSB) Itried To Call Citizen Number Getting Not Vallid,BBMP Whatsapp/Customer Support Representative
+54239,20042163,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-02 08:06:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+54274,20042128,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-01 10:11:00.000000000,Bellandur,Rejected,Complaint comes under BWSSB.  Hence Rejected.,BBMP Whatsapp/Customer Support Representative
+54278,20042124,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-01 09:47:00.000000000,Bellandur,Rejected,Complaint comes under BWSSB.  Hence Rejected,BBMP Whatsapp/Customer Support Representative
+54290,20042112,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-01 09:10:00.000000000,Bellandur,Rejected,"Complaint comes under BWSSB.  Hence, Rejected.",BBMP Whatsapp/Customer Support Representative
+54298,20042104,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-01 08:37:00.000000000,Bellandur,Rejected,Please Contact BWSSB DEPT,BBMP Whatsapp/Customer Support Representative
+54342,20042060,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-07-01 07:11:00.000000000,Bellandur,Rejected,Please Contact BWSSB,BBMP Whatsapp/Customer Support Representative
+54343,20042059,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-07-01 07:10:00.000000000,Bellandur,Rejected,Please Contact BWSSB,BBMP Whatsapp/Customer Support Representative
+54344,20042058,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-07-01 07:08:00.000000000,Bellandur,Rejected,This complaint comes under B W S S B .............,BBMP Whatsapp/Customer Support Representative
+54374,20042028,Storm  Water Drain(SWD),Maintenance of SWD,2020-07-01 05:01:00.000000000,Bellandur,Resolved,SWD is cleaned,Chethan/AE
+54387,20042015,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-07-01 04:08:00.000000000,Bellandur,Rejected,"There is no problem description, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+54617,20041785,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-30 06:56:00.000000000,Singasandra,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+54652,20041750,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-30 04:49:00.000000000,Begur,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+54736,20041666,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-30 12:36:00.000000000,Horamavu,Rejected,"This complaint comes under B W S S B, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+54788,20041614,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-30 09:18:00.000000000,Rajagopala Nagar,Rejected,Rejected This Complaint Citizen Not Answering The Call Please Visit Your Nearest BBMP Office And Issue The Leter For The Concerned Officer Taken Action This Complaint,BBMP Whatsapp/Customer Support Representative
+54917,20041485,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-29 06:13:00.000000000,Rajarajeshwari Nagar,Rejected,Officer Conformation Complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+55269,20041133,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-06-28 11:17:00.000000000,Kengeri,Closed,Resolved,Chandrashekhar/AEE
+55339,20041063,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-06-28 06:32:00.000000000,Sri Rammandira,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+55480,20040922,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-27 02:39:00.000000000,Kodigehalli,Closed,Attended,7829808099/AEE
+55668,20040734,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-26 07:46:00.000000000,Hemmigepura,Closed,Closed,Chandrashekhar/AEE
+55775,20040627,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-26 11:12:00.000000000,Aramane Nagar,Rejected,Rejected Citizen Is Not Responding Call Regarding This Complaint Comes  Under BWSSP,BBMP Whatsapp/Customer Support Representative
+55846,20040556,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-26 07:54:00.000000000,Chokkasandra,Closed,Resolved,Santhosh S/AEE
+55850,20040552,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-26 07:30:00.000000000,Bilekahalli,Closed,closed,Suresh/AEE
+55861,20040541,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-26 06:42:00.000000000,Kengeri,Closed,SWD is cleaned,Chandrashekhar/AEE
+55920,20040482,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-25 08:31:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+55950,20040452,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-25 07:06:00.000000000,Madiwala,Closed,Attended.,Suma/AEE
+55957,20040445,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-25 06:48:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+55963,20040439,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-25 06:34:00.000000000,Rajarajeshwari Nagar,Closed,Resolved,Ragavendra R/AEE
+55975,20040427,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-25 05:59:00.000000000,Begur,Closed,Resolved,Krishne Gowda/AEE
+55995,20040407,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-25 05:31:00.000000000,Padmanabha Nagar,Closed,Complaint resolved,Chethan HD/AEE
+56181,20040221,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-25 09:01:00.000000000,Singasandra,Rejected,As per Citizen Conformation Complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+56200,20040202,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-25 06:26:00.000000000,Byrasandra,Rejected,"Complaint comes under B W S S B, hence Rejected.",BBMP Whatsapp/Customer Support Representative
+56214,20040188,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-24 11:01:00.000000000,Mangammanapalya,Rejected,Rejected This Complaint Comes Under BWSSB,BBMP Whatsapp/Customer Support Representative
+56218,20040184,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-24 10:28:00.000000000,Sanjay Nagar,Rejected,We had informed to citizen to raise new complaint regarding Road side drainage Rejected.,BBMP Whatsapp/Customer Support Representative
+56262,20040140,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-24 06:51:00.000000000,Singasandra,Rejected,This complaint is to be rejected because citizen not mentioned Problem Description.,BBMP Whatsapp/Customer Support Representative
+56410,20039992,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-24 09:55:00.000000000,Hoodi,Rejected,This complaint comes under BWSSB,BBMP Whatsapp/Customer Support Representative
+56548,20039854,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-23 04:47:00.000000000,Basavanapura,Rejected,"Citizen not responding the call, this complaint comes under B W S S B department Rejected.",BBMP Whatsapp/Customer Support Representative
+56598,20039804,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-23 01:38:00.000000000,Garudacharpalya,Rejected,THis complaint comes under BWSSB,BBMP Whatsapp/Customer Support Representative
+57412,20038989,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-20 11:26:00.000000000,J.P.Nagar,Closed,Complaint attended,Suma/AEE
+57816,20038585,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-18 08:30:00.000000000,Hoodi,Closed,Cleaning  done.,Sri. Raghavendra B. N/AEE
+57974,20038427,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-18 11:56:00.000000000,K.R.Puram,Closed,Resolved,Shree Lakshmi/AEE
+58007,20038394,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-18 10:35:00.000000000,Jalahalli,Closed,Complainant attended,Ragavendra R/AEE
+58037,20038364,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-18 09:33:00.000000000,Begur,Rejected,As Per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+58053,20038348,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-18 09:04:00.000000000,Hoodi,Resolved,"In respect to this complaint  I would state that Survey marking was not done on spot then when I tried to make a temporary trench  in d straight alignment which is the shortest  distance  to  allow water to flow from flooded area through the vacant  lands.
+Since I had a follow up complaint   from the resident facing flooding  I had to take immidiate  steps to avoid further flooding endangering to life and  property of the residents.
+
+It's been requested to Surveyor to show  the actual survey marking  . once it is marked and shown   permanent drain work will be taken up in the actual alignment.
+There was no any  malicious intention behind by attempts as the complainer  alleging on my temporary  remedial step.",Chethan/AE
+58216,20038185,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-17 03:28:00.000000000,Konena Agrahara,Closed,Sir the complaint resolved,Renuka Swadi/AEE
+58493,20037908,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-06-16 05:59:00.000000000,Bellandur,Rejected,This complaints is comes under B W SS B ............................,BBMP Whatsapp/Customer Support Representative
+58588,20037813,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-06-16 11:56:00.000000000,Agaram,Rejected,"There is no problem description, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+58614,20037787,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-16 10:59:00.000000000,Bilekahalli,Closed,closed,Suresh/AEE
+58794,20037607,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-15 06:25:00.000000000,Chikkalasandra,Rejected,This complaints is to be rejected as per citizen information ..............,BBMP Whatsapp/Customer Support Representative
+58831,20037570,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-06-15 04:33:00.000000000,Vasanthapura,Closed,Resolved,Krishne Gowda/AEE
+58901,20037500,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-15 12:48:00.000000000,Shakambari Nagar,Rejected,This complaint is to be rejected because citizen not mentioned proper descripation .......,BBMP Whatsapp/Customer Support Representative
+58944,20037457,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-15 11:15:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+58979,20037422,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-06-15 08:31:00.000000000,Vidyapeetha,Closed,The garbage and silt has been cleared,Jyothi/AEE
+58997,20037404,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-15 07:37:00.000000000,Begur,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+59104,20037297,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-14 03:59:00.000000000,K.R.Puram,Rejected,"This complaints comes under B W S S B ,",BBMP Whatsapp/Customer Support Representative
+59231,20037170,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-13 11:12:00.000000000,Hoodi,Resolved,"In respect to this complaint  I would state that Survey marking was not done on spot then when I tried to make a temporary trench  in d straight alignment which is the shortest  distance  to  allow water to flow from flooded area through the vacant  lands.
+Since I had a follow up complaint   from the resident facing flooding  I had to take immidiate  steps to avoid further flooding endangering to life and  property of the residents.
+
+It's been requested to Surveyor to show  the actual survey marking  . once it is marked and shown   permanent drain work will be taken up in the actual alignment.
+There was no any  malicious intention behind by attempts as the complainer  alleging on my temporary  remedial step.",Chethan/AE
+59457,20036944,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-13 09:24:00.000000000,Jalahalli,Closed,Complainant atrended,Ragavendra R/AEE
+59463,20036938,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-13 08:38:00.000000000,Doddabommasandra,Closed,Irrelevant,7829808099/AEE
+59539,20036862,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-12 07:55:00.000000000,Jayachamarajendra Nagar,Closed,Completed,raj kumar/ADTP
+59602,20036799,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-12 04:26:00.000000000,Hoodi,Closed,Attended,Sri. Raghavendra B. N/AEE
+59713,20036688,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-12 11:00:00.000000000,Bagalagunte,Closed,Resolved,Santhosh S/AEE
+59756,20036645,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-06-12 09:16:00.000000000,Horamavu,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+59949,20036452,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-11 12:40:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+59990,20036411,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-11 11:00:00.000000000,Hosahalli,Closed,Attended,Jyothi/AEE
+60181,20036220,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-10 04:49:00.000000000,Jalahalli,Closed,Gravience attended by AE,Ragavendra R/AEE
+60283,20036118,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-10 12:42:00.000000000,Begur,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+60453,20035948,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-09 08:49:00.000000000,Banaswadi,Closed,Completed,Chandrashekhar/AEE
+60507,20035894,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-06-09 07:12:00.000000000,Bellandur,Resolved,Resolved,Chethan/AE
+60563,20035838,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-09 04:45:00.000000000,Mahalakshmipuram,Rejected,"This complaint comes under B W S S B Dept, As per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+60718,20035683,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-09 11:16:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+60971,20035430,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-08 04:20:00.000000000,Kottigepalya,Closed,resolved,Ragavendra R/AEE
+61240,20035161,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-07 05:02:00.000000000,Herohalli,Rejected,Citizen conformation Complaint Comes under BWSSB Department So complaint is Rejected,BBMP Whatsapp/Customer Support Representative
+61274,20035127,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-07 02:21:00.000000000,Hagadooru,Rejected,Citizen conformation complaint is Rejected Complaint comes under BWSSB,BBMP Whatsapp/Customer Support Representative
+61283,20035118,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-07 02:01:00.000000000,Hagadooru,Rejected,Citizen conformation complaint is Rejected Comes under BWSSB,BBMP Whatsapp/Customer Support Representative
+61524,20034877,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-06 03:18:00.000000000,Jeevanbhima Nagar,Rejected,This complaint comes under  B W S S B ............,BBMP Whatsapp/Customer Support Representative
+61536,20034865,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-06 02:22:00.000000000,Thanisandra,Closed,Attended,7829808099/AEE
+61545,20034856,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-06 01:54:00.000000000,Chokkasandra,Closed,Resolved,Santhosh S/AEE
+61629,20034772,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-06-06 11:19:00.000000000,Kadugodi,Resolved,Resolved,Chethan/AE
+61870,20034531,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-05 03:02:00.000000000,Konanakunte,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+61973,20034428,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-05 10:14:00.000000000,Vannarpet,Rejected,"Citizen conformation Complaint is comes under BWSSB So, Complaint is Rejected",BBMP Whatsapp/Customer Support Representative
+62121,20034280,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-04 06:23:00.000000000,Lingarajapuram,Rejected,"This complaint to be rejected ., as per citizen information.",BBMP Whatsapp/Customer Support Representative
+62135,20034266,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-04 05:22:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+62617,20033784,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-03 10:20:00.000000000,K.R.Puram,Rejected,This complaint is to be rejected because  citizen registered  multipal information .,BBMP Whatsapp/Customer Support Representative
+62820,20033581,Storm  Water Drain(SWD),Maintenance of SWD,2020-06-02 05:05:00.000000000,Jayachamarajendra Nagar,Closed,Completed,raj kumar/ADTP
+63095,20033306,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-06-02 09:22:00.000000000,Devasandra,Rejected,"This complaint is to be rejected as per citizen information ,,,,,,,,,,,",BBMP Whatsapp/Customer Support Representative
+63504,20032897,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-31 10:46:00.000000000,Deepanjali Nagar,Closed,Attended,Jyothi/AEE
+63603,20032798,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-31 06:09:00.000000000,Arakere,Rejected,This complaint is under B W S S B .,BBMP Whatsapp/Customer Support Representative
+63613,20032788,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-31 05:35:00.000000000,Singasandra,Rejected,"Citizen not responding the call, this complaint is comes under B W S S B dept Rejected.",BBMP Whatsapp/Customer Support Representative
+63632,20032769,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-31 04:40:00.000000000,Newthippasandra,Closed,Completed,Renuka Swadi/AEE
+63636,20032765,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-31 04:27:00.000000000,Horamavu,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+63718,20032683,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-31 11:37:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+63760,20032641,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-31 10:07:00.000000000,Rajarajeshwari Nagar,Rejected,This complaint comes under B W S S B Rejected.,BBMP Whatsapp/Customer Support Representative
+63790,20032611,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-31 09:10:00.000000000,Herohalli,Rejected,"As per citizen confirmation, This complaint comes under B W S S B rejected.",BBMP Whatsapp/Customer Support Representative
+63992,20032409,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-30 02:57:00.000000000,Peenya Industrial Area,Closed,Resolved,Santhosh S/AEE
+64145,20032256,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-30 09:01:00.000000000,Sarakki,Rejected,AS PER CITIZEN INFORMATION COMPLAINT IS CLOSED,BBMP Whatsapp/Customer Support Representative
+64200,20032201,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-29 07:45:00.000000000,Kuvempu Nagar,Rejected,multiple complaint,BBMP Whatsapp/Customer Support Representative
+64605,20031796,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-28 11:47:00.000000000,Ejipura,Rejected,AS PER CITIZEN INFORMATION COMPLAINT IS CLOSED,BBMP Whatsapp/Customer Support Representative
+64608,20031793,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-28 11:45:00.000000000,Ramamurthy Nagar,Rejected,COMPLAINT COMES UNDER BWSSB DEPARTMENT,BBMP Whatsapp/Customer Support Representative
+64723,20031678,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-28 06:53:00.000000000,BTM Layout,Rejected,AS PER CITIZEN INFORMATION COMPLAINT IS CLOSED,BBMP Whatsapp/Customer Support Representative
+64726,20031675,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-28 06:37:00.000000000,HBR Layout,Rejected,This complaint is under B W S S B,BBMP Whatsapp/Customer Support Representative
+64880,20031521,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-27 03:33:00.000000000,Padmanabha Nagar,Rejected,AS PER CITIZEN INFORMATION COMPLAINT IS CLOSED,BBMP Whatsapp/Customer Support Representative
+64980,20031421,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-27 10:59:00.000000000,Banaswadi,Closed,Completed,Chandrashekhar/AEE
+65097,20031304,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-26 10:22:00.000000000,Agaram,Rejected,This complaint is rejected because citizen registered multiple complaints,BBMP Whatsapp/Customer Support Representative
+65106,20031295,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-26 10:03:00.000000000,Padmanabha Nagar,Closed,Complaint resolved,Chethan HD/AEE
+65107,20031294,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-26 09:57:00.000000000,Padmanabha Nagar,Closed,Complaint resolved,Chethan HD/AEE
+65119,20031282,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-26 09:30:00.000000000,Ejipura,Closed,Compaint attended,Suma/AEE
+65126,20031275,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-26 09:12:00.000000000,Hosakerehalli,Closed,Resolved,Chethan HD/AEE
+65156,20031245,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-26 06:59:00.000000000,Agaram,Rejected,This complaint is close as per citizen information,BBMP Whatsapp/Customer Support Representative
+65637,20030764,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-25 11:45:00.000000000,Begur,Rejected,It is come under the BWSSB and Ward Level,BBMP Whatsapp/Customer Support Representative
+65672,20030729,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-25 10:44:00.000000000,Konanakunte,Closed,Resolved,Krishne Gowda/AEE
+65732,20030669,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-25 08:01:00.000000000,Chokkasandra,Closed,Resolved,Santhosh S/AEE
+65754,20030647,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-25 12:26:00.000000000,Thanisandra,Rejected,Complaint comes under B W S S B.,BBMP Whatsapp/Customer Support Representative
+65805,20030596,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-24 06:59:00.000000000,Shakambari Nagar,Rejected,This complaint is to be rejected because  citizen not maintioned problem descripation .,BBMP Whatsapp/Customer Support Representative
+66002,20030399,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-23 07:13:00.000000000,Rajarajeshwari Nagar,Closed,resolved,Ragavendra R/AEE
+66014,20030387,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-23 06:50:00.000000000,Rajarajeshwari Nagar,Closed,resolved,Ragavendra R/AEE
+66236,20030165,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-22 06:20:00.000000000,Begur,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+66250,20030151,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-22 04:47:00.000000000,HBR Layout,Closed,Spoke with complainant,Chandrashekhar/AEE
+66482,20029919,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-21 03:17:00.000000000,HSR Layout,Closed,closed,Suresh/AEE
+66570,20029831,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-21 10:55:00.000000000,Hoodi,Closed,Attended,Sri. Raghavendra B. N/AEE
+66575,20029826,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-21 10:47:00.000000000,Hoodi,Closed,At nded,Sri. Raghavendra B. N/AEE
+66585,20029814,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-21 10:31:00.000000000,K.R.Puram,Rejected,Multiple Complaints Raised.  Hence Rejected.,BBMP Whatsapp/Customer Support Representative
+66590,20029809,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-21 10:19:00.000000000,Uttarahalli,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+66644,20029755,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-20 07:08:00.000000000,Jayachamarajendra Nagar,Closed,Completed,raj kumar/ADTP
+66874,20029516,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-19 07:03:00.000000000,Jagajeevanram Nagar,Closed,Maintenance of swd is in progress,Manuja R/AEE
+66897,20029493,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-19 04:59:00.000000000,Puttenahalli,Rejected,This complaint is under B W S S B .,BBMP Whatsapp/Customer Support Representative
+67022,20029227,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-19 07:55:00.000000000,Ullalu,Closed,Resolved,Chandrashekhar/AEE
+67075,20029174,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-18 05:46:00.000000000,Mangammanapalya,Rejected,Rejected This Complaint Comes Under BWSSB,BBMP Whatsapp/Customer Support Representative
+67115,20029134,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-18 01:39:00.000000000,Thanisandra,Rejected,Complaint comes under B W S S B.,BBMP Whatsapp/Customer Support Representative
+67119,20029130,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-18 01:25:00.000000000,Varthur,Closed,Non relevant,Sri. Raghavendra B. N/AEE
+67149,20029100,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-18 10:55:00.000000000,Vignana Nagar,Rejected,This complaint comes under B W S S B.,BBMP Whatsapp/Customer Support Representative
+67161,20029088,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-18 10:09:00.000000000,Bagalagunte,Closed,Resolved,Santhosh S/AEE
+67186,20029063,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-18 08:26:00.000000000,Varthur,Closed,Cleared,Sri. Raghavendra B. N/AEE
+67229,20029020,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-17 07:35:00.000000000,BTM Layout,Rejected,cleared,BBMP Whatsapp/Customer Support Representative
+67235,20029014,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-17 07:18:00.000000000,Bilekahalli,Closed,closed,Suresh/AEE
+67341,20028908,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-17 11:26:00.000000000,Varthur,Closed,Non relevant,Sri. Raghavendra B. N/AEE
+67352,20028897,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-17 10:47:00.000000000,Arakere,Rejected,This complaint is under B W  S S B .,BBMP Whatsapp/Customer Support Representative
+67372,20028877,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-17 10:01:00.000000000,Maruthi Seva Nagar,Closed,Closed,Chandrashekhar/AEE
+67381,20028868,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-17 09:03:00.000000000,Doddabommasandra,Closed,Attended,7829808099/AEE
+67526,20028721,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-16 01:14:00.000000000,Jogupalya,Rejected,cleared,BBMP Whatsapp/Customer Support Representative
+67731,20028514,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-15 03:47:00.000000000,Chamrajpet,Closed,Maintenance of swd is in progress,Manuja R/AEE
+67737,20028508,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-15 03:24:00.000000000,Hemmigepura,Closed,Close,Chandrashekhar/AEE
+67740,20028505,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-15 03:09:00.000000000,Kaveripura,Rejected,As  per citizen information this complaint  to be rejected .,BBMP Whatsapp/Customer Support Representative
+67774,20028471,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-15 12:46:00.000000000,Shettyhalli,Closed,Resolved,Santhosh S/AEE
+67798,20028447,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-15 11:16:00.000000000,Varthur,Rejected,complaint comes under bwssb department,BBMP Whatsapp/Customer Support Representative
+67829,20028416,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-15 09:38:00.000000000,Begur,Rejected,This complaint is to be rejected as per citizen information ............,BBMP Whatsapp/Customer Support Representative
+67865,20028380,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-14 09:23:00.000000000,Peenya Industrial Area,Closed,Resolved,Santhosh S/AEE
+67922,20028323,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-14 04:45:00.000000000,Bagalagunte,Closed,Resolved,Santhosh S/AEE
+68028,20028217,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-14 08:16:00.000000000,Vignana Nagar,Rejected,BWSSB WORK under process,BBMP Whatsapp/Customer Support Representative
+68100,20028145,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-13 06:09:00.000000000,Horamavu,Closed,Desilting done,Shree Lakshmi/AEE
+68118,20028127,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-13 04:39:00.000000000,Shanthala Nagar,Rejected,There is no problem description Rejected.,BBMP Whatsapp/Customer Support Representative
+68191,20028054,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-13 11:52:00.000000000,Jnanabharathi Ward,Rejected,As per citizen confirmation this complaint is rejected.,BBMP Whatsapp/Customer Support Representative
+68261,20027984,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-13 08:56:00.000000000,Begur,Rejected,"This complaint comes under B W S S B department, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+68868,20027313,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-09 11:14:00.000000000,HSR Layout,Closed,Close,Suresh/AEE
+69052,20027129,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-09 11:25:00.000000000,Kacharakanahalli,Rejected,Kindly contact B W S S B to attend the complaint.,BBMP Whatsapp/Customer Support Representative
+69098,20027083,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-09 06:51:00.000000000,Basavanapura,Rejected,This complaint comes under B W S S B.,BBMP Whatsapp/Customer Support Representative
+69282,20026894,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-07 08:42:00.000000000,Jakkur,Closed,Attended,7829808099/AEE
+69423,20026753,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-07 11:07:00.000000000,Banaswadi,Closed,Completed,Chandrashekhar/AEE
+69485,20026691,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-07 01:13:00.000000000,Varthur,Resolved,Resolved,Chethan/AE
+69549,20026627,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-06 06:10:00.000000000,Jnanabharathi Ward,Closed,Resolved,Ragavendra R/AEE
+69572,20026603,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-06 03:32:00.000000000,Bilekahalli,Rejected,This complaint comes under B W S S B .,BBMP Whatsapp/Customer Support Representative
+69590,20026585,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-06 01:52:00.000000000,Bilekahalli,Closed,Close,Suresh/AEE
+69641,20026534,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-06 10:31:00.000000000,Shettyhalli,Closed,Resolved,Santhosh S/AEE
+69668,20026507,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-06 07:37:00.000000000,Giri Nagar,Closed,Complaint has been resolved,Jyothi/AEE
+69909,20026264,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-04 07:58:00.000000000,Jogupalya,Closed,Completed,Chandrashekhar/AEE
+69951,20026222,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-04 05:43:00.000000000,Shettyhalli,Closed,"Regular desilting of rajakaluves are carried out. 
+Road side drains are desilted by ward Engineers.",Santhosh S/AEE
+70136,20026037,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-03 07:07:00.000000000,Radhakrishna Temple,Closed,Completed,raj kumar/ADTP
+70189,20025981,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-03 04:01:00.000000000,Gottigere,Closed,Close,Krishne Gowda/AEE
+70203,20025967,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-03 01:39:00.000000000,Bilekahalli,Closed,Close,Suresh/AEE
+70362,20025808,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-05-02 02:16:00.000000000,HSR Layout,Closed,Close,Suresh/AEE
+70363,20025807,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-02 02:06:00.000000000,Anjanapur,Rejected,As per citizen information this complaint is to be rejected .............,BBMP Whatsapp/Customer Support Representative
+70490,20025680,Storm  Water Drain(SWD),Maintenance of SWD,2020-05-01 04:52:00.000000000,Bagalagunte,Closed,Resolved,Santhosh S/AEE
+70521,20025649,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-05-01 01:14:00.000000000,Thanisandra,Closed,Irrelevant as it pertains to BWSSB,7829808099/AEE
+70904,20025246,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-29 02:53:00.000000000,Gottigere,Closed,Close,Krishne Gowda/AEE
+70923,20025227,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-29 01:45:00.000000000,Jeevanbhima Nagar,Closed,Completed,Renuka Swadi/AEE
+70954,20025185,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-29 12:20:00.000000000,Varthur,Rejected,As per citizen confirmation this complaint is rejected.,BBMP Whatsapp/Customer Support Representative
+70973,20025166,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-29 11:34:00.000000000,Varthur,Closed,Non relevant,Sri. Raghavendra B. N/AEE
+70978,20025161,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-29 11:09:00.000000000,Vasanthapura,Rejected,"There is no problem description, as per citizen confirmation this complaint is rejected.",BBMP Whatsapp/Customer Support Representative
+70998,20025141,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-29 10:31:00.000000000,HSR Layout,Closed,Close,Suresh/AEE
+71003,20025136,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-29 10:18:00.000000000,HSR Layout,Closed,Close,Suresh/AEE
+71011,20025128,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-29 09:55:00.000000000,Bilekahalli,Closed,Close,Suresh/AEE
+71012,20025127,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-29 09:53:00.000000000,Puttenahalli,Rejected,cleared,BBMP Whatsapp/Customer Support Representative
+71022,20025117,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-29 09:25:00.000000000,Shettyhalli,Closed,Resolved,Santhosh S/AEE
+71023,20025116,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-29 09:19:00.000000000,Ejipura,Closed,Desilting of SWD done,Suma/AEE
+71026,20025113,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-29 09:16:00.000000000,C.V.Raman Nagar,Rejected,This complaint is under B W S S  B,BBMP Whatsapp/Customer Support Representative
+71027,20025112,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-29 09:15:00.000000000,Shettyhalli,Closed,Resolved,Santhosh S/AEE
+71031,20025108,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-29 09:03:00.000000000,Horamavu,Rejected,"There is no problem description, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+71036,20025103,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-29 08:29:00.000000000,Begur,Rejected,"This complaint comes under B W S S B Dept, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+71038,20025101,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-29 08:21:00.000000000,Begur,Rejected,This complaints is  comes under B W S S B ...............,BBMP Whatsapp/Customer Support Representative
+71042,20025097,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-29 07:50:00.000000000,T-Dasarahalli,Closed,Resolved,Santhosh S/AEE
+71044,20025095,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-29 06:59:00.000000000,Ganeshmandira Ward,Rejected,INFORMED TO THE CITIZEN COMPLAINT IS CLOSED,BBMP Whatsapp/Customer Support Representative
+71045,20025094,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-29 06:54:00.000000000,Begur,Closed,Close,Krishne Gowda/AEE
+71046,20025093,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-29 06:43:00.000000000,Shanthala Nagar,Rejected,Rejected This Number Is Not Valid Please Call This Number For Your Complaint Information Thank You,BBMP Whatsapp/Customer Support Representative
+71047,20025092,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-29 06:40:00.000000000,Dodda Bidarkallu,Rejected,cleared,BBMP Whatsapp/Customer Support Representative
+71048,20025091,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-29 06:27:00.000000000,HBR Layout,Closed,Spoke with complainant it’s been resolved,Samatha/AE
+71051,20025088,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-29 06:11:00.000000000,Yelachenahalli,Rejected,This complaint is to be rejected as per citizen information ..............,BBMP Whatsapp/Customer Support Representative
+71153,20024985,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-28 12:22:00.000000000,Sarakki,Closed,Work done,Suma/AEE
+71207,20024931,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-28 08:44:00.000000000,Lingarajapuram,Closed,Work completed,Samatha/AE
+71288,20024850,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-27 03:08:00.000000000,Herohalli,Rejected,complaint comes under bwssb department,BBMP Whatsapp/Customer Support Representative
+71295,20024843,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-27 01:51:00.000000000,Konena Agrahara,Rejected,This complaint comes under B W S S B rejected.,BBMP Whatsapp/Customer Support Representative
+71461,20024677,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-26 02:10:00.000000000,Varthur,Rejected,complaint comes under bwssb department,BBMP Whatsapp/Customer Support Representative
+71570,20024568,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-25 05:15:00.000000000,Begur,Closed,Close,Krishne Gowda/AEE
+71606,20024532,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-25 01:12:00.000000000,Hoodi,Closed,Attended.,Sri. Raghavendra B. N/AEE
+71609,20024529,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-25 01:00:00.000000000,Singasandra,Rejected,This complaint is  comes under B W S S B ...............,BBMP Whatsapp/Customer Support Representative
+71686,20024452,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-25 07:12:00.000000000,Sarakki,Rejected,"There is no proper address, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+71743,20024395,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-24 02:44:00.000000000,Subramanya Nagar,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+71818,20024320,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-24 10:33:00.000000000,Bellandur,Rejected,"This complaint comes under B W S S B , as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+71823,20024311,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-24 10:26:00.000000000,HSR Layout,Closed,Close,Suresh/AEE
+71837,20024297,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-24 10:08:00.000000000,Vidyaranyapura,Closed,Attended,7829808099/AEE
+71860,20024274,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-24 08:40:00.000000000,Varthur,Resolved,Rejected,Chethan/AE
+71864,20024270,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-24 07:44:00.000000000,HAL Airport,Rejected,"There is no proper address, as per citizen confirmation this complaint is rejected.",BBMP Whatsapp/Customer Support Representative
+71866,20024268,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-24 07:32:00.000000000,Varthur,Rejected,As per citizen information this complaint is to rejected.............,BBMP Whatsapp/Customer Support Representative
+71867,20024267,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-24 07:27:00.000000000,Vignana Nagar,Closed,Chainlink work will be done.,Shree Lakshmi/AEE
+71878,20024256,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-23 10:20:00.000000000,Horamavu,Rejected,This complaint is to be rejected as per citizen  information .,BBMP Whatsapp/Customer Support Representative
+71892,20024242,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-23 08:21:00.000000000,Ejipura,Closed,Attended,Suma/AEE
+71905,20024229,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-23 06:42:00.000000000,Padmanabha Nagar,Rejected,AS PER CITIZEN INFORMATION COMPLAINT IS CLOSED,BBMP Whatsapp/Customer Support Representative
+72018,20024115,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-23 09:30:00.000000000,Mangammanapalya,Closed,Close,Suresh/AEE
+72115,20024018,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-22 12:13:00.000000000,Subhash Nagar,Rejected,CLEARED,BBMP Whatsapp/Customer Support Representative
+72436,20023667,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-20 11:12:00.000000000,Vignana Nagar,Rejected,"This complaint comes under B W S S B Department , Rejected.",BBMP Whatsapp/Customer Support Representative
+72440,20023663,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-20 11:08:00.000000000,Kodigehalli,Closed,Attended,7829808099/AEE
+72681,20023422,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-18 02:07:00.000000000,Dodda Bidarkallu,Rejected,complaint comes under bwssb,BBMP Whatsapp/Customer Support Representative
+72687,20023416,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-18 01:46:00.000000000,Bagalagunte,Closed,Resolved,Santhosh S/AEE
+72721,20023382,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-18 10:11:00.000000000,Mangammanapalya,Rejected,Rejected This Complaint Comes Under BWSSB,BBMP Whatsapp/Customer Support Representative
+72906,20023197,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-16 05:46:00.000000000,A.Narayanapura,Rejected,cleared,BBMP Whatsapp/Customer Support Representative
+72991,20023112,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-16 10:49:00.000000000,Padmanabha Nagar,Rejected,AS PER  CITIZEN INFORMATION COMPLAINT IS CLOSED,BBMP Whatsapp/Customer Support Representative
+73033,20023070,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-15 10:17:00.000000000,Horamavu,Closed,Attended,Shree Lakshmi/AEE
+73101,20023002,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-15 02:47:00.000000000,Kavalbyrasandra,Closed,This complaint comes under B W S S B.,BBMP Whatsapp/Customer Support Representative
+73195,20022908,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-15 03:21:00.000000000,Kadugodi,Rejected,CLEARED,BBMP Whatsapp/Customer Support Representative
+73328,20022775,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-14 09:49:00.000000000,Horamavu,Closed,Desilting done,Shree Lakshmi/AEE
+73471,20022632,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-13 09:54:00.000000000,Begur,Rejected,Rejected,BBMP Whatsapp/Customer Support Representative
+73562,20022541,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-12 02:19:00.000000000,Ulsoor,Closed,Close,Vikranth/AE
+73702,20022401,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-11 01:20:00.000000000,Gandhi Nagar,Rejected,rejected,BBMP Whatsapp/Customer Support Representative
+73844,20022259,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-10 05:50:00.000000000,Vasanthapura,Rejected,Rejected This Complaint Comes Under BWSSB,BBMP Whatsapp/Customer Support Representative
+73870,20022233,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-10 03:15:00.000000000,C.V.Raman Nagar,Closed,Closed,Renuka Swadi/AEE
+73933,20022170,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-10 10:17:00.000000000,Lakkasandra,Closed,BWSSB to take action.,Suma/AEE
+74003,20022100,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-09 06:47:00.000000000,Deepanjali Nagar,Closed,Attended,Jyothi/AEE
+74088,20022015,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-09 12:36:00.000000000,Giri Nagar,Closed,Complaint already attended,Jyothi/AEE
+74148,20021955,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-09 08:43:00.000000000,Bommanahalli,Rejected,Rejected,BBMP Whatsapp/Customer Support Representative
+74172,20021931,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-08 09:55:00.000000000,Rajarajeshwari Nagar,Rejected,CLEARED,BBMP Whatsapp/Customer Support Representative
+74177,20021926,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-08 09:26:00.000000000,Kumaraswamy Layout,Closed,Resolved,Chethan HD/AEE
+74525,20021567,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-06 10:05:00.000000000,Varthur,Resolved,Resolved,Chethan/AE
+74531,20021561,Storm  Water Drain(SWD),Maintenance of SWD,2020-04-06 09:31:00.000000000,Shettyhalli,Closed,Resolved,Santhosh S/AEE
+74536,20021556,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-06 07:38:00.000000000,Shettyhalli,Closed,Resolved,Santhosh S/AEE
+74927,20021163,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-04-04 07:47:00.000000000,Bagalagunte,Closed,Resolved,Santhosh S/AEE
+74940,20021150,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-03 08:03:00.000000000,Singasandra,Rejected,Rejected,BBMP Whatsapp/Customer Support Representative
+75129,20020961,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-04-02 03:04:00.000000000,Begur,Rejected,This complaint is to be rejected as per citizen information ..............,BBMP Whatsapp/Customer Support Representative
+75461,20020625,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-31 06:40:00.000000000,Doddanekkundi,Rejected,complaint comes under bwssb department,BBMP Whatsapp/Customer Support Representative
+75562,20020524,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-31 10:25:00.000000000,Visvesvarapuram,Closed,Complaint comes under B W S S B.,BBMP Whatsapp/Customer Support Representative
+75569,20020517,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-31 10:00:00.000000000,Kengeri,Closed,Pertaing To SWD,Shantha Badagandi/AEE
+75600,20020486,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-31 08:55:00.000000000,Visvesvarapuram,Closed,Complaint comes under B W S S B.,BBMP Whatsapp/Customer Support Representative
+75673,20020413,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-30 06:30:00.000000000,Begur,Rejected,This complaints is comes under B W S S B...................,BBMP Whatsapp/Customer Support Representative
+75701,20020383,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-30 05:09:00.000000000,Ullalu,Closed,Close,Chandrashekhar/AEE
+75721,20020363,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-30 03:36:00.000000000,Jnanabharathi Ward,Rejected,"This complaint comes under B W S S B Dept, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+75778,20020305,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-30 11:45:00.000000000,Manorayanapalya,Rejected,This complaints  under B W S S B,BBMP Whatsapp/Customer Support Representative
+75784,20020299,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-30 11:32:00.000000000,Arakere,Rejected,This complaint is  close because citizen registered multipal complaints,BBMP Whatsapp/Customer Support Representative
+75937,20020143,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-29 04:06:00.000000000,Varthur,Rejected,cleared,BBMP Whatsapp/Customer Support Representative
+75950,20020130,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-29 02:42:00.000000000,Jnanabharathi Ward,Rejected,complaint comes under bwssb department,BBMP Whatsapp/Customer Support Representative
+75988,20020092,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-29 12:09:00.000000000,Jogupalya,Closed,Kindly contact B W S S B for the complaint.,BBMP Whatsapp/Customer Support Representative
+76039,20020041,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-29 10:05:00.000000000,Yelachenahalli,Closed,Close,Krishne Gowda/AEE
+76118,20019962,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-28 01:48:00.000000000,Newthippasandra,Non Relevant,\N,BBMP Whatsapp/Customer Support Representative
+76172,20019907,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-28 10:09:00.000000000,Vishwanathnagenahalli,Closed,Completed,raj kumar/ADTP
+76217,20019862,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-27 11:13:00.000000000,Kadugodi,Rejected,complaint comes under bwssb department,BBMP Whatsapp/Customer Support Representative
+76220,20019859,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-27 10:36:00.000000000,Kadugodi,Rejected,complaints comes under bwssb department,BBMP Whatsapp/Customer Support Representative
+76275,20019804,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-27 01:04:00.000000000,HAL Airport,Closed,Pertaing To SWD,Shantha Badagandi/AEE
+76335,20019740,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-27 08:05:00.000000000,Bagalagunte,Closed,Resolved,Santhosh S/AEE
+76390,20019685,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-26 06:14:00.000000000,K.R.Puram,Rejected,This complaint to be rejected as per citizen information .,BBMP Whatsapp/Customer Support Representative
+76489,20019586,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-26 09:50:00.000000000,Konena Agrahara,Closed,This complaint comes under B W S S B Rejected.,BBMP Whatsapp/Customer Support Representative
+76507,20019568,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-26 08:45:00.000000000,Hoodi,Rejected,REJECTED,BBMP Whatsapp/Customer Support Representative
+76511,20019564,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-26 08:03:00.000000000,Begur,Rejected,This complaint is to be rejected as per citizen information .......,BBMP Whatsapp/Customer Support Representative
+76645,20019430,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-25 11:19:00.000000000,Yelahanka old Satellite Town,Rejected,REJECTED,BBMP Whatsapp/Customer Support Representative
+76714,20019361,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-25 07:42:00.000000000,Konanakunte,Rejected,This Complaint is to rejected as per citizen information ...............,BBMP Whatsapp/Customer Support Representative
+76775,20019300,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-24 04:12:00.000000000,Singasandra,Rejected,"This complaint comes under B W S S B department, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+76795,20019280,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-24 12:44:00.000000000,Vignana Nagar,Closed,Pertaing To SWD,Shantha Badagandi/AEE
+76839,20019236,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-24 09:43:00.000000000,Dattathreya Temple,Closed,Attended,Manuja R/AEE
+76841,20019234,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-24 09:39:00.000000000,Dattathreya Temple,Closed,Attended.,Manuja R/AEE
+76873,20019202,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-24 06:38:00.000000000,Visvesvarapuram,Rejected,REJECTED,BBMP Whatsapp/Customer Support Representative
+76957,20019118,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-23 05:15:00.000000000,HBR Layout,Rejected,This complaint to be rejected as per citizen information .,BBMP Whatsapp/Customer Support Representative
+77006,20019069,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-23 03:02:00.000000000,Benniganahalli,Closed,This complaint comes under B W S S B rejected.,BBMP Whatsapp/Customer Support Representative
+77013,20019062,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-23 02:42:00.000000000,HSR Layout,Rejected,Rejected Issue notice to BWSSB,BBMP Whatsapp/Customer Support Representative
+77245,20018822,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-23 06:59:00.000000000,Horamavu,Closed,Desilting done,Shree Lakshmi/AEE
+77331,20018736,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-22 06:44:00.000000000,Jagajeevanram Nagar,Rejected,"This complaint comes under B W S S B Dept, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+77371,20018696,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-22 12:39:00.000000000,J.P.Nagar,Closed,BWSSB is informed about the complaint.,Suma/AEE
+77451,20018616,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-21 08:22:00.000000000,Chokkasandra,Closed,Resolved,Santhosh S/AEE
+77491,20018576,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-21 05:34:00.000000000,Shettyhalli,Closed,Resolved,Santhosh S/AEE
+77542,20018505,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-21 03:19:00.000000000,Vishwanathnagenahalli,Rejected,This complaint is to be rejected because citizen registered multiple complaints ....,BBMP Whatsapp/Customer Support Representative
+77543,20018502,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-21 03:18:00.000000000,Thanisandra,Rejected,CONTACT BWSSB,BBMP Whatsapp/Customer Support Representative
+77544,20018499,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-21 03:16:00.000000000,Konanakunte,Rejected,Citizen is barred is incoming call not responding rejected.,BBMP Whatsapp/Customer Support Representative
+77546,20018497,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-21 03:10:00.000000000,Thanisandra,Rejected,"Complainer can contact ward Engineer, bwssb officials for needful action",BBMP Whatsapp/Customer Support Representative
+77572,20018466,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-21 01:52:00.000000000,Banaswadi,Rejected,This complaint comes under B W S S B Rejected.,BBMP Whatsapp/Customer Support Representative
+77584,20018454,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-21 01:14:00.000000000,Bilekahalli,Rejected,REJECTED PROBLEM SOLVED...................VEL,BBMP Whatsapp/Customer Support Representative
+77610,20018426,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-21 12:36:00.000000000,Garudacharpalya,Closed,Attended,Sri. Raghavendra B. N/AEE
+77622,20018414,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-21 12:12:00.000000000,Shivaji Nagar,Closed,Completed,raj kumar/ADTP
+77677,20018359,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-21 10:56:00.000000000,Bagalagunte,Closed,Closer,Santhosh S/AEE
+77710,20018325,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-21 10:01:00.000000000,Jakkur,Closed,Attended,7829808099/AEE
+77719,20018316,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-21 09:44:00.000000000,Yelahanka old Satellite Town,Rejected,rejected complaint enquiry purpose calling citizen call not pick...............................vel,BBMP Whatsapp/Customer Support Representative
+77881,20018154,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-20 06:58:00.000000000,K.R.Puram,Closed,Resolved,Shree Lakshmi/AEE
+77882,20018153,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-20 06:52:00.000000000,Thanisandra,Rejected,AS PER CITIZEN INFORMATION COMPLAINT IS CLOSED,BBMP Whatsapp/Customer Support Representative
+77905,20018130,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-20 06:13:00.000000000,Ramamurthy Nagar,Closed,Resolved,Shree Lakshmi/AEE
+78006,20018029,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-20 05:31:00.000000000,Horamavu,Closed,Pertains to SWM,Shantha Badagandi/AEE
+78144,20017891,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-19 10:15:00.000000000,Peenya Industrial Area,Closed,Closed,Santhosh S/AEE
+78180,20017855,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-19 07:19:00.000000000,Ejipura,Closed,Desilting done,Suma/AEE
+78242,20017793,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-19 02:59:00.000000000,Uttarahalli,Rejected,This complaint is to be rejected as per citizen information ...........,BBMP Whatsapp/Customer Support Representative
+78599,20017428,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-18 04:55:00.000000000,Kammanahalli,Rejected,This complaint  to be rejected as per citizen information .,BBMP Whatsapp/Customer Support Representative
+78703,20017324,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-18 12:09:00.000000000,Agaram,Rejected,Rejected Sir throwing of garbage to SWD the health inspector/ SWM engineer has to create awareness among the residents/ public to not throw the garbage/ solid waste into SWD and at the same time they will have ensure collection of garbage from each house by the auto drivers.,BBMP Whatsapp/Customer Support Representative
+78752,20017275,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-18 10:32:00.000000000,Jakkur,Rejected,REJECTED,BBMP Whatsapp/Customer Support Representative
+78806,20017221,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-18 09:01:00.000000000,Banaswadi,Closed,Pertains to SWD,Shantha Badagandi/AEE
+78959,20017050,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-17 05:20:00.000000000,Banaswadi,Closed,Work completed,Chandrashekhar/AEE
+78993,20017008,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-17 03:37:00.000000000,Kengeri,Closed,Resolved,Chandrashekhar/AEE
+79186,20016815,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-17 08:39:00.000000000,Dr.Rajkumar Ward,Closed,Maintenance of swd is in progress,Manuja R/AEE
+79246,20016755,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-16 09:57:00.000000000,Padmanabha Nagar,Closed,Blockages cleared,Chethan HD/AEE
+79307,20016694,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-16 07:14:00.000000000,HSR Layout,Rejected,Rejected,BBMP Whatsapp/Customer Support Representative
+79464,20016537,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-16 12:37:00.000000000,Konena Agrahara,Rejected,COMPLAINT COMES UNDER BWSSB DEPARTMENT,BBMP Whatsapp/Customer Support Representative
+79670,20016327,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-15 07:58:00.000000000,J.P.Park,Closed,resolved,Ragavendra R/AEE
+79905,20016091,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-14 08:34:00.000000000,Ulsoor,Closed,Completed,raj kumar/ADTP
+79907,20016089,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-14 08:30:00.000000000,HSR Layout,Rejected,Rejected Not Valid Number,BBMP Whatsapp/Customer Support Representative
+80056,20015931,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-14 12:55:00.000000000,Jakkur,Closed,Attended,7829808099/AEE
+80109,20015878,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-14 10:55:00.000000000,Kengeri,Closed,Resolved,Chandrashekhar/AEE
+80323,20015664,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-13 12:40:00.000000000,Shettyhalli,Closed,Close,Santhosh S/AEE
+80344,20015643,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-13 11:59:00.000000000,Chokkasandra,Closed,Close,Santhosh S/AEE
+80526,20015461,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-12 09:49:00.000000000,Hoysala Nagar,Closed,"This complaint comes under B W S S B Dept, as per citizen confirmation this complaint is Rejected.",BBMP Whatsapp/Customer Support Representative
+80723,20015264,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-12 11:44:00.000000000,Arakere,Rejected,AS PER CITIZEN INFORMATION COMPLAINT IS CLOSED,BBMP Whatsapp/Customer Support Representative
+80805,20015180,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-12 08:23:00.000000000,Vasanthapura,Rejected,As per citizen  information  this complaint is to rejected ............,BBMP Whatsapp/Customer Support Representative
+80969,20015016,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-11 03:52:00.000000000,Domlur,Rejected,This complaint is close as per citizen  information,BBMP Whatsapp/Customer Support Representative
+80980,20015005,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-11 03:26:00.000000000,Bellandur,Rejected,As per citizen confirmation this complaint is Rejected.,BBMP Whatsapp/Customer Support Representative
+81118,20014867,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-11 10:37:00.000000000,Hemmigepura,Closed,Close,Chandrashekhar/AEE
+81378,20014607,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-10 02:54:00.000000000,Arakere,Closed,Resolved,Suresh/AEE
+81714,20014265,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-09 06:26:00.000000000,Benniganahalli,Rejected,This Complaints Comes Under BWSSB,BBMP Whatsapp/Customer Support Representative
+82283,20013694,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-08 08:04:00.000000000,C.V.Raman Nagar,Rejected,AS PER CITIZEN CONFIRMATION THIS COMPLAINT HAS BEEN REJECTED DUE TO IT COMES UNDER BWSSB LIMITES,BBMP Whatsapp/Customer Support Representative
+82818,20013159,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-03-06 05:24:00.000000000,Jakkur,Closed,Attended,7829808099/AEE
+83310,20012666,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-05 11:51:00.000000000,Yelahanka old Satellite Town,Closed,Resolved,Srinivas J N/AEE
+83459,20012517,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-04 10:36:00.000000000,Giri Nagar,Closed,SSM wall reconstructed,Jyothi/AEE
+83700,20012264,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-04 11:35:00.000000000,C.V.Raman Nagar,Closed,Close,Vikranth/AE
+84353,20011611,Storm  Water Drain(SWD),Maintenance of SWD,2020-03-02 06:13:00.000000000,Kuvempu Nagar,Rejected,This complaint is close as per citizen comfirmation,BBMP Whatsapp/Customer Support Representative
+84906,20011055,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-03-01 10:42:00.000000000,HBR Layout,Closed,Work completed,Chandrashekhar/AEE
+85030,20010931,Storm  Water Drain(SWD),Maintenance of SWD,2020-02-29 11:11:00.000000000,Konena Agrahara,Closed,Sir the complaint resolved,Renuka Swadi/AEE
+85462,20010499,Storm  Water Drain(SWD),Maintenance of SWD,2020-02-29 03:41:00.000000000,Jnanabharathi Ward,Rejected,As per citizen confirmation this complaint is rejected.,BBMP Whatsapp/Customer Support Representative
+86126,20009834,Storm  Water Drain(SWD),Sewerage water left in SWD,2020-02-28 10:07:00.000000000,Radhakrishna Temple,Closed,Work completed,raj kumar/ADTP
+86182,20009778,Storm  Water Drain(SWD),Maintenance of SWD,2020-02-28 12:22:00.000000000,Arakere,Rejected,This complaint is to be rejected  as per citizen information .,BBMP Whatsapp/Customer Support Representative
+86493,20009463,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-02-26 11:06:00.000000000,Padmanabha Nagar,Closed,Chain-link fencing provided to prevent garbage throwing into swd,Chethan HD/AEE
+87060,20008886,Storm  Water Drain(SWD),Maintenance of SWD,2020-02-25 10:25:00.000000000,Hosakerehalli,Closed,Complaint resolved,Chethan HD/AEE
+88538,20007387,Storm  Water Drain(SWD),Maintenance of SWD,2020-02-19 12:47:00.000000000,HSR Layout,Closed,Resolved,Suresh/AEE
+88672,20007253,Storm  Water Drain(SWD),Garbage thrown in storm water drain,2020-02-18 08:27:00.000000000,Byatarayanapura,Closed,Attended,7829808099/AEE
+89087,20006827,Storm  Water Drain(SWD),Maintenance of SWD,2020-02-17 09:48:00.000000000,HSR Layout,Closed,Resolved,Suresh/AEE
+89498,20006410,Storm  Water Drain(SWD),Maintenance of SWD,2020-02-15 11:22:00.000000000,C.V.Raman Nagar,Rejected,resolved,BBMP Whatsapp/Customer Support Representative
+90612,20005293,Storm  Water Drain(SWD),Maintenance of SWD,2020-02-11 01:48:00.000000000,Varthur,Rejected,This complaint  under  B W S S B,BBMP Whatsapp/Customer Support Representative
+91587,20004293,Storm  Water Drain(SWD),Maintenance of SWD,2020-02-08 11:49:00.000000000,Hoysala Nagar,Closed,Completed,Renuka Swadi/AEE
