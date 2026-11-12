@@ -12,7 +12,7 @@ export const DriverLayout: React.FC = () => {
       <div className="bg-white border-b border-slate-200 px-6 py-2.5 flex items-center justify-between shadow-2xs">
         <div className="flex items-center space-x-2 text-xs">
           <span className="font-semibold text-slate-700 flex items-center">
-            <ShieldAlert className="w-4 h-4 text-rose-600 mr-1.5" />
+            <ShieldAlert className="w-4 h-4 text-sky-600 mr-1.5" />
             Emergency Responder Interface
           </span>
           <span className="text-slate-300">|</span>
