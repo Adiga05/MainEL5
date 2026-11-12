@@ -100,15 +100,106 @@ Implemented via **NetworkX** on the directed road network of the corridor:
 
 ---
 
-## 6. Technology Stack
+## 6. System Architecture & Separation
 
-- **Backend**: Python 3.10+, FastAPI, SQLAlchemy, Pydantic v2, NetworkX, Scikit-learn, Shapely, PyJWT.
-- **Database**: SQLite with GeoJSON spatial data structures (PostGIS-ready schema).
-- **Frontend**: React 18, Vite, TypeScript, Tailwind CSS, Leaflet & React-Leaflet, Lucide Icons.
+The system is strictly divided into four decoupled tiers:
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                   1. REACT + VITE FRONTEND (Port 5173)                 │
+│  - Interactive GIS Leaflet Maps       - pastel pink / sky blue theme   │
+│  - Authority & Driver UI              - Live weather telemetry widget  │
+│  - Model Management Interface         - Real-time API health monitor   │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │ REST API (JSON / GeoJSON)
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                   2. FASTAPI BACKEND API (Port 8000)                   │
+│  - 36 Modular REST Endpoints          - NetworkX Dijkstra routing      │
+│  - Real-Time Open-Meteo Telemetry     - Dataset ingestion & audit      │
+│  - Corridor Spatial Feature Engine    - PostGIS / SQLite Data Layer    │
+└───────────────┬────────────────────────────────────────┬───────────────┘
+                │                                        │
+                ▼                                        ▼
+┌────────────────────────────────┐      ┌────────────────────────────────┐
+│   3. DATABASE & POSTGIS TIER   │      │     4. MACHINE LEARNING TIER   │
+│  - PostgreSQL + PostGIS Ext    │      │  - XGBoost Candidate Model     │
+│  - PostGIS Spatial Geometries  │      │  - Random Forest Benchmark     │
+│  - Roads, Drains, Hotspots     │      │  - StandardScaler Pipeline     │
+│  - Incident & Routing Logs     │      │  - Serialized Artifacts (.joblib)│
+│  - Resilient SQLite Fallback   │      │  - MLflow Tracking Interface   │
+└────────────────────────────────┘      └────────────────────────────────┘
+```
 
 ---
 
-## 7. Installation & Quick Start (Windows)
+## 7. Independent Startup & Service URLs
+
+Each tier operates independently and can be started, stopped, or updated without affecting other components:
+
+| Service | Technology | Port / URL | Independent Startup Command |
+| :--- | :--- | :--- | :--- |
+| **Frontend UI** | React 18 + Vite | `http://localhost:5173` | `run_frontend.bat` or `npm run dev` in `CIVIX/frontend` |
+| **Backend API** | FastAPI + Uvicorn | `http://localhost:8000` | `run_backend.bat` or `python scripts/start_backend.py` |
+| **API Docs (Swagger)** | OpenAPI 3.0 | `http://localhost:8000/docs` | Built into FastAPI backend |
+| **Database** | PostgreSQL / PostGIS | Port `5432` | `docker compose up db -d` |
+| **Full Stack (All-in-one)** | Windows Batch | Both ports | `run_app.bat` |
+| **Docker Compose** | Docker Containers | Full Stack | `docker compose up --build` |
+
+---
+
+## 8. Database Setup: PostgreSQL with PostGIS
+
+### Option A: Running via Docker Compose (Recommended)
+```powershell
+# Launch PostgreSQL 16 with PostGIS 3.4 in the background
+docker compose up db -d
+```
+The database initialization script (`CIVIX/backend/init_postgis.sql`) will automatically create the `postgis` and `postgis_topology` extensions.
+
+### Option B: Local PostgreSQL Installation
+1. Install PostgreSQL 14+ and the PostGIS bundle.
+2. In pgAdmin or psql, run:
+   ```sql
+   CREATE DATABASE civix_db;
+   \c civix_db;
+   CREATE EXTENSION IF NOT EXISTS postgis;
+   ```
+3. Set `DATABASE_URL` in `CIVIX/backend/.env`:
+   ```env
+   DATABASE_URL=postgresql://postgres:postgres_secure_password@localhost:5432/civix_db
+   ```
+4. Run table initialization and corridor seeding:
+   ```powershell
+   python CIVIX/scripts/populate_db.py
+   ```
+
+*(Note: If PostgreSQL is not detected, the backend automatically and seamlessly activates its local SQLite WAL database at `CIVIX/backend/data/civix.db`).*
+
+---
+
+## 9. Machine Learning Pipeline & Artifacts
+
+The backend includes a machine learning engine that serializes trained models, scalers, and evaluation metrics:
+
+- **Primary Candidate**: **XGBoost / Gradient Boosting Classifier** (`backend/models/xgboost_candidate.joblib`)
+- **Benchmark Model**: **Random Forest Classifier** (`backend/models/random_forest_benchmark.joblib`)
+- **Feature Scaler**: **StandardScaler** (`backend/models/feature_scaler.joblib`)
+- **Model Metadata**: Training dates, test precision, recall, F1-score, ROC-AUC, confusion matrices, and feature importances (`backend/models/model_metadata.json`).
+
+### Re-training the Models
+To retrain both models on the latest spatial features and save updated `.joblib` artifacts:
+```powershell
+python CIVIX/scripts/train_ml_models.py
+```
+Or trigger retraining directly from the Authority Dashboard UI or via REST API:
+```http
+POST http://localhost:8000/api/model/train
+```
+
+---
+
+## 10. Installation & Quick Start (Windows)
 
 ### Prerequisites
 - Python 3.10 or newer

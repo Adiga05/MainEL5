@@ -1,0 +1,98 @@
+{
+  "version": "1.2.0-bengaluru-corridor",
+  "active_model": "xgboost",
+  "training_date": "2026-11-12T17:44:55.719935+00:00",
+  "dataset": {
+    "total_samples": 20000,
+    "train_samples": 15000,
+    "test_samples": 5000,
+    "positive_disruption_samples": 9647,
+    "negative_dry_samples": 10353
+  },
+  "models": {
+    "random_forest": {
+      "name": "Random Forest Benchmark Classifier",
+      "algorithm": "RandomForestClassifier",
+      "hyperparameters": {
+        "n_estimators": 100,
+        "max_depth": 8,
+        "class_weight": "balanced"
+      },
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "confusion_matrix": [
+          [
+            2587,
+            1
+          ],
+          [
+            1,
+            2411
+          ]
+        ]
+      }
+    },
+    "xgboost": {
+      "name": "Gradient Boosting (XGBoost compatible)",
+      "algorithm": "GradientBoostingClassifier",
+      "hyperparameters": {
+        "n_estimators": 100,
+        "learning_rate": 0.1,
+        "max_depth": 5
+      },
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "confusion_matrix": [
+          [
+            2587,
+            1
+          ],
+          [
+            0,
+            2412
+          ]
+        ]
+      }
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "effective_rain_mm",
+      "importance": 0.7638
+    },
+    {
+      "feature": "rainfall_intensity_mmh",
+      "importance": 0.1864
+    },
+    {
+      "feature": "dist_vulnerable_m",
+      "importance": 0.0195
+    },
+    {
+      "feature": "road_type_factor",
+      "importance": 0.0163
+    },
+    {
+      "feature": "dist_flood_prone_m",
+      "importance": 0.0071
+    },
+    {
+      "feature": "dist_low_lying_m",
+      "importance": 0.0067
+    },
+    {
+      "feature": "dist_primary_drain_m",
+      "importance": 0.0001
+    },
+    {
+      "feature": "drains_count_50m",
+      "importance": 0.0
+    }
+  ]
+}

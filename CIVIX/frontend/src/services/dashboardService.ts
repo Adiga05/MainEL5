@@ -14,6 +14,16 @@ export const dashboardService = {
   async getModelStatus() {
     const res = await api.get('/model/status');
     return res.data;
+  },
+
+  async trainModel() {
+    const res = await api.post('/model/train');
+    return res.data;
+  },
+
+  async selectModel(modelName: string) {
+    const res = await api.post('/model/select', { model_name: modelName });
+    return res.data;
   }
 };
 

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { authService } from '../services/authService';
+import api from '../services/api';
 import { ShieldAlert, User, LogOut, Navigation, BarChart3, MapPin } from 'lucide-react';
 
 interface HeaderProps {
@@ -11,6 +12,25 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ currentRole, onSwitchRole }) => {
   const navigate = useNavigate();
   const user = authService.getStoredUser();
+  const [apiOnline, setApiOnline] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    let isMounted = true;
+    const checkApi = async () => {
+      try {
+        await api.get('/gis/study-area');
+        if (isMounted) setApiOnline(true);
+      } catch {
+        if (isMounted) setApiOnline(false);
+      }
+    };
+    checkApi();
+    const interval = setInterval(checkApi, 20000);
+    return () => {
+      isMounted = false;
+      clearInterval(interval);
+    };
+  }, []);
 
   const handleLogout = () => {
     authService.logout();
@@ -40,6 +60,25 @@ export const Header: React.FC<HeaderProps> = ({ currentRole, onSwitchRole }) => 
       </div>
 
       <div className="flex items-center space-x-3">
+        {/* Backend API Connection Status Badge */}
+        {apiOnline !== null && (
+          <div
+            className={`hidden lg:flex items-center text-[11px] font-semibold px-2.5 py-1 rounded-xl border shadow-2xs ${
+              apiOnline
+                ? 'bg-emerald-50 text-emerald-800 border-emerald-200'
+                : 'bg-pink-50 text-pink-800 border-pink-200'
+            }`}
+            title={apiOnline ? 'Connected to FastAPI Backend (Port 8000)' : 'Backend API is unreachable'}
+          >
+            <span
+              className={`w-2 h-2 rounded-full mr-1.5 ${
+                apiOnline ? 'bg-emerald-500 animate-pulse' : 'bg-pink-500'
+              }`}
+            ></span>
+            <span>{apiOnline ? 'Backend API Connected' : 'Backend Offline'}</span>
+          </div>
+        )}
+
         {/* Pastel Role Switcher Pill */}
         <div className="flex items-center bg-slate-100/80 p-1 rounded-xl border border-slate-200/70 text-xs">
           <button

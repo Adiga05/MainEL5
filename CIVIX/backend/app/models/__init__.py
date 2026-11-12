@@ -13,6 +13,7 @@ from app.models.low_lying import LowLyingArea
 from app.models.vulnerable import VulnerablePoint
 from app.models.model_run import ModelRun
 from app.models.scenario import Scenario
+from app.models.routing_result import RoutingResult
 
 __all__ = [
     "User", "Dataset", "Road", "Drainage",
@@ -20,4 +21,5 @@ __all__ = [
     "Complaint", "RoadPrediction", "Incident",
     "Hospital", "FloodProneLocation", "LowLyingArea",
     "VulnerablePoint", "ModelRun", "Scenario",
+    "RoutingResult",
 ]

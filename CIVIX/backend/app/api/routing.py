@@ -1,5 +1,7 @@
 """Emergency vehicle routing and critical links API endpoints."""
 
+import json
+import logging
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
 from typing import Optional, List, Dict, Any
@@ -7,10 +9,13 @@ from sqlalchemy.orm import Session
 
 from app.database.database import get_db
 from app.models.incident import Incident
+from app.models.routing_result import RoutingResult
 from app.api.gis import get_road_risk
 from app.routing.graph_builder import build_road_graph
 from app.routing.router import find_routes
 from app.routing.critical_links import identify_critical_roads
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api/routes", tags=["Emergency Routing"])
 
@@ -63,6 +68,32 @@ def calculate_recommended_route(req: RouteRequest, db: Session = Depends(get_db)
     )
     if "error" in res:
         raise HTTPException(status_code=400, detail=res["error"])
+
+    # Persist routing calculation result to database
+    try:
+        rec = res.get("recommended_route") or {}
+        alt = res.get("alternative_route") or {}
+        routing_log = RoutingResult(
+            origin_lat=req.origin_lat,
+            origin_lon=req.origin_lon,
+            dest_lat=req.dest_lat,
+            dest_lon=req.dest_lon,
+            vehicle_type=req.vehicle_type,
+            risk_weight=req.risk_weight,
+            rainfall_mm=req.rainfall_1h_mm,
+            recommended_distance_m=rec.get("total_distance_m"),
+            recommended_duration_s=rec.get("estimated_duration_s"),
+            recommended_risk_score=rec.get("risk_penalty_score"),
+            alternative_distance_m=alt.get("total_distance_m") if alt else None,
+            alternative_duration_s=alt.get("estimated_duration_s") if alt else None,
+            alternative_risk_score=alt.get("risk_penalty_score") if alt else None,
+            route_geojson=json.dumps(res.get("geojson", {}))
+        )
+        db.add(routing_log)
+        db.commit()
+    except Exception as e:
+        logger.warning(f"Could not persist routing log: {e}")
+
     return res
 
 

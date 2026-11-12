@@ -24,8 +24,8 @@ def _seed_admin():
 
     db = SessionLocal()
     try:
-        existing = db.query(User).filter(User.username == "admin").first()
-        if existing is None:
+        admin = db.query(User).filter(User.username == "admin").first()
+        if admin is None:
             admin = User(
                 username="admin",
                 password_hash=hash_password("admin123"),
@@ -33,9 +33,20 @@ def _seed_admin():
             )
             db.add(admin)
             db.commit()
-            logger.info("Default admin user created (admin / civix2024).")
+            logger.info("Default admin user created (admin / admin123).")
         else:
             logger.info("Admin user already exists – skipping seed.")
+
+        driver = db.query(User).filter(User.username == "driver1").first()
+        if driver is None:
+            driver = User(
+                username="driver1",
+                password_hash=hash_password("driver123"),
+                role="driver",
+            )
+            db.add(driver)
+            db.commit()
+            logger.info("Default driver user created (driver1 / driver123).")
     finally:
         db.close()
 
