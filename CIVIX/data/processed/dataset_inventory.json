@@ -1,0 +1,452 @@
+{
+  "audit_timestamp": "2026-11-12T18:23:27.880142",
+  "study_area": {
+    "id": "bommanahalli_marathahalli_corridor",
+    "name": "Bommanahalli\u2013Marathahalli Corridor",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "country": "India",
+    "bbox": {
+      "min_lat": 12.885,
+      "max_lat": 12.995,
+      "min_lon": 77.61,
+      "max_lon": 77.725
+    },
+    "key_localities": [
+      "Bommanahalli",
+      "HSR Layout",
+      "Bellandur",
+      "Devarabeesanahalli",
+      "Kadubeesanahalli",
+      "Marathahalli",
+      "Mahadevapura"
+    ],
+    "center": {
+      "lat": 12.938,
+      "lon": 77.675
+    },
+    "default_zoom": 13
+  },
+  "datasets": {
+    "BBMP_2020.csv": {
+      "filename": "BBMP_2020.csv",
+      "format": "CSV",
+      "size_kb": 144.21,
+      "feature_count": 859,
+      "study_area_overlap_count": 114,
+      "geometry_type": "Unknown",
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [
+        "_id",
+        "Complaint ID",
+        "Category",
+        "Sub Category",
+        "Grievance Date",
+        "Ward Name",
+        "Grievance Status",
+        "Staff Remarks",
+        "Staff Name"
+      ],
+      "issues": [
+        "BBMP grievance records contain Ward Names but NO latitude/longitude coordinates. Geocoding requires ward polygon/centroid mapping."
+      ],
+      "summary": "859 grievance records across 150 wards. 114 records match study corridor wards.",
+      "type": "Municipal Grievances (SWD/Waterlogging)",
+      "unique_wards": 150,
+      "sub_categories": [
+        "Garbage thrown in storm water drain",
+        "Maintenance of SWD",
+        "Sewerage water left in SWD"
+      ]
+    },
+    "BBMP_2021.csv": {
+      "filename": "BBMP_2021.csv",
+      "format": "CSV",
+      "size_kb": 173.06,
+      "feature_count": 940,
+      "study_area_overlap_count": 115,
+      "geometry_type": "Unknown",
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [
+        "_id",
+        "Complaint ID",
+        "Category",
+        "Sub Category",
+        "Grievance Date",
+        "Ward Name",
+        "Grievance Status",
+        "Staff Remarks",
+        "Staff Name"
+      ],
+      "issues": [
+        "BBMP grievance records contain Ward Names but NO latitude/longitude coordinates. Geocoding requires ward polygon/centroid mapping."
+      ],
+      "summary": "940 grievance records across 155 wards. 115 records match study corridor wards.",
+      "type": "Municipal Grievances (SWD/Waterlogging)",
+      "unique_wards": 155,
+      "sub_categories": [
+        "Garbage thrown in storm water drain",
+        "Maintenance of SWD",
+        "Sewerage water left in SWD"
+      ]
+    },
+    "BBMP_2023.csv": {
+      "filename": "BBMP_2023.csv",
+      "format": "CSV",
+      "size_kb": 133.87,
+      "feature_count": 935,
+      "study_area_overlap_count": 57,
+      "geometry_type": "Unknown",
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [
+        "_id",
+        "Complaint ID",
+        "Category",
+        "Sub Category",
+        "Grievance Date",
+        "Ward Name",
+        "Grievance Status",
+        "Staff Remarks",
+        "Staff Name"
+      ],
+      "issues": [
+        "BBMP grievance records contain Ward Names but NO latitude/longitude coordinates. Geocoding requires ward polygon/centroid mapping."
+      ],
+      "summary": "935 grievance records across 152 wards. 57 records match study corridor wards.",
+      "type": "Municipal Grievances (SWD/Waterlogging)",
+      "unique_wards": 152,
+      "sub_categories": [
+        "Sewerage water left in SWD",
+        "Water related issue",
+        "Garbage thrown in storm water drain",
+        "Maintenance of SWD"
+      ]
+    },
+    "BBMP_2024.csv": {
+      "filename": "BBMP_2024.csv",
+      "format": "CSV",
+      "size_kb": 370.46,
+      "feature_count": 2377,
+      "study_area_overlap_count": 196,
+      "geometry_type": "Unknown",
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [
+        "_id",
+        "Complaint ID",
+        "Category",
+        "Sub Category",
+        "Grievance Date",
+        "Ward Name",
+        "Grievance Status",
+        "Staff Remarks",
+        "Staff Name"
+      ],
+      "issues": [
+        "BBMP grievance records contain Ward Names but NO latitude/longitude coordinates. Geocoding requires ward polygon/centroid mapping."
+      ],
+      "summary": "2377 grievance records across 183 wards. 196 records match study corridor wards.",
+      "type": "Municipal Grievances (SWD/Waterlogging)",
+      "unique_wards": 183,
+      "sub_categories": [
+        "Sewerage water left in SWD",
+        "Water related issue",
+        "Garbage thrown in storm water drain",
+        "Maintenance of SWD"
+      ]
+    },
+    "BBMP_2025_until_june_19.csv": {
+      "filename": "BBMP_2025_until_june_19.csv",
+      "format": "CSV",
+      "size_kb": 199.31,
+      "feature_count": 1248,
+      "study_area_overlap_count": 167,
+      "geometry_type": "Unknown",
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [
+        "_id",
+        "Complaint ID",
+        "Category",
+        "Sub Category",
+        "Grievance Date",
+        "Ward Name",
+        "Grievance Status",
+        "Staff Remarks",
+        "Staff Name"
+      ],
+      "issues": [
+        "BBMP grievance records contain Ward Names but NO latitude/longitude coordinates. Geocoding requires ward polygon/centroid mapping."
+      ],
+      "summary": "1248 grievance records across 161 wards. 167 records match study corridor wards.",
+      "type": "Municipal Grievances (SWD/Waterlogging)",
+      "unique_wards": 161,
+      "sub_categories": [
+        "Garbage thrown in storm water drain",
+        "Water related issue",
+        "Maintenance of SWD",
+        "Sewerage water left in SWD"
+      ]
+    },
+    "BBMP_grievance_data_2022.csv": {
+      "filename": "BBMP_grievance_data_2022.csv",
+      "format": "CSV",
+      "size_kb": 195.11,
+      "feature_count": 1225,
+      "study_area_overlap_count": 103,
+      "geometry_type": "Unknown",
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [
+        "_id",
+        "Complaint ID",
+        "Category",
+        "Sub Category",
+        "Grievance Date",
+        "Ward Name",
+        "Grievance Status",
+        "Staff Remarks",
+        "Staff Name"
+      ],
+      "issues": [
+        "BBMP grievance records contain Ward Names but NO latitude/longitude coordinates. Geocoding requires ward polygon/centroid mapping."
+      ],
+      "summary": "1225 grievance records across 153 wards. 103 records match study corridor wards.",
+      "type": "Municipal Grievances (SWD/Waterlogging)",
+      "unique_wards": 153,
+      "sub_categories": [
+        "Garbage thrown in storm water drain",
+        "Maintenance of SWD",
+        "Sewerage water left in SWD"
+      ]
+    },
+    "Bommanahalli_Drainage.pdf": {
+      "filename": "Bommanahalli_Drainage.pdf",
+      "format": "PDF",
+      "size_kb": 445.86,
+      "feature_count": 0,
+      "study_area_overlap_count": 0,
+      "geometry_type": "Unstructured Document (Text/Tables/Maps)",
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [],
+      "issues": [
+        "Requires OCR/text extraction; spatial data must be cross-referenced with KML layers."
+      ],
+      "summary": "Official drainage engineering documentation for the study zone. Used for infrastructure cross-referencing and validation.",
+      "type": "Drainage Engineering Report / Masterplan"
+    },
+    "East_zone-darinage.pdf": {
+      "filename": "East_zone-darinage.pdf",
+      "format": "PDF",
+      "size_kb": 463.88,
+      "feature_count": 0,
+      "study_area_overlap_count": 0,
+      "geometry_type": "Unstructured Document (Text/Tables/Maps)",
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [],
+      "issues": [
+        "Requires OCR/text extraction; spatial data must be cross-referenced with KML layers."
+      ],
+      "summary": "Official drainage engineering documentation for the study zone. Used for infrastructure cross-referencing and validation.",
+      "type": "Drainage Engineering Report / Masterplan"
+    },
+    "Emergency_services.geojson": {
+      "filename": "Emergency_services.geojson",
+      "format": "GEOJSON",
+      "size_kb": 1128.06,
+      "feature_count": 2111,
+      "study_area_overlap_count": 487,
+      "geometry_type": [
+        "Point"
+      ],
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [
+        "@id",
+        "addr:district",
+        "addr:postcode",
+        "addr:state",
+        "amenity",
+        "building",
+        "emergency",
+        "healthcare",
+        "heritage",
+        "heritage:operator",
+        "heritage:website",
+        "name",
+        "name:kn",
+        "ref:nmma",
+        "source",
+        "type",
+        "@geometry"
+      ],
+      "issues": [],
+      "summary": "2111 emergency facilities across Bengaluru; 487 within Bommanahalli\u2013Marathahalli study area.",
+      "type": "Emergency Services (Hospitals & Clinics)"
+    },
+    "Flood-prone_locations_map.kml": {
+      "filename": "Flood-prone_locations_map.kml",
+      "format": "KML",
+      "size_kb": 21.85,
+      "feature_count": 70,
+      "study_area_overlap_count": 13,
+      "geometry_type": [
+        "Point"
+      ],
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [],
+      "issues": [],
+      "summary": "70 flood vulnerability locations; 13 within study area.",
+      "type": "Flood Risk / Vulnerability Locations"
+    },
+    "Low_Lying_Areas.kml": {
+      "filename": "Low_Lying_Areas.kml",
+      "format": "KML",
+      "size_kb": 39.94,
+      "feature_count": 129,
+      "study_area_overlap_count": 28,
+      "geometry_type": [
+        "Point"
+      ],
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [],
+      "issues": [],
+      "summary": "129 flood vulnerability locations; 28 within study area.",
+      "type": "Flood Risk / Vulnerability Locations"
+    },
+    "Marathalli_Drainage_Data(Use QGIS to open).pdf": {
+      "filename": "Marathalli_Drainage_Data(Use QGIS to open).pdf",
+      "format": "PDF",
+      "size_kb": 526.33,
+      "feature_count": 0,
+      "study_area_overlap_count": 0,
+      "geometry_type": "Unstructured Document (Text/Tables/Maps)",
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [],
+      "issues": [
+        "Requires OCR/text extraction; spatial data must be cross-referenced with KML layers."
+      ],
+      "summary": "Official drainage engineering documentation for the study zone. Used for infrastructure cross-referencing and validation.",
+      "type": "Drainage Engineering Report / Masterplan"
+    },
+    "Points_vulnerable_to_flooding.kml": {
+      "filename": "Points_vulnerable_to_flooding.kml",
+      "format": "KML",
+      "size_kb": 103.65,
+      "feature_count": 200,
+      "study_area_overlap_count": 42,
+      "geometry_type": [
+        "Point"
+      ],
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [],
+      "issues": [],
+      "summary": "200 flood vulnerability locations; 42 within study area.",
+      "type": "Flood Risk / Vulnerability Locations"
+    },
+    "Primary_Drains.kml": {
+      "filename": "Primary_Drains.kml",
+      "format": "KML",
+      "size_kb": 482.66,
+      "feature_count": 163,
+      "study_area_overlap_count": 28,
+      "geometry_type": [
+        "LineString"
+      ],
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [],
+      "issues": [],
+      "summary": "163 drainage features (LineString); 28 intersect the Bommanahalli\u2013Marathahalli corridor.",
+      "type": "Drainage Network Infrastructure"
+    },
+    "Road_network.geojson": {
+      "filename": "Road_network.geojson",
+      "format": "GEOJSON",
+      "size_kb": 16914.32,
+      "feature_count": 25719,
+      "study_area_overlap_count": 16320,
+      "geometry_type": [
+        "LineString",
+        "Polygon"
+      ],
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [
+        "@id",
+        "area",
+        "highway"
+      ],
+      "issues": [],
+      "summary": "25719 total road/way elements; 16320 intersect the Bommanahalli\u2013Marathahalli corridor.",
+      "type": "Road Network (OSM Centerlines)"
+    },
+    "Secendory_Drains.kml": {
+      "filename": "Secendory_Drains.kml",
+      "format": "KML",
+      "size_kb": 1232.77,
+      "feature_count": 870,
+      "study_area_overlap_count": 160,
+      "geometry_type": [
+        "LineString"
+      ],
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [],
+      "issues": [],
+      "summary": "870 drainage features (LineString); 160 intersect the Bommanahalli\u2013Marathahalli corridor.",
+      "type": "Drainage Network Infrastructure"
+    },
+    "Telemetric_Rain_Gauge.kml": {
+      "filename": "Telemetric_Rain_Gauge.kml",
+      "format": "KML",
+      "size_kb": 141.62,
+      "feature_count": 185,
+      "study_area_overlap_count": 18,
+      "geometry_type": [
+        "Point"
+      ],
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [],
+      "issues": [],
+      "summary": "185 rain gauge stations; 18 in/near study corridor.",
+      "type": "Telemetric Rain Gauge Stations"
+    },
+    "Tertiary_Drains.kml": {
+      "filename": "Tertiary_Drains.kml",
+      "format": "KML",
+      "size_kb": 24158.07,
+      "feature_count": 5806,
+      "study_area_overlap_count": 1180,
+      "geometry_type": [
+        "LineString"
+      ],
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [],
+      "issues": [],
+      "summary": "5806 drainage features (LineString); 1180 intersect the Bommanahalli\u2013Marathahalli corridor.",
+      "type": "Drainage Network Infrastructure"
+    },
+    "bangalore_urban_rainfall.csv": {
+      "filename": "bangalore_urban_rainfall.csv",
+      "format": "CSV",
+      "size_kb": 285.87,
+      "feature_count": 3337,
+      "study_area_overlap_count": 0,
+      "geometry_type": "Unknown",
+      "crs": "EPSG:4326 (WGS84)",
+      "columns": [
+        "SlNo",
+        "Station",
+        "Agency",
+        "District",
+        "Latitude",
+        "Longitude",
+        "Data Acquisition Time",
+        "Telemetry Hourly Rainfall (mm)"
+      ],
+      "issues": [],
+      "summary": "3337 hourly rainfall readings from 5 telemetry stations (0 within/bordering study corridor).",
+      "type": "Rainfall Observations",
+      "unique_stations_total": 5,
+      "study_area_stations": [],
+      "date_range": {
+        "earliest": "01-05-2025 12:00",
+        "latest": "31-10-2025 23:00"
+      }
+    }
+  }
+}
