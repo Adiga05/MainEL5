@@ -15,17 +15,17 @@ backend_dir = project_root / "backend"
 if str(backend_dir) not in sys.path:
     sys.path.insert(0, str(backend_dir))
 
-from app.database.database import SessionLocal, engine, Base
-from app.models.user import User
-from app.models.road import Road
-from app.models.drainage import Drainage
-from app.models.hospital import Hospital
-from app.models.incident import Incident
-from app.models.rainfall import RainfallStation, RainfallObservation
-from app.gis.road_processor import load_study_area_roads
-from app.gis.drainage_processor import load_and_deduplicate_drainage
-from app.gis.emergency_facility_processor import load_study_area_hospitals
-from app.core.security import hash_password
+from app.database.database import SessionLocal, engine, Base  # type: ignore[import-untyped, import-not-found]
+from app.models.user import User  # type: ignore[import-untyped, import-not-found]
+from app.models.road import Road  # type: ignore[import-untyped, import-not-found]
+from app.models.drainage import Drainage  # type: ignore[import-untyped, import-not-found]
+from app.models.hospital import Hospital  # type: ignore[import-untyped, import-not-found]
+from app.models.incident import Incident  # type: ignore[import-untyped, import-not-found]
+from app.models.rainfall import RainfallStation, RainfallObservation  # type: ignore[import-untyped, import-not-found]
+from app.gis.road_processor import load_study_area_roads  # type: ignore[import-untyped, import-not-found]
+from app.gis.drainage_processor import load_and_deduplicate_drainage  # type: ignore[import-untyped, import-not-found]
+from app.gis.emergency_facility_processor import load_study_area_hospitals  # type: ignore[import-untyped, import-not-found]
+from app.core.security import hash_password  # type: ignore[import-untyped, import-not-found]
 
 
 def populate():

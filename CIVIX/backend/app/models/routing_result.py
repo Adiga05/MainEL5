@@ -32,3 +32,4 @@ class RoutingResult(Base):
     # GeoJSON payload
     route_geojson = Column(Text, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)
+

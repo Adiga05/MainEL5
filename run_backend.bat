@@ -25,3 +25,4 @@ if not exist "data\civix.db" (
 
 :: Start FastAPI Backend
 python scripts\start_backend.py
+

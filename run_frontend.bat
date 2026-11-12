@@ -18,3 +18,4 @@ if %errorlevel% neq 0 (
 
 :: Start Vite dev server
 npm run dev
+

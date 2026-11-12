@@ -11,8 +11,8 @@ backend_dir = project_root / "backend"
 if str(backend_dir) not in sys.path:
     sys.path.insert(0, str(backend_dir))
 
-from app.api.gis import get_road_risk
-from app.ml.train_pipeline import run_training_pipeline
+from app.api.gis import get_road_risk  # type: ignore[import-untyped, import-not-found]
+from app.ml.train_pipeline import run_training_pipeline  # type: ignore[import-untyped, import-not-found]
 
 
 def main():

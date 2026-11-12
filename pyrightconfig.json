@@ -1,0 +1,26 @@
+{
+  "include": [
+    ".",
+    "CIVIX"
+  ],
+  "extraPaths": [
+    "c:/Users/prana/OneDrive/Desktop/EL5/CIVIX/backend",
+    "./CIVIX/backend",
+    "./backend"
+  ],
+  "executionEnvironments": [
+    {
+      "root": "CIVIX/scripts",
+      "extraPaths": [
+        "../backend",
+        "../../CIVIX/backend"
+      ]
+    },
+    {
+      "root": "CIVIX/backend",
+      "extraPaths": [
+        "."
+      ]
+    }
+  ]
+}

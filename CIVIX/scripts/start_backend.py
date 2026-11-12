@@ -9,8 +9,8 @@ import uvicorn
 backend_dir = Path(__file__).resolve().parents[1] / "backend"
 sys.path.insert(0, str(backend_dir))
 
-from app.database.init_db import init_db
-from app.main import app
+from app.database.init_db import init_db  # type: ignore[import-untyped, import-not-found]
+from app.main import app  # type: ignore[import-untyped, import-not-found]
 
 if __name__ == "__main__":
     print("=" * 70)

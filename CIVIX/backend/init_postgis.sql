@@ -17,3 +17,4 @@ SELECT PostGIS_Full_Version();
 -- CREATE INDEX IF NOT EXISTS idx_roads_geom ON roads USING GIST (ST_GeomFromGeoJSON(geometry_json));
 -- CREATE INDEX IF NOT EXISTS idx_drainage_geom ON drainage USING GIST (ST_GeomFromGeoJSON(geometry_json));
 -- CREATE INDEX IF NOT EXISTS idx_hospitals_geom ON hospitals USING GIST (ST_GeomFromGeoJSON(geometry_json));
+

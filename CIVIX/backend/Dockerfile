@@ -18,3 +18,4 @@ COPY . .
 EXPOSE 8000
 
 CMD ["python", "scripts/start_backend.py"]
+

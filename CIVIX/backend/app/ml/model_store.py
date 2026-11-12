@@ -94,3 +94,4 @@ def set_active_model(model_name: str) -> bool:
 
 def get_active_model_name() -> str:
     return _ACTIVE_MODEL_KEY
+
