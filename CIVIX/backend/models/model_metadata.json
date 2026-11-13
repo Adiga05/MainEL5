@@ -1,7 +1,7 @@
 {
   "version": "1.2.0-bengaluru-corridor",
   "active_model": "xgboost",
-  "training_date": "2026-11-13T05:24:27.328720+00:00",
+  "training_date": "2026-11-13T05:43:25.431719+00:00",
   "dataset": {
     "total_samples": 20000,
     "train_samples": 15000,
