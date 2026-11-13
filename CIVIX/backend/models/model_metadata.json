@@ -1,7 +1,7 @@
 {
   "version": "1.2.0-bengaluru-corridor",
   "active_model": "xgboost",
-  "training_date": "2026-11-13T05:54:54.144870+00:00",
+  "training_date": "2026-11-13T06:02:16.442157+00:00",
   "training_sources": [
     "Datasets/Road_network.geojson",
     "Datasets/bangalore_urban_rainfall.csv",

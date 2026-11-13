@@ -34,11 +34,16 @@ interface InteractiveMapProps {
   incidents?: any[];
   activeRoute?: any;
   alternativeRoute?: any;
+  thirdRoute?: any;
+  routes?: any[];
+  selectedRouteIndex?: number;
+  onSelectRoute?: (index: number) => void;
   origin?: { lat: number; lon: number; label?: string };
   destination?: { lat: number; lon: number; label?: string };
   onMapClick?: (lat: number, lon: number) => void;
   height?: string;
   showLayerToggle?: boolean;
+  routesOnly?: boolean;
 }
 
 // Click listener inside Leaflet context
@@ -77,12 +82,34 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
   incidents = [],
   activeRoute,
   alternativeRoute,
+  thirdRoute,
+  routes,
+  selectedRouteIndex,
+  onSelectRoute,
   origin,
   destination,
   onMapClick,
   height = '600px',
   showLayerToggle = true,
+  routesOnly = false,
 }) => {
+  // Aggregate routes (supports either `routes` array or individual props)
+  const routeList = routes && routes.length > 0 
+    ? routes 
+    : [activeRoute, alternativeRoute, thirdRoute].filter(Boolean);
+
+  // Compute bounding box for auto-framing
+  const allRouteCoords: [number, number][] = [];
+  if (origin?.lat && origin?.lon) allRouteCoords.push([origin.lat, origin.lon]);
+  if (destination?.lat && destination?.lon) allRouteCoords.push([destination.lat, destination.lon]);
+  routeList.forEach((r) => {
+    if (r?.geometry?.coordinates) {
+      r.geometry.coordinates.forEach((c: number[]) => {
+        allRouteCoords.push([c[1], c[0]]);
+      });
+    }
+  });
+  const routeBounds = allRouteCoords.length > 1 ? L.latLngBounds(allRouteCoords) : undefined;
   // Layer visibility toggles
   const [layers, setLayers] = useState({
     roads: true,
@@ -125,9 +152,10 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
         />
 
         <MapClickHandler onMapClick={onMapClick} />
+        {routeBounds && <FitBounds bounds={routeBounds} />}
 
         {/* 1. Drainage Layer */}
-        {layers.drainage &&
+        {!routesOnly && layers.drainage &&
           drainage.map((drain, idx) => {
             const coords = drain.geometry?.coordinates || [];
             if (!coords || coords.length < 2) return null;
@@ -157,7 +185,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
           })}
 
         {/* 2. Road Network & Risk Layer */}
-        {layers.roads &&
+        {!routesOnly && layers.roads &&
           roads.map((road, idx) => {
             const coords = road.geometry?.coordinates || [];
             if (!coords || coords.length < 2) return null;
@@ -205,7 +233,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
           })}
 
         {/* 3. Hospitals & Emergency Facilities */}
-        {layers.hospitals &&
+        {!routesOnly && layers.hospitals &&
           hospitals.map((hosp, idx) => {
             const coords = hosp.geometry?.coordinates || [];
             if (coords.length < 2) return null;
@@ -233,7 +261,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
           })}
 
         {/* 4. Flood-Prone Points */}
-        {layers.floodProne &&
+        {!routesOnly && layers.floodProne &&
           floodProne.map((pt, idx) => {
             const c = pt.geometry?.coordinates || [];
             if (c.length < 2) return null;
@@ -255,7 +283,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
           })}
 
         {/* 5. Low-Lying Areas */}
-        {layers.lowLying &&
+        {!routesOnly && layers.lowLying &&
           lowLying.map((pt, idx) => {
             const c = pt.geometry?.coordinates || [];
             if (c.length < 2) return null;
@@ -277,7 +305,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
           })}
 
         {/* 6. Rain Gauge Stations */}
-        {layers.rainGauges &&
+        {!routesOnly && layers.rainGauges &&
           rainGauges.map((rg, idx) => {
             const c = rg.geometry?.coordinates || [];
             if (c.length < 2) return null;
@@ -299,7 +327,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
           })}
 
         {/* 7. Reported Incidents */}
-        {layers.incidents &&
+        {!routesOnly && layers.incidents &&
           incidents.map((inc, idx) => {
             if (!inc.latitude || !inc.longitude) return null;
             const isVerified = inc.verification_status === 'verified';
@@ -330,46 +358,73 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
             );
           })}
 
-        {/* 8. Active Emergency Route (Recommended / Scenario Simulated) */}
-        {activeRoute?.geometry?.coordinates && (
-          <Polyline
-            positions={activeRoute.geometry.coordinates.map((c: number[]) => [c[1], c[0]])}
-            pathOptions={{ color: '#db2777', weight: 6, opacity: 0.95 }}
-          >
-            <Popup>
-              <div className="text-xs">
-                <p className="font-bold text-pink-700">{activeRoute.route_name}</p>
-                <p>Distance: {activeRoute.total_distance_km} km</p>
-                <p>Estimated Time: {activeRoute.total_time_minutes} mins</p>
-                <p className="text-slate-500 mt-1">{activeRoute.recommendation_reason}</p>
-              </div>
-            </Popup>
-          </Polyline>
-        )}
+        {/* 8. Candidate Emergency Routes (Top 2-3 Routes) */}
+        {routeList.map((route, idx) => {
+          if (!route?.geometry?.coordinates) return null;
+          const isSelected = selectedRouteIndex === idx;
+          const defaultColors = ['#2563eb', '#0891b2', '#d97706', '#7c3aed'];
+          const strokeColor = route.color || defaultColors[idx % defaultColors.length];
+          const weight = isSelected ? 8 : (idx === 0 ? 6 : 5);
+          const opacity = isSelected ? 1.0 : (selectedRouteIndex !== undefined ? 0.7 : 0.9);
+          const dashArray = idx === 0 ? undefined : (idx === 1 ? '7, 6' : '4, 6');
 
-        {/* 9. Alternative Safe Route / Baseline Route */}
-        {alternativeRoute?.geometry?.coordinates && (
-          <Polyline
-            positions={alternativeRoute.geometry.coordinates.map((c: number[]) => [c[1], c[0]])}
-            pathOptions={{ color: '#0284c7', weight: 5, opacity: 0.9, dashArray: '6, 6' }}
-          >
-            <Popup>
-              <div className="text-xs">
-                <p className="font-bold text-sky-700">{alternativeRoute.route_name}</p>
-                <p>Distance: {alternativeRoute.total_distance_km} km</p>
-                <p>Estimated Time: {alternativeRoute.total_time_minutes} mins</p>
-              </div>
-            </Popup>
-          </Polyline>
-        )}
+          return (
+            <Polyline
+              key={`route-poly-${route.id || idx}`}
+              positions={route.geometry.coordinates.map((c: number[]) => [c[1], c[0]])}
+              pathOptions={{ color: strokeColor, weight, opacity, dashArray }}
+              eventHandlers={{
+                click: () => onSelectRoute && onSelectRoute(idx),
+              }}
+            >
+              <Popup>
+                <div className="text-xs space-y-1.5 min-w-[200px]">
+                  <div className="flex items-center justify-between border-b border-slate-100 pb-1">
+                    <span className="font-bold text-slate-900">{route.route_name || `Route ${idx + 1}`}</span>
+                    <span
+                      className="px-1.5 py-0.5 rounded text-[10px] font-bold"
+                      style={{ backgroundColor: `${strokeColor}20`, color: strokeColor }}
+                    >
+                      {route.badge || `Option ${idx + 1}`}
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-3 gap-1.5 py-1 text-center bg-slate-50 rounded-lg">
+                    <div>
+                      <div className="text-[9px] text-slate-400">Distance</div>
+                      <div className="font-bold text-slate-800">{route.total_distance_km} km</div>
+                    </div>
+                    <div>
+                      <div className="text-[9px] text-slate-400">Duration</div>
+                      <div className="font-bold text-slate-800">{route.total_time_minutes} min</div>
+                    </div>
+                    <div>
+                      <div className="text-[9px] text-slate-400">Risk</div>
+                      <div className="font-bold text-emerald-600">
+                        {((route.average_risk_probability || 0) * 100).toFixed(0)}%
+                      </div>
+                    </div>
+                  </div>
+                  {route.recommendation_reason && (
+                    <p className="text-slate-600 text-[10px] leading-tight">{route.recommendation_reason}</p>
+                  )}
+                  {route.warnings?.length > 0 && (
+                    <div className="p-1.5 bg-amber-50 rounded text-amber-800 text-[10px]">
+                      ⚠️ {route.warnings[0]}
+                    </div>
+                  )}
+                </div>
+              </Popup>
+            </Polyline>
+          );
+        })}
 
-        {/* 10. Origin Starting Point Pin */}
+        {/* 9. Origin Starting Point Pin */}
         {origin && origin.lat && origin.lon && (
           <CircleMarker
             center={[origin.lat, origin.lon]}
             radius={9}
             pathOptions={{
-              fillColor: '#0284c7',
+              fillColor: '#16a34a',
               color: '#ffffff',
               weight: 3,
               fillOpacity: 1,
@@ -377,21 +432,21 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
           >
             <Popup>
               <div className="text-xs space-y-1">
-                <p className="font-bold text-sky-800">📍 Starting Point (Origin)</p>
-                <p className="text-slate-700">{origin.label || 'Specified Origin'}</p>
+                <p className="font-bold text-emerald-700">🟢 Origin (Source)</p>
+                <p className="text-slate-700 font-semibold">{origin.label || 'Specified Starting Location'}</p>
                 <p className="text-[10px] text-slate-400 font-mono">[{origin.lat.toFixed(4)}, {origin.lon.toFixed(4)}]</p>
               </div>
             </Popup>
           </CircleMarker>
         )}
 
-        {/* 11. Destination Target Pin */}
+        {/* 10. Destination Target Pin */}
         {destination && destination.lat && destination.lon && (
           <CircleMarker
             center={[destination.lat, destination.lon]}
             radius={9}
             pathOptions={{
-              fillColor: '#ec4899',
+              fillColor: '#dc2626',
               color: '#ffffff',
               weight: 3,
               fillOpacity: 1,
@@ -399,8 +454,8 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
           >
             <Popup>
               <div className="text-xs space-y-1">
-                <p className="font-bold text-pink-700">🎯 Destination</p>
-                <p className="text-slate-700">{destination.label || 'Specified Destination'}</p>
+                <p className="font-bold text-rose-700">🔴 Destination</p>
+                <p className="text-slate-700 font-semibold">{destination.label || 'Specified Destination'}</p>
                 <p className="text-[10px] text-slate-400 font-mono">[{destination.lat.toFixed(4)}, {destination.lon.toFixed(4)}]</p>
               </div>
             </Popup>
@@ -408,8 +463,8 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
         )}
       </MapContainer>
 
-      {/* Floating Layer Control Button */}
-      {showLayerToggle && (
+      {/* Floating Layer Control Button (Hidden in routes-only clean navigation mode) */}
+      {!routesOnly && showLayerToggle && (
         <div className="absolute top-4 right-4 z-10 flex flex-col items-end">
           <button
             onClick={() => setPanelOpen(!panelOpen)}
@@ -438,10 +493,51 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
         </div>
       )}
 
-      {/* Floating Legend */}
-      <div className="absolute bottom-4 left-4 z-10">
-        <RiskLegend />
-      </div>
+      {/* Floating Legend: Clean Route Legend in routesOnly mode, else Standard Risk Legend */}
+      {routesOnly ? (
+        <div className="absolute bottom-4 left-4 z-10 bg-white/95 backdrop-blur-xs p-3 rounded-xl border border-sky-100 shadow-md text-xs space-y-2 max-w-xs">
+          <div className="font-bold text-slate-800 text-[11px] uppercase tracking-wider flex items-center justify-between">
+            <span>Navigation Routes ({routeList.length})</span>
+            <span className="text-[10px] text-emerald-700 font-semibold">Clean View</span>
+          </div>
+          <div className="space-y-1 text-[11px]">
+            {routeList.map((r, i) => {
+              const defaultColors = ['#2563eb', '#0891b2', '#d97706', '#7c3aed'];
+              const c = r.color || defaultColors[i % defaultColors.length];
+              const isSel = selectedRouteIndex === i;
+              return (
+                <div
+                  key={i}
+                  onClick={() => onSelectRoute && onSelectRoute(i)}
+                  className={`flex items-center justify-between p-1 rounded cursor-pointer transition-colors ${
+                    isSel ? 'bg-sky-50 font-bold' : 'hover:bg-slate-50'
+                  }`}
+                >
+                  <div className="flex items-center space-x-2">
+                    <span className="w-3.5 h-1 rounded" style={{ backgroundColor: c }}></span>
+                    <span className="text-slate-800 truncate">{r.badge || `Route ${i + 1}`}</span>
+                  </div>
+                  <span className="text-slate-500 text-[10px]">{r.total_time_minutes}m • {r.total_distance_km}km</span>
+                </div>
+              );
+            })}
+          </div>
+          <div className="pt-1.5 border-t border-slate-100 flex items-center justify-between text-[10px] text-slate-600 font-medium">
+            <span className="flex items-center space-x-1">
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 inline-block"></span>
+              <span>Source Pin</span>
+            </span>
+            <span className="flex items-center space-x-1">
+              <span className="w-2.5 h-2.5 rounded-full bg-rose-600 inline-block"></span>
+              <span>Destination Pin</span>
+            </span>
+          </div>
+        </div>
+      ) : (
+        <div className="absolute bottom-4 left-4 z-10">
+          <RiskLegend />
+        </div>
+      )}
     </div>
   );
 };

@@ -158,21 +158,73 @@ def find_routes(
     except Exception:
         fastest = None
 
-    # 3. Alternative Route (penalty on used path)
+    # 3. Alternative Route 1 (High-Ground Bypass by penalizing recommended path)
     alternative = None
+    alt_path = None
     try:
         def alt_weight_func(u, v, d):
             cost = calculate_edge_weight(u, v, d, risk_weight_lambda=risk_weight_lambda * 1.5)
             if u in recommended_path and v in recommended_path:
-                cost *= 3.0
+                cost *= 3.5
             return cost
 
         alt_path = nx.shortest_path(G, source=start_node, target=target_node, weight=alt_weight_func)
         if alt_path != recommended_path:
             alternative = format_route_result(G, alt_path, "Alternative Route (High-Ground Bypass)")
-            alternative["recommendation_reason"] = "Alternative corridor path bypassing primary road segments."
+            alternative["recommendation_reason"] = "Alternative corridor path bypassing primary low-lying road segments."
     except Exception:
         pass
+
+    # 4. Alternative Route 2 (Secondary Bypass)
+    secondary_alt = None
+    try:
+        def alt2_weight_func(u, v, d):
+            cost = calculate_edge_weight(u, v, d, risk_weight_lambda=risk_weight_lambda)
+            if u in recommended_path:
+                cost *= 5.0
+            if alt_path and u in alt_path:
+                cost *= 3.0
+            return cost
+
+        alt2_path = nx.shortest_path(G, source=start_node, target=target_node, weight=alt2_weight_func)
+        if alt2_path != recommended_path and alt2_path != alt_path:
+            secondary_alt = format_route_result(G, alt2_path, "Secondary Bypass Route (Outer Arterials)")
+            secondary_alt["recommendation_reason"] = "Secondary peripheral route avoiding central corridor choke points."
+    except Exception:
+        pass
+
+    # Collect up to 3 distinct routes
+    candidate_routes = []
+    
+    # 1. Primary Recommended
+    recommended["id"] = "route-1"
+    recommended["badge"] = "Safest (Flood-Aware)"
+    recommended["color"] = "#2563eb" # Royal Blue
+    candidate_routes.append(recommended)
+
+    # 2. Alternative High-Ground
+    if alternative and alternative.get("geometry") != recommended.get("geometry"):
+        alternative["id"] = "route-2"
+        alternative["badge"] = "High-Ground Bypass"
+        alternative["color"] = "#0891b2" # Cyan / Teal
+        candidate_routes.append(alternative)
+
+    # 3. Fastest (if distinct from recommended and alternative)
+    if fastest and fastest.get("geometry") != recommended.get("geometry"):
+        if not alternative or fastest.get("geometry") != alternative.get("geometry"):
+            fastest["id"] = f"route-{len(candidate_routes) + 1}"
+            fastest["badge"] = "Direct Shortest Path"
+            fastest["color"] = "#d97706" # Amber
+            candidate_routes.append(fastest)
+
+    # 4. Secondary alternative if we still have < 3 routes
+    if len(candidate_routes) < 3 and secondary_alt:
+        is_dup = any(r.get("geometry") == secondary_alt.get("geometry") for r in candidate_routes)
+        if not is_dup:
+            secondary_alt["id"] = f"route-{len(candidate_routes) + 1}"
+            secondary_alt["badge"] = "Outer Bypass"
+            secondary_alt["color"] = "#7c3aed" # Purple
+            candidate_routes.append(secondary_alt)
 
     return {
         "status": "success",
@@ -181,6 +233,7 @@ def find_routes(
         "vehicle_type": vehicle_type,
         "risk_penalty_weight": risk_weight_lambda,
         "recommended_route": recommended,
-        "fastest_route": fastest,
-        "alternative_route": alternative or fastest or recommended
+        "fastest_route": fastest or recommended,
+        "alternative_route": alternative or (candidate_routes[1] if len(candidate_routes) > 1 else recommended),
+        "routes": candidate_routes[:3]
     }
