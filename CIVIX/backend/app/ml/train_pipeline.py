@@ -69,11 +69,11 @@ def load_real_dataset_telemetry() -> Tuple[np.ndarray, Dict[str, float]]:
         rain_df = pd.read_csv(rain_path)
         col = "Telemetry Hourly Rainfall (mm)"
         if col in rain_df.columns:
-            rain_vals = rain_df[col].dropna().values
+            rain_vals = np.asarray(rain_df[col].dropna().to_numpy(), dtype=float)
         else:
-            rain_vals = np.array([0.0, 5.0, 15.0, 35.0, 65.0])
+            rain_vals = np.array([0.0, 5.0, 15.0, 35.0, 65.0], dtype=float)
     else:
-        rain_vals = np.array([0.0, 5.0, 15.0, 35.0, 65.0])
+        rain_vals = np.array([0.0, 5.0, 15.0, 35.0, 65.0], dtype=float)
 
     # 2. Real BBMP Grievance records (7,584 records across 2020-2025)
     bbmp_files = sorted(glob.glob(str(d_dir / "BBMP*.csv")))
