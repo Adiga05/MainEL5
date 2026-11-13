@@ -18,6 +18,7 @@ def build_road_graph(roads: List[Dict[str, Any]], blocked_road_ids: set = None) 
         blocked_road_ids = set()
 
     G = nx.DiGraph()
+    endpoint_nodes = set()
 
     for r in roads:
         props = r.get("properties", {})
@@ -27,10 +28,33 @@ def build_road_graph(roads: List[Dict[str, Any]], blocked_road_ids: set = None) 
         if len(coords) < 2:
             continue
 
+        endpoint_nodes.add(node_key(coords[0]))
+        endpoint_nodes.add(node_key(coords[-1]))
+
         length_m = props.get("length_m", 50.0)
         travel_time_sec = props.get("travel_time_sec", 10.0)
         risk_prob = props.get("probability", 0.05)
         is_blocked = road_id in blocked_road_ids
+
+        # Determine critical rainfall blockage threshold (in mm/h) for this specific road
+        min_flood_dist = min(
+            props.get("dist_flood_prone_m", 9999.0),
+            props.get("dist_low_lying_m", 9999.0),
+            props.get("dist_vulnerable_m", 9999.0)
+        )
+        dist_prim_drain = props.get("dist_primary_drain_m", 9999.0)
+        road_type = props.get("road_type", "residential")
+
+        if min_flood_dist < 100.0:
+            flood_threshold_mm = 20.0  # Chronic flood-prone / low-lying depression blocks at 20mm/h
+        elif dist_prim_drain < 50.0:
+            flood_threshold_mm = 25.0  # Direct SWD / Raja Kaluve buffer overflows at 25mm/h
+        elif road_type in ["motorway", "trunk", "primary"]:
+            flood_threshold_mm = 40.0  # Major arterial corridors handle up to 40mm/h
+        elif road_type in ["secondary", "tertiary"]:
+            flood_threshold_mm = 30.0
+        else:
+            flood_threshold_mm = 25.0
 
         # Connect consecutive vertices along the road line
         for i in range(len(coords) - 1):
@@ -44,10 +68,11 @@ def build_road_graph(roads: List[Dict[str, Any]], blocked_road_ids: set = None) 
             edge_data = {
                 "road_id": road_id,
                 "road_name": props.get("road_name", "Road"),
-                "road_type": props.get("road_type", "residential"),
+                "road_type": road_type,
                 "length_m": seg_len,
                 "travel_time_sec": seg_time,
                 "risk_probability": risk_prob,
+                "flood_threshold_mm": flood_threshold_mm,
                 "is_blocked": is_blocked,
                 "coordinates": [coords[i], coords[i + 1]]
             }
@@ -55,23 +80,23 @@ def build_road_graph(roads: List[Dict[str, Any]], blocked_road_ids: set = None) 
             G.add_edge(u, v, **edge_data)
             G.add_edge(v, u, **edge_data)
 
-    # Bridge intersection gaps and disconnected OSM road segment endpoints (within 85 meters)
-    nodes_list = list(G.nodes)
-    if len(nodes_list) > 1:
+    # Bridge intersection gaps and disconnected OSM road segment endpoints (within 130 meters)
+    endpoints_list = list(endpoint_nodes)
+    if len(endpoints_list) > 1:
         try:
             import numpy as np
             from scipy.spatial import KDTree
             from app.gis.corridor_filter import haversine_distance
 
-            coords_arr = np.array(nodes_list)
+            coords_arr = np.array(endpoints_list)
             tree = KDTree(coords_arr)
-            # 0.0008 degrees corresponds to ~85-90 meters in Bengaluru latitude
-            pairs = tree.query_pairs(0.0008)
+            # 0.0012 degrees corresponds to ~130 meters in Bengaluru latitude
+            pairs = tree.query_pairs(0.0012)
             for i, j in pairs:
-                u = nodes_list[i]
-                v = nodes_list[j]
+                u = endpoints_list[i]
+                v = endpoints_list[j]
                 d_m = haversine_distance(u[1], u[0], v[1], v[0])
-                if d_m <= 85.0:
+                if d_m <= 130.0:
                     t_sec = max(1.0, d_m / 10.0) # ~36 km/h transition speed
                     edge_data = {
                         "road_id": -1,
@@ -79,7 +104,8 @@ def build_road_graph(roads: List[Dict[str, Any]], blocked_road_ids: set = None) 
                         "road_type": "residential",
                         "length_m": d_m,
                         "travel_time_sec": t_sec,
-                        "risk_probability": 0.02,
+                        "risk_probability": 0.01,
+                        "flood_threshold_mm": 35.0,
                         "is_blocked": False,
                         "coordinates": [list(u), list(v)]
                     }

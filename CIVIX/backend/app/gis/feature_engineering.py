@@ -44,6 +44,29 @@ def calculate_road_spatial_features(
     ll_pts = [(p["properties"]["latitude"], p["properties"]["longitude"]) for p in low_lying_points]
     vp_pts = [(p["properties"]["latitude"], p["properties"]["longitude"]) for p in vulnerable_points]
 
+    import numpy as np
+    from scipy.spatial import KDTree
+
+    M_PER_DEG = 110500.0  # Approx meters per degree at 12.9 deg N
+
+    def build_tree(pts):
+        if not pts:
+            return None
+        return KDTree(np.array(pts))
+
+    def query_min_dist_m(tree, lat, lon):
+        if tree is None:
+            return 9999.0
+        d_deg, _ = tree.query([lat, lon])
+        return float(d_deg * M_PER_DEG)
+
+    prim_tree = build_tree(prim_cents)
+    sec_tree = build_tree(sec_cents)
+    tert_tree = build_tree(tert_cents)
+    fp_tree = build_tree(fp_pts)
+    ll_tree = build_tree(ll_pts)
+    vp_tree = build_tree(vp_pts)
+
     # Build spatial grid index for drainage features
     drain_grid = {}
     for d in drainage_features:
@@ -62,15 +85,9 @@ def calculate_road_spatial_features(
         centroid = props.get("centroid", [0, 0])
         r_lon, r_lat = centroid[0], centroid[1]
 
-        # 1. Distances to nearest drains
-        def min_dist(pts):
-            if not pts:
-                return 9999.0
-            return min(haversine_distance(r_lat, r_lon, pt[0], pt[1]) for pt in pts)
-
-        dist_primary = min_dist(prim_cents)
-        dist_secondary = min_dist(sec_cents)
-        dist_tertiary = min_dist(tert_cents)
+        dist_primary = query_min_dist_m(prim_tree, r_lat, r_lon)
+        dist_secondary = query_min_dist_m(sec_tree, r_lat, r_lon)
+        dist_tertiary = query_min_dist_m(tert_tree, r_lat, r_lon)
 
         # 2. Drainage density via neighboring grid cells (checks 9 cells instead of all 1,368 drains)
         center_cell = get_grid_cell(r_lat, r_lon)
@@ -93,9 +110,9 @@ def calculate_road_spatial_features(
                             drain_len_100m += d_len
 
         # 3. Proximity to flood vulnerability locations
-        dist_flood_prone = min_dist(fp_pts)
-        dist_low_lying = min_dist(ll_pts)
-        dist_vulnerable = min_dist(vp_pts)
+        dist_flood_prone = query_min_dist_m(fp_tree, r_lat, r_lon)
+        dist_low_lying = query_min_dist_m(ll_tree, r_lat, r_lon)
+        dist_vulnerable = query_min_dist_m(vp_tree, r_lat, r_lon)
 
         # 4. Road classification vulnerability factor
         road_type = props.get("road_type", "unclassified")

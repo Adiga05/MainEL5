@@ -58,7 +58,7 @@ export const DriverRouting: React.FC = () => {
   const [destText, setDestText] = useState(PRESET_DESTINATIONS[0].name);
 
   // Live rainfall telemetry
-  const [rainfallRate, setRainfallRate] = useState<number>(15.0);
+  const [rainfallRate, setRainfallRate] = useState<number>(0.0);
 
   // Routes
   const [routeList, setRouteList] = useState<any[]>([]);
@@ -68,16 +68,18 @@ export const DriverRouting: React.FC = () => {
   // Initialize and load real-time telemetry
   useEffect(() => {
     async function init() {
+      let liveRain = 0.0;
       try {
         const weather = await rainfallService.getLiveWeather();
         if (weather) {
-          const r = weather.rainfall_1h_mm ?? weather.current_rainfall_mmh ?? 15.0;
-          setRainfallRate(r);
+          liveRain = weather.rainfall_1h_mm ?? weather.current_rainfall_mmh ?? 0.0;
+          setRainfallRate(liveRain);
         }
       } catch (err) {
-        console.warn('Could not fetch real-time weather for driver routing, using 15mm/h default');
+        console.warn('Could not fetch real-time weather for driver routing, using 0 mm/h default (clear)');
       } finally {
         setLoading(false);
+        handleCalculateRoutes(origin.lat, origin.lon, dest.lat, dest.lon, liveRain);
       }
     }
     init();
@@ -88,7 +90,8 @@ export const DriverRouting: React.FC = () => {
     sLat: number = origin.lat,
     sLon: number = origin.lon,
     dLat: number = dest.lat,
-    dLon: number = dest.lon
+    dLon: number = dest.lon,
+    rainMm: number = rainfallRate
   ) => {
     setRouting(true);
     setErrorMsg(null);
@@ -100,7 +103,7 @@ export const DriverRouting: React.FC = () => {
         dest_lat: dLat,
         risk_weight: 3.0,
         vehicle_type: 'ambulance',
-        rainfall_1h_mm: rainfallRate,
+        rainfall_1h_mm: rainMm,
       });
 
       // Extract up to 3 candidate routes
@@ -126,13 +129,6 @@ export const DriverRouting: React.FC = () => {
       setRouting(false);
     }
   };
-
-  // Run initial route once loaded
-  useEffect(() => {
-    if (!loading) {
-      handleCalculateRoutes(origin.lat, origin.lon, dest.lat, dest.lon);
-    }
-  }, [loading]);
 
   // Use Current Location via Browser GPS
   const handleUseCurrentLocation = () => {
@@ -262,9 +258,15 @@ export const DriverRouting: React.FC = () => {
         </div>
 
         <div className="flex items-center space-x-2 text-xs">
-          <span className="px-2.5 py-1 rounded-xl bg-sky-50 border border-sky-200 text-sky-700 font-semibold flex items-center space-x-1.5">
+          <span className={`px-2.5 py-1 rounded-xl border font-semibold flex items-center space-x-1.5 ${
+            rainfallRate > 25
+              ? 'bg-pink-50 border-pink-200 text-pink-700'
+              : 'bg-sky-50 border-sky-200 text-sky-800'
+          }`}>
             <Compass className="w-3.5 h-3.5" />
-            <span>Telemetry: {rainfallRate.toFixed(1)} mm/h</span>
+            <span>
+              Live Rainfall: {rainfallRate.toFixed(1)} mm/h {rainfallRate === 0 ? '(Clear / Road Passable)' : rainfallRate <= 25 ? '(Roads Passable)' : '(Flood Inundation Risk)'}
+            </span>
           </span>
           <span className="px-2.5 py-1 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 font-semibold flex items-center space-x-1">
             <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />

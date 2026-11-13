@@ -19,7 +19,7 @@ ROAD_SPEED_PROFILES = {
 }
 
 
-def load_study_area_roads(road_geojson_path: str, max_roads: int = 5000) -> Dict[str, Any]:
+def load_study_area_roads(road_geojson_path: str, max_roads: int = 25000) -> Dict[str, Any]:
     """
     Extract, clean, and filter roads to Bommanahalli–Marathahalli study area.
     Filters out area polygons, retains LineStrings, calculates segment lengths and travel times.

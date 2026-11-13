@@ -23,20 +23,32 @@ def find_nearest_node(G: nx.DiGraph, lon: float, lat: float, target_component: s
     return best_node
 
 
-def calculate_edge_weight(u, v, data, risk_weight_lambda: float = 2.0) -> float:
+def calculate_edge_weight(
+    u, v, data, risk_weight_lambda: float = 2.0, current_rainfall_mm: float = 0.0
+) -> float:
     """
     Weighted edge-cost function:
-    C(edge) = TravelTime(edge) * (1 + lambda * DisruptionProbability(edge))
-    If the road is verified blocked, edge cost is infinite.
+    If current rainfall on the road is less than its blockage threshold, use the road itself at natural speed.
+    Only when current rainfall exceeds the road's waterlogging threshold (or road is verified blocked),
+    apply disruption penalty to divert to safe alternatives.
     """
     if data.get("is_blocked", False):
         return float("inf")
 
     base_time = data.get("travel_time_sec", 1.0)
     risk_prob = data.get("risk_probability", 0.0)
+    flood_threshold_mm = data.get("flood_threshold_mm", 30.0)
 
-    # Cost penalization
-    cost = base_time * (1.0 + risk_weight_lambda * (risk_prob ** 1.5))
+    if current_rainfall_mm < flood_threshold_mm:
+        # Rainfall is less than blockage threshold: road is safe and passable!
+        # Show that road itself with baseline transit time
+        ratio = current_rainfall_mm / max(flood_threshold_mm, 1.0)
+        cost = base_time * (1.0 + 0.08 * ratio)
+    else:
+        # Current rainfall exceeds blockage capacity: road is waterlogged
+        overflow = (current_rainfall_mm - flood_threshold_mm) / 10.0
+        cost = base_time * (1.0 + risk_weight_lambda * (2.0 + overflow) * max(risk_prob, 0.4))
+
     return cost
 
 
@@ -136,7 +148,8 @@ def find_routes(
     dest_lon: float,
     dest_lat: float,
     risk_weight_lambda: float = 2.0,
-    vehicle_type: str = "ambulance"
+    vehicle_type: str = "ambulance",
+    current_rainfall_mm: float = 0.0
 ) -> Dict[str, Any]:
     """
     Compute Recommended Route (risk-weighted) and Alternative Routes.
@@ -173,18 +186,25 @@ def find_routes(
     orig_pt = (origin_lon, origin_lat)
     dest_pt = (dest_lon, dest_lat)
 
-    # 1. Recommended Route (Risk-Penalized)
+    # 1. Recommended Route (Risk-Penalized based on current rainfall vs blockage capacity)
     try:
         def weight_func(u, v, d):
-            return calculate_edge_weight(u, v, d, risk_weight_lambda=risk_weight_lambda)
+            return calculate_edge_weight(
+                u, v, d, risk_weight_lambda=risk_weight_lambda, current_rainfall_mm=current_rainfall_mm
+            )
 
         recommended_path = nx.shortest_path(G, source=start_node, target=target_node, weight=weight_func)
         recommended = format_route_result(
-            G, recommended_path, "Recommended Route (Flood-Aware)", origin_point=orig_pt, dest_point=dest_pt
+            G, recommended_path, "Safest Route (Live Rainfall Aware)", origin_point=orig_pt, dest_point=dest_pt
         )
-        recommended["recommendation_reason"] = (
-            "Optimized to minimize exposure to waterlogged roads, low-lying bottlenecks, and overflowing stormwater drains while maintaining rapid emergency transit."
-        )
+        if current_rainfall_mm <= 5.0:
+            recommended["recommendation_reason"] = (
+                f"Rainfall is currently {current_rainfall_mm} mm/h (below road blockage thresholds). Taking direct arterial corridor without detour."
+            )
+        else:
+            recommended["recommendation_reason"] = (
+                f"Optimized for {current_rainfall_mm} mm/h live rainfall. Avoids segments exceeding hydrologic drainage capacity while prioritizing open arterials."
+            )
     except nx.NetworkXNoPath:
         return {"error": "No passable route available between the selected locations due to verified closures or network disconnections."}
     except Exception as e:
@@ -193,13 +213,13 @@ def find_routes(
     # 2. Fastest Route (Unweighted by flood risk, lambda = 0)
     try:
         def time_func(u, v, d):
-            return calculate_edge_weight(u, v, d, risk_weight_lambda=0.0)
+            return calculate_edge_weight(u, v, d, risk_weight_lambda=0.0, current_rainfall_mm=0.0)
 
         fastest_path = nx.shortest_path(G, source=start_node, target=target_node, weight=time_func)
         fastest = format_route_result(
-            G, fastest_path, "Fastest Route (Standard Shortest Path)", origin_point=orig_pt, dest_point=dest_pt, apply_risk_delay=False
+            G, fastest_path, "Direct Baseline Route", origin_point=orig_pt, dest_point=dest_pt, apply_risk_delay=False
         )
-        fastest["recommendation_reason"] = "Standard shortest travel time path ignoring pluvial flood exposure."
+        fastest["recommendation_reason"] = "Direct nominal shortest travel time path."
     except Exception:
         fastest = None
 
@@ -208,7 +228,9 @@ def find_routes(
     alt_path = None
     try:
         def alt_weight_func(u, v, d):
-            cost = calculate_edge_weight(u, v, d, risk_weight_lambda=risk_weight_lambda * 1.5)
+            cost = calculate_edge_weight(
+                u, v, d, risk_weight_lambda=risk_weight_lambda * 1.5, current_rainfall_mm=current_rainfall_mm
+            )
             if u in recommended_path and v in recommended_path:
                 cost *= 3.5
             return cost
@@ -226,7 +248,9 @@ def find_routes(
     secondary_alt = None
     try:
         def alt2_weight_func(u, v, d):
-            cost = calculate_edge_weight(u, v, d, risk_weight_lambda=risk_weight_lambda)
+            cost = calculate_edge_weight(
+                u, v, d, risk_weight_lambda=risk_weight_lambda, current_rainfall_mm=current_rainfall_mm
+            )
             if u in recommended_path:
                 cost *= 5.0
             if alt_path and u in alt_path:

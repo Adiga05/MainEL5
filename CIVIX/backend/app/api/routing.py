@@ -33,9 +33,13 @@ class RouteRequest(BaseModel):
 
 
 def _get_active_graph(db: Session, rainfall_mm: float = 0.0):
-    # Fetch road segments with current risk evaluations
-    roads_fc = get_road_risk(rainfall_1h_mm=rainfall_mm)
-    roads = roads_fc.get("features", [])
+    global _CACHED_GRAPH
+    if _CACHED_GRAPH is None:
+        logger.info("Building initial base road graph for corridor routing...")
+        roads_fc = get_road_risk(rainfall_1h_mm=0.0)
+        roads = roads_fc.get("features", [])
+        _CACHED_GRAPH = build_road_graph(roads, blocked_road_ids=set())
+        logger.info(f"Corridor road graph ready: {len(_CACHED_GRAPH.nodes)} nodes, {len(_CACHED_GRAPH.edges)} edges.")
 
     # Fetch verified closures
     blocked_incidents = (
@@ -46,8 +50,15 @@ def _get_active_graph(db: Session, rainfall_mm: float = 0.0):
     )
     blocked_ids = {inc.road_id for inc in blocked_incidents if inc.road_id is not None}
 
-    G = build_road_graph(roads, blocked_road_ids=blocked_ids)
-    return G
+    if blocked_ids:
+        # Clone graph to mark closures without mutating shared cache
+        G = _CACHED_GRAPH.copy()
+        for u, v, d in G.edges(data=True):
+            if d.get("road_id") in blocked_ids:
+                d["is_blocked"] = True
+        return G
+
+    return _CACHED_GRAPH
 
 
 @router.post("/recommend")
@@ -64,7 +75,8 @@ def calculate_recommended_route(req: RouteRequest, db: Session = Depends(get_db)
         dest_lon=req.dest_lon,
         dest_lat=req.dest_lat,
         risk_weight_lambda=req.risk_weight,
-        vehicle_type=req.vehicle_type
+        vehicle_type=req.vehicle_type,
+        current_rainfall_mm=req.rainfall_1h_mm
     )
     if "error" in res:
         raise HTTPException(status_code=400, detail=res["error"])
