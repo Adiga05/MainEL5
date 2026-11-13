@@ -40,14 +40,31 @@ def calculate_edge_weight(u, v, data, risk_weight_lambda: float = 2.0) -> float:
     return cost
 
 
-def format_route_result(G: nx.DiGraph, path_nodes: List[Tuple[float, float]], route_name: str, apply_risk_delay: bool = True) -> Dict[str, Any]:
-    """Extract path coordinates, total length, travel time, and risk exposure."""
-    coords = []
+def format_route_result(
+    G: nx.DiGraph,
+    path_nodes: List[Tuple[float, float]],
+    route_name: str,
+    origin_point: Optional[Tuple[float, float]] = None,
+    dest_point: Optional[Tuple[float, float]] = None,
+    apply_risk_delay: bool = True
+) -> Dict[str, Any]:
+    """Extract path coordinates, total length, travel time, and risk exposure, starting exactly at origin_point and ending at dest_point."""
+    coords: List[List[float]] = []
     total_length_m = 0.0
     total_time_sec = 0.0
     high_risk_count = 0
     risk_probs = []
     warnings = []
+
+    # 1. Exact Source Access Link (from green source pin to first graph road node)
+    if origin_point and len(origin_point) >= 2 and path_nodes:
+        orig_lon, orig_lat = origin_point[0], origin_point[1]
+        first_node = path_nodes[0]
+        orig_dist_m = haversine_distance(orig_lat, orig_lon, first_node[1], first_node[0])
+        coords.append([round(orig_lon, 5), round(orig_lat, 5)])
+        if orig_dist_m > 1.0:
+            total_length_m += orig_dist_m
+            total_time_sec += max(1.0, orig_dist_m / 8.33)  # ~30 km/h access road speed
 
     for i in range(len(path_nodes) - 1):
         u = path_nodes[i]
@@ -73,14 +90,28 @@ def format_route_result(G: nx.DiGraph, path_nodes: List[Tuple[float, float]], ro
         seg_coords = edge_data.get("coordinates")
         if seg_coords:
             if not coords:
-                coords.extend(seg_coords)
+                coords.extend([[round(c[0], 5), round(c[1], 5)] for c in seg_coords])
             else:
-                coords.append(seg_coords[1])
+                last_pt = coords[-1]
+                for c in seg_coords:
+                    if abs(c[0] - last_pt[0]) > 1e-5 or abs(c[1] - last_pt[1]) > 1e-5:
+                        coords.append([round(c[0], 5), round(c[1], 5)])
+                        last_pt = coords[-1]
         else:
-            coords.append([u[0], u[1]])
+            coords.append([round(u[0], 5), round(u[1], 5)])
 
-    if path_nodes and not coords:
-        coords = [[n[0], n[1]] for n in path_nodes]
+    if path_nodes and len(coords) <= 1:
+        coords = [[round(n[0], 5), round(n[1], 5)] for n in path_nodes]
+
+    # 2. Exact Destination Access Link (from last graph road node to red destination pin)
+    if dest_point and len(dest_point) >= 2 and path_nodes:
+        dest_lon, dest_lat = dest_point[0], dest_point[1]
+        last_node = path_nodes[-1]
+        dest_dist_m = haversine_distance(last_node[1], last_node[0], dest_lat, dest_lon)
+        if dest_dist_m > 1.0:
+            coords.append([round(dest_lon, 5), round(dest_lat, 5)])
+            total_length_m += dest_dist_m
+            total_time_sec += max(1.0, dest_dist_m / 8.33)
 
     avg_risk = sum(risk_probs) / max(len(risk_probs), 1)
 
@@ -114,12 +145,19 @@ def find_routes(
     if not G.nodes:
         return {"error": "Road graph is empty. Please verify road network dataset."}
 
-    # Find the largest weakly connected component (the main contiguous road network)
-    components = sorted(nx.weakly_connected_components(G), key=len, reverse=True)
-    main_component = components[0] if components else set(G.nodes)
+    # Check direct connectivity between closest road nodes
+    s_any = find_nearest_node(G, origin_lon, origin_lat)
+    t_any = find_nearest_node(G, dest_lon, dest_lat)
 
-    start_node = find_nearest_node(G, origin_lon, origin_lat, target_component=main_component)
-    target_node = find_nearest_node(G, dest_lon, dest_lat, target_component=main_component)
+    if s_any and t_any and nx.has_path(G, s_any, t_any):
+        start_node = s_any
+        target_node = t_any
+    else:
+        # Snap to largest connected corridor component
+        components = sorted(nx.weakly_connected_components(G), key=len, reverse=True)
+        main_component = components[0] if components else set(G.nodes)
+        start_node = find_nearest_node(G, origin_lon, origin_lat, target_component=main_component)
+        target_node = find_nearest_node(G, dest_lon, dest_lat, target_component=main_component)
 
     if not start_node or not target_node:
         return {"error": "Origin or destination could not be connected to the corridor road network."}
@@ -132,13 +170,18 @@ def find_routes(
         else:
             return {"error": "Origin and destination are within the same road node."}
 
+    orig_pt = (origin_lon, origin_lat)
+    dest_pt = (dest_lon, dest_lat)
+
     # 1. Recommended Route (Risk-Penalized)
     try:
         def weight_func(u, v, d):
             return calculate_edge_weight(u, v, d, risk_weight_lambda=risk_weight_lambda)
 
         recommended_path = nx.shortest_path(G, source=start_node, target=target_node, weight=weight_func)
-        recommended = format_route_result(G, recommended_path, "Recommended Route (Flood-Aware)")
+        recommended = format_route_result(
+            G, recommended_path, "Recommended Route (Flood-Aware)", origin_point=orig_pt, dest_point=dest_pt
+        )
         recommended["recommendation_reason"] = (
             "Optimized to minimize exposure to waterlogged roads, low-lying bottlenecks, and overflowing stormwater drains while maintaining rapid emergency transit."
         )
@@ -153,7 +196,9 @@ def find_routes(
             return calculate_edge_weight(u, v, d, risk_weight_lambda=0.0)
 
         fastest_path = nx.shortest_path(G, source=start_node, target=target_node, weight=time_func)
-        fastest = format_route_result(G, fastest_path, "Fastest Route (Standard Shortest Path)", apply_risk_delay=False)
+        fastest = format_route_result(
+            G, fastest_path, "Fastest Route (Standard Shortest Path)", origin_point=orig_pt, dest_point=dest_pt, apply_risk_delay=False
+        )
         fastest["recommendation_reason"] = "Standard shortest travel time path ignoring pluvial flood exposure."
     except Exception:
         fastest = None
@@ -170,7 +215,9 @@ def find_routes(
 
         alt_path = nx.shortest_path(G, source=start_node, target=target_node, weight=alt_weight_func)
         if alt_path != recommended_path:
-            alternative = format_route_result(G, alt_path, "Alternative Route (High-Ground Bypass)")
+            alternative = format_route_result(
+                G, alt_path, "Alternative Route (High-Ground Bypass)", origin_point=orig_pt, dest_point=dest_pt
+            )
             alternative["recommendation_reason"] = "Alternative corridor path bypassing primary low-lying road segments."
     except Exception:
         pass
@@ -188,7 +235,9 @@ def find_routes(
 
         alt2_path = nx.shortest_path(G, source=start_node, target=target_node, weight=alt2_weight_func)
         if alt2_path != recommended_path and alt2_path != alt_path:
-            secondary_alt = format_route_result(G, alt2_path, "Secondary Bypass Route (Outer Arterials)")
+            secondary_alt = format_route_result(
+                G, alt2_path, "Secondary Bypass Route (Outer Arterials)", origin_point=orig_pt, dest_point=dest_pt
+            )
             secondary_alt["recommendation_reason"] = "Secondary peripheral route avoiding central corridor choke points."
     except Exception:
         pass

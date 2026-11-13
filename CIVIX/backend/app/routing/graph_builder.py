@@ -55,5 +55,40 @@ def build_road_graph(roads: List[Dict[str, Any]], blocked_road_ids: set = None) 
             G.add_edge(u, v, **edge_data)
             G.add_edge(v, u, **edge_data)
 
+    # Bridge intersection gaps and disconnected OSM road segment endpoints (within 85 meters)
+    nodes_list = list(G.nodes)
+    if len(nodes_list) > 1:
+        try:
+            import numpy as np
+            from scipy.spatial import KDTree
+            from app.gis.corridor_filter import haversine_distance
+
+            coords_arr = np.array(nodes_list)
+            tree = KDTree(coords_arr)
+            # 0.0008 degrees corresponds to ~85-90 meters in Bengaluru latitude
+            pairs = tree.query_pairs(0.0008)
+            for i, j in pairs:
+                u = nodes_list[i]
+                v = nodes_list[j]
+                d_m = haversine_distance(u[1], u[0], v[1], v[0])
+                if d_m <= 85.0:
+                    t_sec = max(1.0, d_m / 10.0) # ~36 km/h transition speed
+                    edge_data = {
+                        "road_id": -1,
+                        "road_name": "Corridor Connector",
+                        "road_type": "residential",
+                        "length_m": d_m,
+                        "travel_time_sec": t_sec,
+                        "risk_probability": 0.02,
+                        "is_blocked": False,
+                        "coordinates": [list(u), list(v)]
+                    }
+                    if not G.has_edge(u, v):
+                        G.add_edge(u, v, **edge_data)
+                    if not G.has_edge(v, u):
+                        G.add_edge(v, u, **edge_data)
+        except Exception:
+            pass
+
     return G
 
