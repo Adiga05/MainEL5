@@ -104,7 +104,8 @@ def compute_road_risk(
         "road_id": road_features.get("road_id"),
         "probability": probability,
         "risk_category": category,
-        "model_version": "UFR-ML-v1.0 (Spatial-Telemetry)" if not is_simulated else "UFR-SIM-v1.0",
+        "model_version": "UFR-HEURISTIC-v1 (unvalidated screening)" if not is_simulated else "UFR-SIM-HEURISTIC-v1",
+        "risk_estimate_kind": "heuristic_screening_score_not_validated_probability",
         "is_simulated": is_simulated,
         "explanation": explanation,
         "factors": {

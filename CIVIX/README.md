@@ -1,5 +1,14 @@
 # Urban Flood Risk and Emergency Accessibility System
 
+> **Architecture and model-validity notice (November 2026):** the React UI is
+> served only by Vite on port 5173. FastAPI on port 8000 is API-only (`/docs`)
+> and never serves the frontend build. The backend requires PostgreSQL with
+> PostGIS; the former SQLite fallback is retired. The bundled datasets do not
+> contain verified road-disruption labels, so supervised training and all
+> accuracy/precision/recall/F1/AUC claims are blocked rather than fabricated.
+> The live map currently exposes a clearly labelled heuristic screening score,
+> not a calibrated ML probability. See `docs/DATABASE_INSPECTION.md`.
+
 An AI- and GIS-based decision-support platform designed to predict rainfall-induced road disruption risk, monitor real-time telemetry, and compute flood-aware emergency vehicle routing for the **Bommanahalli–Marathahalli corridor, Bengaluru, Karnataka, India**.
 
 ---

@@ -44,6 +44,7 @@ def populate():
         admin = User(username="admin", password_hash=hash_password("admin123"), role="admin")
         db.add(admin)
     else:
+        # pyrefly: ignore[read-only]
         admin.password_hash = hash_password("admin123")
 
     driver = db.query(User).filter(User.username == "driver1").first()

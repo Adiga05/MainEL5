@@ -8,8 +8,7 @@ import os
 import logging
 from pathlib import Path
 from sqlalchemy import create_engine, event, text
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import declarative_base, sessionmaker
 
 from app.core.config import get_settings
 
@@ -26,15 +25,20 @@ active_db_url = settings.DATABASE_URL
 engine = None
 is_postgres = False
 has_postgis = False
+db_error = None
 
 # Normalize SQLite path if relative
 if active_db_url.startswith("sqlite:///./") or active_db_url == "sqlite:///data/civix.db":
     active_db_url = sqlite_fallback_url
 
 if active_db_url.startswith("postgresql"):
+    # Ensure driver format
+    pg_url = active_db_url
+    if pg_url.startswith("postgresql://"):
+        pg_url = pg_url.replace("postgresql://", "postgresql+psycopg2://", 1)
     try:
         candidate_engine = create_engine(
-            active_db_url,
+            pg_url,
             pool_pre_ping=True,
             pool_size=10,
             max_overflow=20,
@@ -49,10 +53,11 @@ if active_db_url.startswith("postgresql"):
                     has_postgis = True
                     logger.info(f"Connected to PostgreSQL with PostGIS: {result[0]}")
             except Exception:
-                logger.info("Connected to PostgreSQL (PostGIS extension not active or standard schema).")
+                logger.info("Connected to PostgreSQL (standard schema).")
         engine = candidate_engine
         is_postgres = True
     except Exception as e:
+        db_error = str(e)
         logger.warning(
             f"PostgreSQL connection to {active_db_url} failed ({e}). "
             f"Falling back to local SQLite database at {sqlite_fallback_url}."
@@ -91,5 +96,6 @@ def get_db_info():
         "is_postgres": is_postgres or (dialect == "postgresql"),
         "has_postgis": has_postgis,
         "connection_url": engine.url.render_as_string(hide_password=True),
-        "status": "connected"
+        "status": "connected",
+        "error": db_error
     }

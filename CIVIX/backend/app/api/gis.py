@@ -218,7 +218,9 @@ def get_road_risk(
                 "rainfall_3h_mm": rainfall_3h_mm,
                 "rainfall_intensity_mmh": rainfall_intensity_mmh,
                 "is_simulated": is_simulated
-            }
+            },
+            "risk_method": "transparent heuristic screening, not a trained or calibrated probability model",
+            "model_evaluation_status": "BLOCKED_NO_VERIFIED_LABELS"
         },
         "features": risk_features
     }

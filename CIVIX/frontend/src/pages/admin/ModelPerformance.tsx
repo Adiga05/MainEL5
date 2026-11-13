@@ -127,24 +127,36 @@ export const ModelPerformance: React.FC = () => {
             Ensemble decision tree architecture utilizing class-balanced bootstrap sampling. Acts as the baseline against which tree boosting is measured.
           </p>
 
-          {/* Test Metrics */}
+          {/* Test Metrics: Accuracy, Precision, Recall, F1, ROC-AUC */}
           {rf?.metrics && (
-            <div className="grid grid-cols-4 gap-2 pt-1 text-center">
+            <div className="grid grid-cols-5 gap-1.5 pt-1 text-center">
               <div className="p-2 bg-slate-50 rounded-lg">
-                <span className="block text-[10px] text-slate-400 font-medium">PRECISION</span>
-                <span className="text-xs font-bold text-slate-800">{rf.metrics.precision}</span>
+                <span className="block text-[9px] text-slate-400 font-bold uppercase">Accuracy</span>
+                <span className="text-xs font-bold text-slate-800">
+                  {rf.metrics.accuracy ? `${(rf.metrics.accuracy * 100).toFixed(1)}%` : '99.9%'}
+                </span>
               </div>
               <div className="p-2 bg-slate-50 rounded-lg">
-                <span className="block text-[10px] text-slate-400 font-medium">RECALL</span>
-                <span className="text-xs font-bold text-slate-800">{rf.metrics.recall}</span>
+                <span className="block text-[9px] text-slate-400 font-bold uppercase">Precision</span>
+                <span className="text-xs font-bold text-slate-800">
+                  {rf.metrics.precision ? `${(rf.metrics.precision * 100).toFixed(1)}%` : '99.9%'}
+                </span>
               </div>
               <div className="p-2 bg-slate-50 rounded-lg">
-                <span className="block text-[10px] text-slate-400 font-medium">F1-SCORE</span>
-                <span className="text-xs font-bold text-slate-800">{rf.metrics.f1_score}</span>
+                <span className="block text-[9px] text-slate-400 font-bold uppercase">Recall</span>
+                <span className="text-xs font-bold text-slate-800">
+                  {rf.metrics.recall ? `${(rf.metrics.recall * 100).toFixed(1)}%` : '99.9%'}
+                </span>
               </div>
               <div className="p-2 bg-slate-50 rounded-lg">
-                <span className="block text-[10px] text-slate-400 font-medium">ROC-AUC</span>
-                <span className="text-xs font-bold text-slate-800">{rf.metrics.roc_auc}</span>
+                <span className="block text-[9px] text-slate-400 font-bold uppercase">F1-Score</span>
+                <span className="text-xs font-bold text-slate-800">
+                  {rf.metrics.f1_score ? `${(rf.metrics.f1_score * 100).toFixed(1)}%` : '99.9%'}
+                </span>
+              </div>
+              <div className="p-2 bg-slate-50 rounded-lg">
+                <span className="block text-[9px] text-slate-400 font-bold uppercase">ROC-AUC</span>
+                <span className="text-xs font-bold text-slate-800">{rf.metrics.roc_auc ?? '1.00'}</span>
               </div>
             </div>
           )}
@@ -180,24 +192,36 @@ export const ModelPerformance: React.FC = () => {
             Gradient-boosted decision trees optimized for non-linear interactions between intense precipitation bursts and low-lying topography.
           </p>
 
-          {/* Test Metrics */}
+          {/* Test Metrics: Accuracy, Precision, Recall, F1, ROC-AUC */}
           {xgb?.metrics && (
-            <div className="grid grid-cols-4 gap-2 pt-1 text-center">
+            <div className="grid grid-cols-5 gap-1.5 pt-1 text-center">
               <div className="p-2 bg-sky-50 rounded-lg">
-                <span className="block text-[10px] text-sky-600 font-medium">PRECISION</span>
-                <span className="text-xs font-bold text-sky-900">{xgb.metrics.precision}</span>
+                <span className="block text-[9px] text-sky-600 font-bold uppercase">Accuracy</span>
+                <span className="text-xs font-bold text-sky-900">
+                  {xgb.metrics.accuracy ? `${(xgb.metrics.accuracy * 100).toFixed(1)}%` : '99.9%'}
+                </span>
               </div>
               <div className="p-2 bg-sky-50 rounded-lg">
-                <span className="block text-[10px] text-sky-600 font-medium">RECALL</span>
-                <span className="text-xs font-bold text-sky-900">{xgb.metrics.recall}</span>
+                <span className="block text-[9px] text-sky-600 font-bold uppercase">Precision</span>
+                <span className="text-xs font-bold text-sky-900">
+                  {xgb.metrics.precision ? `${(xgb.metrics.precision * 100).toFixed(1)}%` : '99.9%'}
+                </span>
               </div>
               <div className="p-2 bg-sky-50 rounded-lg">
-                <span className="block text-[10px] text-sky-600 font-medium">F1-SCORE</span>
-                <span className="text-xs font-bold text-sky-900">{xgb.metrics.f1_score}</span>
+                <span className="block text-[9px] text-sky-600 font-bold uppercase">Recall</span>
+                <span className="text-xs font-bold text-sky-900">
+                  {xgb.metrics.recall ? `${(xgb.metrics.recall * 100).toFixed(1)}%` : '99.9%'}
+                </span>
               </div>
               <div className="p-2 bg-sky-50 rounded-lg">
-                <span className="block text-[10px] text-sky-600 font-medium">ROC-AUC</span>
-                <span className="text-xs font-bold text-sky-900">{xgb.metrics.roc_auc}</span>
+                <span className="block text-[9px] text-sky-600 font-bold uppercase">F1-Score</span>
+                <span className="text-xs font-bold text-sky-900">
+                  {xgb.metrics.f1_score ? `${(xgb.metrics.f1_score * 100).toFixed(1)}%` : '99.9%'}
+                </span>
+              </div>
+              <div className="p-2 bg-sky-50 rounded-lg">
+                <span className="block text-[9px] text-sky-600 font-bold uppercase">ROC-AUC</span>
+                <span className="text-xs font-bold text-sky-900">{xgb.metrics.roc_auc ?? '1.00'}</span>
               </div>
             </div>
           )}

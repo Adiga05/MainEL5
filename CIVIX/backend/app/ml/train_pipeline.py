@@ -12,12 +12,13 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import (
-    precision_score, recall_score, f1_score,
+    accuracy_score, precision_score, recall_score, f1_score,
     roc_auc_score, confusion_matrix
 )
 
 from app.ml.feature_extractor import FEATURE_NAMES, extract_road_features
 from app.ml.model_store import get_models_dir, save_metadata
+from app.ml.label_audit import audit_ground_truth, InsufficientGroundTruthError
 
 logger = logging.getLogger(__name__)
 
@@ -66,11 +67,16 @@ def generate_corridor_training_dataset(roads_fc: Dict[str, Any]) -> Tuple[np.nda
     return np.array(X_rows, dtype=np.float32), np.array(y_labels, dtype=np.int32)
 
 
-def run_training_pipeline(roads_fc: Dict[str, Any]) -> Dict[str, Any]:
+def run_training_pipeline(roads_fc: Dict[str, Any], require_verified_labels: bool = False) -> Dict[str, Any]:
     """
     Train both XGBoost/GradientBoosting (Primary Candidate) and RandomForest (Benchmark).
-    Calculates test metrics, feature importances, saves models and registers metadata.
+    Calculates test metrics (Accuracy, Precision, Recall, F1-Score, ROC-AUC),
+    feature importances, saves models and registers metadata.
     """
+    audit = audit_ground_truth()
+    if require_verified_labels and audit.get("verified_label_count", 0) == 0:
+        raise InsufficientGroundTruthError(audit["reason"])
+
     models_dir = get_models_dir()
     X, y = generate_corridor_training_dataset(roads_fc)
     
@@ -100,6 +106,12 @@ def run_training_pipeline(roads_fc: Dict[str, Any]) -> Dict[str, Any]:
     rf_prob_pos = rf_probs[:, 1] if rf_probs.shape[1] > 1 else rf_probs[:, 0]
     joblib.dump(rf, models_dir / "random_forest_benchmark.joblib")
 
+    rf_acc = round(float(accuracy_score(y_test, rf_preds)), 4)
+    rf_prec = round(float(precision_score(y_test, rf_preds, zero_division=0)), 4)
+    rf_rec = round(float(recall_score(y_test, rf_preds, zero_division=0)), 4)
+    rf_f1 = round(float(f1_score(y_test, rf_preds, zero_division=0)), 4)
+    rf_auc = round(float(roc_auc_score(y_test, rf_prob_pos)), 4)
+
     # 2. Primary Candidate: Gradient Boosting / XGBoost
     try:
         from xgboost import XGBClassifier
@@ -127,6 +139,12 @@ def run_training_pipeline(roads_fc: Dict[str, Any]) -> Dict[str, Any]:
     gb_prob_pos = gb_probs[:, 1] if gb_probs.shape[1] > 1 else gb_probs[:, 0]
     joblib.dump(gb, models_dir / "xgboost_candidate.joblib")
 
+    gb_acc = round(float(accuracy_score(y_test, gb_preds)), 4)
+    gb_prec = round(float(precision_score(y_test, gb_preds, zero_division=0)), 4)
+    gb_rec = round(float(recall_score(y_test, gb_preds, zero_division=0)), 4)
+    gb_f1 = round(float(f1_score(y_test, gb_preds, zero_division=0)), 4)
+    gb_auc = round(float(roc_auc_score(y_test, gb_prob_pos)), 4)
+
     # Compute Feature Importances
     feat_imp = []
     for name, imp in zip(FEATURE_NAMES, gb.feature_importances_):
@@ -153,10 +171,11 @@ def run_training_pipeline(roads_fc: Dict[str, Any]) -> Dict[str, Any]:
                 "algorithm": "RandomForestClassifier",
                 "hyperparameters": {"n_estimators": 100, "max_depth": 8, "class_weight": "balanced"},
                 "metrics": {
-                    "precision": round(float(precision_score(y_test, rf_preds, zero_division=0)), 3),
-                    "recall": round(float(recall_score(y_test, rf_preds, zero_division=0)), 3),
-                    "f1_score": round(float(f1_score(y_test, rf_preds, zero_division=0)), 3),
-                    "roc_auc": round(float(roc_auc_score(y_test, rf_prob_pos)), 3),
+                    "accuracy": rf_acc,
+                    "precision": rf_prec,
+                    "recall": rf_rec,
+                    "f1_score": rf_f1,
+                    "roc_auc": rf_auc,
                     "confusion_matrix": confusion_matrix(y_test, rf_preds).tolist()
                 }
             },
@@ -165,10 +184,11 @@ def run_training_pipeline(roads_fc: Dict[str, Any]) -> Dict[str, Any]:
                 "algorithm": gb.__class__.__name__,
                 "hyperparameters": {"n_estimators": 100, "learning_rate": 0.1, "max_depth": 5},
                 "metrics": {
-                    "precision": round(float(precision_score(y_test, gb_preds, zero_division=0)), 3),
-                    "recall": round(float(recall_score(y_test, gb_preds, zero_division=0)), 3),
-                    "f1_score": round(float(f1_score(y_test, gb_preds, zero_division=0)), 3),
-                    "roc_auc": round(float(roc_auc_score(y_test, gb_prob_pos)), 3),
+                    "accuracy": gb_acc,
+                    "precision": gb_prec,
+                    "recall": gb_rec,
+                    "f1_score": gb_f1,
+                    "roc_auc": gb_auc,
                     "confusion_matrix": confusion_matrix(y_test, gb_preds).tolist()
                 }
             }

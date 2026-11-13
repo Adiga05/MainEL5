@@ -9,3 +9,4 @@ extraPaths = ["../backend"]
 [[tool.pyright.executionEnvironments]]
 root = "backend"
 extraPaths = ["."]
+

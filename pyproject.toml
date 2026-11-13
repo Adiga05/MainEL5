@@ -12,3 +12,4 @@ extraPaths = ["../backend", "../../CIVIX/backend"]
 [[tool.pyright.executionEnvironments]]
 root = "CIVIX/backend"
 extraPaths = ["."]
+

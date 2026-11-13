@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { authService } from '../services/authService';
 import api from '../services/api';
-import { ShieldAlert, User, LogOut, Navigation, BarChart3, MapPin } from 'lucide-react';
+import { ShieldAlert, User, LogOut, Navigation, BarChart3 } from 'lucide-react';
 
 interface HeaderProps {
   currentRole: 'admin' | 'driver';
@@ -48,14 +48,6 @@ export const Header: React.FC<HeaderProps> = ({ currentRole, onSwitchRole }) => 
           <h1 className="text-sm sm:text-base font-bold text-slate-900 leading-tight">
             Urban Flood Risk and Emergency Accessibility System
           </h1>
-          <div className="flex items-center space-x-2 text-xs">
-            <span className="flex items-center text-sky-700 font-medium bg-sky-50 px-2 py-0.5 rounded-md border border-sky-200/60">
-              <MapPin className="w-3 h-3 mr-1 text-sky-600 inline" />
-              Bommanahalli–Marathahalli Corridor, Bengaluru
-            </span>
-            <span className="hidden md:inline text-slate-300">•</span>
-            <span className="hidden md:inline text-slate-400">Decision-Support Platform</span>
-          </div>
         </div>
       </div>
 

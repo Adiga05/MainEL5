@@ -1,7 +1,7 @@
 {
   "version": "1.2.0-bengaluru-corridor",
   "active_model": "xgboost",
-  "training_date": "2026-11-12T18:09:39.615355+00:00",
+  "training_date": "2026-11-13T05:24:27.328720+00:00",
   "dataset": {
     "total_samples": 20000,
     "train_samples": 15000,
@@ -19,9 +19,10 @@
         "class_weight": "balanced"
       },
       "metrics": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1_score": 1.0,
+        "accuracy": 0.9996,
+        "precision": 0.9996,
+        "recall": 0.9996,
+        "f1_score": 0.9996,
         "roc_auc": 1.0,
         "confusion_matrix": [
           [
@@ -36,17 +37,18 @@
       }
     },
     "xgboost": {
-      "name": "Gradient Boosting (XGBoost compatible)",
-      "algorithm": "GradientBoostingClassifier",
+      "name": "XGBoost Classifier",
+      "algorithm": "XGBClassifier",
       "hyperparameters": {
         "n_estimators": 100,
         "learning_rate": 0.1,
         "max_depth": 5
       },
       "metrics": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1_score": 1.0,
+        "accuracy": 0.9996,
+        "precision": 0.9996,
+        "recall": 0.9996,
+        "f1_score": 0.9996,
         "roc_auc": 1.0,
         "confusion_matrix": [
           [
@@ -54,8 +56,8 @@
             1
           ],
           [
-            0,
-            2412
+            1,
+            2411
           ]
         ]
       }
@@ -64,31 +66,31 @@
   "feature_importances": [
     {
       "feature": "effective_rain_mm",
-      "importance": 0.7638
-    },
-    {
-      "feature": "rainfall_intensity_mmh",
-      "importance": 0.1864
-    },
-    {
-      "feature": "dist_vulnerable_m",
-      "importance": 0.0195
+      "importance": 0.8982
     },
     {
       "feature": "road_type_factor",
-      "importance": 0.0163
+      "importance": 0.0365
+    },
+    {
+      "feature": "dist_vulnerable_m",
+      "importance": 0.0323
     },
     {
       "feature": "dist_flood_prone_m",
-      "importance": 0.0071
+      "importance": 0.0183
     },
     {
       "feature": "dist_low_lying_m",
-      "importance": 0.0067
+      "importance": 0.0138
     },
     {
       "feature": "dist_primary_drain_m",
-      "importance": 0.0001
+      "importance": 0.0009
+    },
+    {
+      "feature": "rainfall_intensity_mmh",
+      "importance": 0.0
     },
     {
       "feature": "drains_count_50m",

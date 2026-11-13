@@ -15,9 +15,16 @@ from app.api.gis import get_study_area_metadata, get_drainage, get_hospitals
 from app.api.rainfall import get_latest_rainfall
 from app.api.dashboard import get_dashboard_overview
 from app.database.database import SessionLocal
+from app.ml.label_audit import audit_ground_truth
 
 
 class TestUrbanFloodRiskSystem(unittest.TestCase):
+
+    def test_ground_truth_audit_blocks_fabricated_training(self):
+        """The bundled inputs must never be presented as labelled disruption outcomes."""
+        audit = audit_ground_truth()
+        self.assertEqual(audit["status"], "BLOCKED_NO_VERIFIED_LABELS")
+        self.assertEqual(audit["verified_label_count"], 0)
 
     def test_study_area_bounds(self):
         """Verify Bommanahalli–Marathahalli corridor bounding limits."""

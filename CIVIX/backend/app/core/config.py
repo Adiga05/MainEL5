@@ -3,7 +3,7 @@
 import os
 from pathlib import Path
 from functools import lru_cache
-from typing import Dict, Any
+from typing import List
 
 from pydantic_settings import BaseSettings
 
@@ -11,7 +11,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
     # ── Paths ────────────────────────────────────────────
     PROJECT_ROOT: str = str(Path(__file__).resolve().parents[3])
-    DATABASE_URL: str = "sqlite:///./data/civix.db"
+    DATABASE_URL: str = "postgresql://postgres:postgres_secure_password@localhost:5432/civix_db"
     UPLOAD_DIR: str = "data/uploads/raw"
     DATA_DIR: str = "data"
     DATASETS_DIR: str = "../../Datasets"
@@ -39,6 +39,12 @@ class Settings(BaseSettings):
     # ── Server ───────────────────────────────────────────
     HOST: str = "0.0.0.0"
     PORT: int = 8000
+    FRONTEND_ORIGIN: str = "http://localhost:5173"
+    CORS_ORIGINS: str = "http://localhost:5173,http://127.0.0.1:5173"
+
+    @property
+    def cors_origins(self) -> List[str]:
+        return [origin.strip() for origin in self.CORS_ORIGINS.split(",") if origin.strip()]
 
     class Config:
         env_file = ".env"

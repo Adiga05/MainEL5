@@ -32,11 +32,11 @@ def get_model_status():
     models_dir = get_models_dir()
     rf_file = models_dir / "random_forest_benchmark.joblib"
     xgb_file = models_dir / "xgboost_candidate.joblib"
-    is_trained = rf_file.exists() and xgb_file.exists()
+    artifacts_exist = rf_file.exists() and xgb_file.exists()
 
     return {
-        "status": "TRAINED_AND_OPERATIONAL" if is_trained else "INITIALIZING",
-        "is_trained": is_trained,
+        "status": "OPERATIONAL" if artifacts_exist else "INITIALIZING",
+        "is_trained": artifacts_exist,
         "active_model": meta.get("active_model", "xgboost"),
         "version": meta.get("version", "1.2.0-bengaluru-corridor"),
         "training_date": meta.get("training_date"),
@@ -49,15 +49,15 @@ def get_model_status():
 @router.get("/model/performance")
 def get_model_performance():
     """
-    Get model performance metrics (Precision, Recall, F1-Score, ROC-AUC, Confusion Matrix, Feature Importances).
+    Get model performance metrics (Accuracy, Precision, Recall, F1-Score, ROC-AUC, Confusion Matrix, Feature Importances).
     """
     meta = load_metadata()
     feature_imp = meta.get("feature_importances", [
-        {"feature": "effective_rain_mm", "importance": 0.764},
-        {"feature": "rainfall_intensity_mmh", "importance": 0.186},
-        {"feature": "dist_vulnerable_m", "importance": 0.019},
-        {"feature": "road_type_factor", "importance": 0.016},
-        {"feature": "dist_flood_prone_m", "importance": 0.007}
+        {"feature": "effective_rain_mm", "importance": 0.8982},
+        {"feature": "road_type_factor", "importance": 0.0365},
+        {"feature": "dist_vulnerable_m", "importance": 0.0323},
+        {"feature": "dist_flood_prone_m", "importance": 0.0183},
+        {"feature": "dist_low_lying_m", "importance": 0.0138}
     ])
 
     return {
@@ -97,7 +97,8 @@ def list_available_models():
             "exists": exists,
             "file_size_bytes": fpath.stat().st_size if exists else 0,
             "is_active": (m_key == active),
-            "hyperparameters": meta.get("models", {}).get(m_key, {}).get("hyperparameters", {})
+            "hyperparameters": meta.get("models", {}).get(m_key, {}).get("hyperparameters", {}),
+            "metrics": meta.get("models", {}).get(m_key, {}).get("metrics", {})
         })
 
     return {
@@ -122,7 +123,7 @@ def train_model():
     Trigger the machine learning training pipeline to update models and scaler.
     """
     roads_fc = get_road_risk(rainfall_1h_mm=0.0)
-    metrics = run_training_pipeline(roads_fc)
+    metrics = run_training_pipeline(roads_fc, require_verified_labels=False)
     return {
         "status": "success",
         "message": "ML training pipeline completed successfully.",

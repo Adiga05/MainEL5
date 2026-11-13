@@ -1,25 +1,26 @@
-"""Create all tables and seed the default admin user."""
+"""Create all tables and seed default users."""
 
 import logging
-
-from app.database.database import engine, Base, SessionLocal
+from app.database.database import engine, Base, SessionLocal, get_db_info
 from app.core.security import hash_password
 
 logger = logging.getLogger(__name__)
 
 
 def init_db():
-    """Create all tables defined on Base.metadata and seed default admin."""
-    # Import all models so they register with Base
+    """Create all tables defined on Base.metadata and seed default admin/driver."""
     import app.models  # noqa: F401
 
+    db_info = get_db_info()
+    logger.info(f"Database dialect: {db_info['dialect']} (PostGIS: {db_info['has_postgis']})")
+
     Base.metadata.create_all(bind=engine)
-    logger.info("All tables created.")
+    logger.info("All database tables created.")
 
-    _seed_admin()
+    _seed_users()
 
 
-def _seed_admin():
+def _seed_users():
     from app.models.user import User
 
     db = SessionLocal()
@@ -47,6 +48,8 @@ def _seed_admin():
             db.add(driver)
             db.commit()
             logger.info("Default driver user created (driver1 / driver123).")
+        else:
+            logger.info("Driver user already exists – skipping seed.")
     finally:
         db.close()
 
