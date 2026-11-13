@@ -11,7 +11,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
     # ── Paths ────────────────────────────────────────────
     PROJECT_ROOT: str = str(Path(__file__).resolve().parents[3])
-    DATABASE_URL: str = "postgresql://postgres:postgres_secure_password@localhost:5432/civix_db"
+    DATABASE_URL: str = "postgresql://postgres:Pranavadiga05@localhost:5432/civix_db"
     UPLOAD_DIR: str = "data/uploads/raw"
     DATA_DIR: str = "data"
     DATASETS_DIR: str = "../../Datasets"

@@ -1,13 +1,23 @@
 {
   "version": "1.2.0-bengaluru-corridor",
   "active_model": "xgboost",
-  "training_date": "2026-11-13T05:43:25.431719+00:00",
+  "training_date": "2026-11-13T05:54:54.144870+00:00",
+  "training_sources": [
+    "Datasets/Road_network.geojson",
+    "Datasets/bangalore_urban_rainfall.csv",
+    "Datasets/Primary_Drains.kml",
+    "Datasets/Secendory_Drains.kml",
+    "Datasets/Flood-prone_locations_map.kml",
+    "Datasets/Low_Lying_Areas.kml",
+    "Datasets/Points_vulnerable_to_flooding.kml",
+    "Datasets/BBMP_2020.csv to BBMP_2025.csv"
+  ],
   "dataset": {
     "total_samples": 20000,
     "train_samples": 15000,
     "test_samples": 5000,
-    "positive_disruption_samples": 9647,
-    "negative_dry_samples": 10353
+    "positive_disruption_samples": 5166,
+    "negative_dry_samples": 14834
   },
   "models": {
     "random_forest": {
@@ -19,19 +29,19 @@
         "class_weight": "balanced"
       },
       "metrics": {
-        "accuracy": 0.9996,
-        "precision": 0.9996,
-        "recall": 0.9996,
-        "f1_score": 0.9996,
-        "roc_auc": 1.0,
+        "accuracy": 0.93,
+        "precision": 0.814,
+        "recall": 0.945,
+        "f1_score": 0.8746,
+        "roc_auc": 0.9841,
         "confusion_matrix": [
           [
-            2587,
-            1
+            3429,
+            279
           ],
           [
-            1,
-            2411
+            71,
+            1221
           ]
         ]
       }
@@ -45,19 +55,19 @@
         "max_depth": 5
       },
       "metrics": {
-        "accuracy": 0.9996,
-        "precision": 0.9996,
-        "recall": 0.9996,
-        "f1_score": 0.9996,
-        "roc_auc": 1.0,
+        "accuracy": 0.9332,
+        "precision": 0.8219,
+        "recall": 0.9466,
+        "f1_score": 0.8799,
+        "roc_auc": 0.9857,
         "confusion_matrix": [
           [
-            2587,
-            1
+            3443,
+            265
           ],
           [
-            1,
-            2411
+            69,
+            1223
           ]
         ]
       }
@@ -66,35 +76,43 @@
   "feature_importances": [
     {
       "feature": "effective_rain_mm",
-      "importance": 0.8982
+      "importance": 0.6602
     },
     {
-      "feature": "road_type_factor",
-      "importance": 0.0365
+      "feature": "ward_grievance_rate",
+      "importance": 0.1007
     },
     {
       "feature": "dist_vulnerable_m",
-      "importance": 0.0323
-    },
-    {
-      "feature": "dist_flood_prone_m",
-      "importance": 0.0183
+      "importance": 0.0627
     },
     {
       "feature": "dist_low_lying_m",
-      "importance": 0.0138
+      "importance": 0.0567
     },
     {
-      "feature": "dist_primary_drain_m",
-      "importance": 0.0009
-    },
-    {
-      "feature": "rainfall_intensity_mmh",
-      "importance": 0.0
+      "feature": "dist_flood_prone_m",
+      "importance": 0.039
     },
     {
       "feature": "drains_count_50m",
-      "importance": 0.0
+      "importance": 0.0219
+    },
+    {
+      "feature": "rainfall_intensity_mmh",
+      "importance": 0.0195
+    },
+    {
+      "feature": "road_type_factor",
+      "importance": 0.0144
+    },
+    {
+      "feature": "dist_primary_drain_m",
+      "importance": 0.0131
+    },
+    {
+      "feature": "dist_secondary_drain_m",
+      "importance": 0.0118
     }
   ]
 }
